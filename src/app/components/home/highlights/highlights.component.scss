@@ -1,0 +1,37 @@
+@import "./../../../../variables.scss";
+
+.highlights{
+
+    .description{
+        margin-top: 30px;
+    }
+
+    .qualifications-list {
+      padding: 0;
+      list-style: none;
+      li{
+        margin: 15px 0;
+      }
+    }
+    .skills {
+        margin: 15px 0px;
+        .skill-element {
+            position: relative;
+            font-size: 12px;
+            font-family: $MainFont;
+            color: $Accent;
+                &:after {
+                    content: "/";
+                    color: $Primary;
+                    font-weight: 600;
+                    opacity: .7;
+                    margin: 5px;
+                }
+                &:last-child:after {
+                    content: "";
+              }
+        }
+    }
+
+}
+

@@ -1,0 +1,11 @@
+.bg-img {
+  background: #282f35 no-repeat center center;
+  transform-origin: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

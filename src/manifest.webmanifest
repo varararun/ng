@@ -1,0 +1,17 @@
+{
+  "name": "Arun Varghese",
+  "short_name": "Arun Varghese",
+  "theme_color": "#1c1c1c",
+  "background_color": "#1c1c1c",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/icons/icon_x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

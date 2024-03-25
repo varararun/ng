@@ -150,12 +150,12 @@ ol, ul, li {
   }
 }
 
-@media (max-width: 768em) {
+@media (max-width: 768px) {
   .section-title {
     font-size: 24px;
   }
   .container {
-    width: 80% !important;
+    width: 90% !important;
   }
 }
 
@@ -166,7 +166,7 @@ ol, ul, li {
   }
 }
 
-@media (max-width: 30em) {
+@media (max-width: 768px) {
   body {
     font-size: 18px;
   }

@@ -4713,12 +4713,12 @@ ol, ul, li {
     max-width: 600px;
   }
 }
-@media (max-width: 768em) {
+@media (max-width: 768px) {
   .section-title {
     font-size: 24px;
   }
   .container {
-    width: 80% !important;
+    width: 90% !important;
   }
 }
 @media (max-width: 1000px) {
@@ -4726,7 +4726,7 @@ ol, ul, li {
     font-size: 14px !important;
   }
 }
-@media (max-width: 30em) {
+@media (max-width: 768px) {
   body {
     font-size: 18px;
   }

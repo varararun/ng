@@ -1,6 +1,6 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {animate, query, stagger, style, transition, trigger} from '@angular/animations'
+import {animate, style, transition, trigger} from '@angular/animations'
 import {FormControl} from '@angular/forms';
 import {LanguageService} from 'src/app/services/language/language.service';
 
@@ -28,7 +28,7 @@ export class MenuComponent implements OnInit {
 
   menuOpen = false;
   languageFormControl: FormControl= new FormControl();
-  fileName: string = "";
+  fileName = "";
 
   constructor(
     private router: Router,

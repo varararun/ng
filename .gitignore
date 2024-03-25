@@ -82,3 +82,5 @@ client/uploads
 # --------------------
 *.angular/
 dist/
+
+.nx/cache

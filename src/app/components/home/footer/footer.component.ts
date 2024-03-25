@@ -1,6 +1,4 @@
-import {Component, ElementRef, HostListener, inject, OnInit} from '@angular/core';
-import {animate, query, stagger, style, transition, trigger} from '@angular/animations'
-import {DOCUMENT} from "@angular/common";
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-footer',

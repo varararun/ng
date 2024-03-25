@@ -14,10 +14,22 @@
     padding: 2rem 1.75rem;
     border-radius: 3px;
 
-    svg {
-        width: 40px;
-        height: 40px;
-        color: $Accent;
+    &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0px;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background: $Accent;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    &:hover:after {
+        width: 100%;
+        left: 0;
     }
 
     .external-links {

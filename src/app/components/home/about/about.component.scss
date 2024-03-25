@@ -52,19 +52,11 @@
 }
 
 @media (max-width: 480px) {
-    .title, .name, .role {
-        text-align: center;
-    }
     .name {
         font-size: 45px !important;
     }
     .role {
         font-size: 30px !important;
-    }
-
-    .resume-btn {
-        left: 25%;
-        position: relative;
     }
 }
 

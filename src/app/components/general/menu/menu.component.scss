@@ -61,7 +61,7 @@
         position: fixed;
         top: 15%;
         left: 38%;
-        width: 30%;
+        width: 100vw;
         margin: auto;
         list-style: none;
         color: $Primary;
@@ -72,17 +72,33 @@
             cursor: $Cursor;
             transition: $Transition;
 
-            a {
-                color: inherit !important;
-
-                &:hover {
-
-                }
+            &:before {
+                content: '<';
+                opacity: 0;
+                margin-right: 10px;
+                color: $Accent;
+                transition: $Transition;
             }
-
+            &:after {
+                content: '>';
+                opacity: 0;
+                margin-left: 10px;
+                color: $Accent;
+                transition: $Transition;
+            }
             &:hover {
                 color: $Accent;
                 transform: translateX(5px);
+                &:before {
+                    content: '<';
+                    opacity: 1;
+                    margin: 0;
+                }
+                &:after {
+                    content: '>';
+                    opacity: 1;
+                    margin: 0;
+                }
             }
         }
     }

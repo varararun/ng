@@ -12,4 +12,4 @@ Navigate to `http://localhost:4200/`
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Github Deployment
-Run `ng build --output-path docs --base-href /ng/ ; git push`
+Run `ng build --output-path docs --base-href / ; git push`

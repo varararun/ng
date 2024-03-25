@@ -3,19 +3,23 @@
         <div class="section-box">
             <div class="title" data-aos="fade-up">
                 <h3 class="section-title">
-                  {{"Highlights.Title" | translate}}
+                    {{"Highlights.Title" | translate}}
                 </h3>
             </div>
             <div>
                 <div class="description">
                     <ul class="qualifications-list" data-aos="fade-up">
-                      <li *ngFor='let text of "Highlights.Qualifications" | translate' [innerHTML]="text" class="qualifications-element" data-aos="fade-up" data-aos-duration="500">
-                        <hr></li>
+                        <li *ngFor='let text of "Highlights.Qualifications" | translate' [innerHTML]="text"
+                            class="qualifications-element" data-aos="fade-up" data-aos-duration="500">
+                            <hr>
+                        </li>
                     </ul>
 
                     <div *ngFor='let skill of "Highlights.Skills" | translate' class="skills">
-                      <div data-aos="fade-up"><b>{{skill.Category}}</b></div>
-                      <span *ngFor="let s of skill.Elements; let i = index" class="skill-element" data-aos="zoom-out" data-aos-duration="500" [attr.data-aos-delay]="i*50">
+                        <div data-aos="fade-up"><b>{{skill.Category}}</b></div>
+                        <span *ngFor="let s of skill.Elements; let i = index" [attr.data-aos-delay]="i*50"
+                              class="skill-element"
+                              data-aos="zoom-out" data-aos-duration="500">
                         <span class="underline">{{s}}</span>
                       </span>
                     </div>

@@ -1,90 +1,96 @@
 @import "src/variables";
 
 .menu-btn {
-  font-size: 35px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin-right: 40px;
-  margin-top: 30px;
-  color: $Primary;
-  cursor: $Cursor;
-  z-index: 20;
-  .menu-container {
-    display: block;
-    cursor: pointer;
-    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    font-size: 35px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 40px;
+    margin-top: 30px;
+    color: $Primary;
+    cursor: $Cursor;
+    z-index: 20;
 
-    .bar1, .bar2, .bar3 {
-      transition: $Transition;
-      width: 35px;
-      height: 2px;
-      background-color: $Primary;
-      margin: 6px 0;
-      transition: 0.4s;
-      box-shadow: 2px 2px 10px 0px #000;
+    .menu-container {
+        display: block;
+        cursor: pointer;
+        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+
+        .bar1, .bar2, .bar3 {
+            transition: $Transition;
+            width: 35px;
+            height: 2px;
+            background-color: $Primary;
+            margin: 6px 0;
+            transition: 0.4s;
+            box-shadow: 2px 2px 10px 0px #000;
+        }
+
+        &.menu-open {
+            .bar1, .bar2, .bar3 {
+                background-color: $Accent;
+                box-shadow: none;
+            }
+
+            .bar1 {
+                transform: translate(0, 10px) rotate(-45deg);
+            }
+
+            .bar2 {
+                opacity: 0;
+            }
+
+            .bar3 {
+                transform: translate(0, -6px) rotate(45deg);
+            }
+        }
+
     }
-
-    &.menu-open {
-      .bar1, .bar2, .bar3 {
-        background-color: $Accent;
-        box-shadow: none;
-      }
-      .bar1 {
-        transform: translate(0, 10px) rotate(-45deg);
-      }
-
-      .bar2 {
-        opacity: 0;
-      }
-
-      .bar3 {
-        transform: translate(0, -6px) rotate(45deg);
-      }
-    }
-
-  }
 }
 
 .menu-overlay {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: $Background;
-  z-index: 10;
-  .menu-items {
     position: fixed;
-    top: 15%;
-    left: 38%;
-    width: 30%;
-    margin: auto;
-    list-style: none;
-    color: $Primary;
-    .menu-item {
-      margin: 20px 0;
-      font-size: 50px;
-      cursor: $Cursor;
-      transition: $Transition;
-      a {
-        color: inherit !important;
-        &:hover {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: $Background;
+    z-index: 10;
 
+    .menu-items {
+        position: fixed;
+        top: 15%;
+        left: 38%;
+        width: 30%;
+        margin: auto;
+        list-style: none;
+        color: $Primary;
+
+        .menu-item {
+            margin: 20px 0;
+            font-size: 50px;
+            cursor: $Cursor;
+            transition: $Transition;
+
+            a {
+                color: inherit !important;
+
+                &:hover {
+
+                }
+            }
+
+            &:hover {
+                color: $Accent;
+                transform: translateX(5px);
+            }
         }
-      }
-
-      &:hover {
-        color: $Accent;
-        transform: translateX(5px);
-      }
     }
-  }
 }
 
 @media (max-width: 827px) {
-  .menu-items {
-    left: 15% !important;
-  }
+    .menu-items {
+        left: 15% !important;
+    }
 }
 

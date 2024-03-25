@@ -12,29 +12,29 @@ import {AboutComponent} from './about/about.component';
 import {FooterComponent} from "./footer/footer.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    AboutComponent,
-    HighlightsComponent,
-    ExperienceComponent,
-    ProjectsComponent,
-    ContactComponent,
-    FooterComponent
-  ],
-  imports: [
-    CommonModule,
-    TranslateModule.forChild({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
-  ]
+    declarations: [
+        HomeComponent,
+        AboutComponent,
+        HighlightsComponent,
+        ExperienceComponent,
+        ProjectsComponent,
+        ContactComponent,
+        FooterComponent
+    ],
+    imports: [
+        CommonModule,
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
+    ]
 })
 export class HomeModule {
 }

@@ -1,16 +1,16 @@
-<div class="menu-btn" (click)="menuOpen = !menuOpen">
-  <div class="menu-container" [ngClass]="{'menu-open': menuOpen}">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
+<div (click)="menuOpen = !menuOpen" class="menu-btn">
+    <div [ngClass]="{'menu-open': menuOpen}" class="menu-container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
 </div>
-<div class="menu-overlay" *ngIf="menuOpen" data-aos="fade-out" @OutAnimation>
-  <ol class="menu-items" data-aos="fade-up" data-aos-duration="500">
-    <li class="menu-item" *ngFor='let item of "Menu.NavItems" | translate; let i = index'>
-      <a (click)="navigate(item); menuOpen = !menuOpen">
-        {{item.label}}
-      </a>
-    </li>
-  </ol>
+<div *ngIf="menuOpen" @OutAnimation class="menu-overlay" data-aos="fade-out">
+    <ol class="menu-items" data-aos="fade-up" data-aos-duration="500">
+        <li *ngFor='let item of "Menu.NavItems" | translate; let i = index' class="menu-item">
+            <a (click)="navigate(item); menuOpen = !menuOpen">
+                {{item.label}}
+            </a>
+        </li>
+    </ol>
 </div>

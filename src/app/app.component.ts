@@ -3,28 +3,29 @@ import * as AOS from 'aos';
 import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
-  title = 'Arun Varghese';
+export class AppComponent implements OnInit {
+    title = 'Arun Varghese';
 
-  constructor(
-    private titleService: Title,
-    private metaService: Meta
-    ){
+    constructor(
+        private titleService: Title,
+        private metaService: Meta
+    ) {
     }
-  ngOnInit(): void{
 
-    this.titleService.setTitle( "Arun Varghese | Software Engineer" );
+    ngOnInit(): void {
 
-    this.metaService.addTags([
-      {name: 'keywords', content: 'software, engineer, developer'},
-      {name: 'description', content: '#engineer #husband #traveler'},
-    ]);
+        this.titleService.setTitle("Arun Varghese | Software Engineer");
 
-    AOS.init();
+        this.metaService.addTags([
+            {name: 'keywords', content: 'software, engineer, developer'},
+            {name: 'description', content: '#engineer #husband #traveler'},
+        ]);
 
-  }
+        AOS.init();
+
+    }
 }

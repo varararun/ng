@@ -1,42 +1,42 @@
 @import "src/variables";
 
 .description {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .qualifications-list {
-  padding: 0;
-  margin-bottom: 50px;
+    padding: 0;
+    margin-bottom: 50px;
 
-  li {
-    margin: 15px 0;
-  }
+    li {
+        margin: 15px 0;
+    }
 }
 
 .skills {
-  margin: 15px 0px;
+    margin: 15px 0px;
 
-  .skill-element {
-    position: relative;
-    font-size: 12px;
-    color: $Accent;
+    .skill-element {
+        position: relative;
+        font-size: 12px;
+        color: $Accent;
 
-    &:after {
-      content: $Divider;
-      color: $Primary;
-      font-weight: 600;
-      opacity: .7;
-      margin: 5px;
+        &:after {
+            content: $Divider;
+            color: $Primary;
+            font-weight: 600;
+            opacity: .7;
+            margin: 5px;
+        }
+
+        &:last-child:after {
+            content: "";
+        }
+
+        span {
+            padding-bottom: 5px;
+        }
     }
-
-    &:last-child:after {
-      content: "";
-    }
-
-    span {
-      padding-bottom: 5px;
-    }
-  }
 }
 
 

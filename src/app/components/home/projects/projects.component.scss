@@ -65,7 +65,7 @@
     ". . .";
 
   .grid-item {
-    background-color: $Background;
+    background-color: $BgOpaque;
 
     &:hover {
       transform: translateY(-5px);

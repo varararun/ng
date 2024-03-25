@@ -6,7 +6,7 @@
   top: 0;
   right: 0;
   margin-right: 40px;
-  margin-top: 25px;
+  margin-top: 30px;
   color: $Primary;
   cursor: $Cursor;
   z-index: 20;
@@ -18,7 +18,7 @@
     .bar1, .bar2, .bar3 {
       transition: $Transition;
       width: 35px;
-      height: 5px;
+      height: 2px;
       background-color: $Primary;
       margin: 6px 0;
       transition: 0.4s;
@@ -31,7 +31,7 @@
         box-shadow: none;
       }
       .bar1 {
-        transform: translate(0, 11px) rotate(-45deg);
+        transform: translate(0, 10px) rotate(-45deg);
       }
 
       .bar2 {
@@ -39,7 +39,7 @@
       }
 
       .bar3 {
-        transform: translate(0, -11px) rotate(45deg);
+        transform: translate(0, -6px) rotate(45deg);
       }
     }
 
@@ -52,7 +52,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background: $Gray;
+  background: $Background;
   z-index: 10;
   .menu-items {
     position: fixed;
@@ -69,6 +69,9 @@
       transition: $Transition;
       a {
         color: inherit !important;
+        &:hover {
+
+        }
       }
 
       &:hover {

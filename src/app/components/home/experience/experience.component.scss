@@ -5,12 +5,12 @@
   padding: 0;
 
   .job {
-    background-color: $Gray;
+    background-color: $Background;
     padding: 25px;
     margin-bottom: 25px;
     transition: $Transition;
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-    background-color: $Gray;
+    background-color: $Background;
     backdrop-filter: blur(5px);
     opacity: 0.9;
 

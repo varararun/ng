@@ -65,7 +65,7 @@ footer{
         font-family: $MainFont;
         font-size: 12px;
         line-height: 1;
-
+        text-align: center;
         position: absolute;
         margin: auto;
         left: 0;
@@ -93,4 +93,10 @@ footer{
         margin-top: -5px;
         margin-left: 5px;
     }
+}
+
+@media(max-width: 768px){
+  .footer-right-bar, .footer-left-bar {
+    display: none;
+  }
 }

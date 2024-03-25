@@ -1,41 +1,42 @@
-@import "./../../../../variables.scss";
+@import "src/variables";
 
-.highlights{
-
-    .description{
-        margin-top: 30px;
-    }
-
-    .qualifications-list {
-      padding: 0;
-      margin-bottom: 50px;
-
-      li{
-        margin: 15px 0;
-      }
-    }
-    .skills {
-        margin: 15px 0px;
-        .skill-element {
-            position: relative;
-            font-size: 12px;
-            font-family: $MainFont;
-            color: $Accent;
-                &:after {
-                    content: $Divider;
-                    color: $Primary;
-                    font-weight: 600;
-                    opacity: .7;
-                    margin: 5px;
-                }
-                &:last-child:after {
-                    content: "";
-              }
-          span {
-            padding-bottom: 5px;
-          }
-        }
-    }
-
+.description {
+  margin-top: 30px;
 }
+
+.qualifications-list {
+  padding: 0;
+  margin-bottom: 50px;
+
+  li {
+    margin: 15px 0;
+  }
+}
+
+.skills {
+  margin: 15px 0px;
+
+  .skill-element {
+    position: relative;
+    font-size: 12px;
+    color: $Accent;
+
+    &:after {
+      content: $Divider;
+      color: $Primary;
+      font-weight: 600;
+      opacity: .7;
+      margin: 5px;
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+
+    span {
+      padding-bottom: 5px;
+    }
+  }
+}
+
 

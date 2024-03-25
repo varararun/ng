@@ -1,102 +1,90 @@
-@import "./variables.scss";
+@import "src/variables";
 
-body{
-    margin: 0;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    background-color: $Background;
-    color: $Primary;
-    line-height: 1.3;
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: $Background;
+  color: $Primary;
+  line-height: 1.3;
+  font-family: $MainFont;
+  font-size: 15px;
+}
+
+.section-box {
+  padding: 130px 0;
+}
+
+section {
+  background: transparent;
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh !important;
+  margin: auto;
+  width: 70% !important;
+}
+
+.section-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 40px;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 32px;
+  font-weight: 600;
+  color: $Primary;
+  font-family: $MainFont;
+
+  .n-section-title {
+    margin-right: 10px;
     font-family: $MainFont;
-    font-size: 15px;
-}
-.section-box{
-    padding: 130px 0;
-}
-.section{
-    background: transparent;
-}
-
-.code-font{
-    font-family: $CodeFont;
-
-}
-
-.e-font{
-    font-family: $MainFont;
-}
-
-.section-title{
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 10px 0 40px;
-    width: 100%;
-    white-space: nowrap;
-    font-size: 32px;
-    font-weight: 600;
-    color: $Primary;
-    font-family: $MainFont;
-    margin: 0 0 10px 0;
-
-    .n-section-title{
-        margin-right: 10px;
-        font-family: $MainFont;
-        font-weight: normal;
-        color: $Accent;
-        font-size: 20px;
-        position: relative;
-    }
-
-    &:after{
-        content: '';
-        display: block;
-        height: 1px;
-        width: 300px;
-        background-color: $Accent;
-        position: relative;
-        margin-left: 20px;
-    }
-}
-
-
-
-.main-btn{
+    font-weight: normal;
     color: $Accent;
-    background-color: transparent;
-    border: 1px solid $Accent;
-    border-radius: 3px;
-    font-size: 13px;
-    font-family: $MainFont;
-    line-height: 1;
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    cursor: $Cursor;
-    transition: $Transition;
-    padding: 1.25rem 1.75rem;
+    font-size: 20px;
+    position: relative;
+  }
 
-    &:hover, &:focus, &:active {
-        background-color: rgba(100,255,218,0.07);
-        outline: none;
-    }
+  &:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: $Accent;
+    position: relative;
+    margin-left: 20px;
+  }
 }
 
-a{
-    text-decoration: none;
+.main-btn {
+  color: $Accent;
+  background-color: transparent;
+  border: 1px solid $Accent;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: $MainFont;
+  line-height: 1;
+  text-decoration: none;
+  cursor: $Cursor;
+  transition: $Transition;
+  padding: 1.25rem 1.75rem;
 
-    &:hover{
-        text-decoration: none;
-        color: $Accent;
-    }
+  &:hover, &:focus, &:active {
+    background-color: rgba(100, 255, 218, 0.07);
+    outline: none;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: $Accent;
+  }
 }
 
 .underline {
@@ -104,81 +92,103 @@ a{
   display: inline-block;
   position: relative;
   color: $Accent !important;
-}
-.underline:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 3px;
-  content: "";
-  display: block;
-  height: 1px;
-  left: 50%;
-  position: absolute;
-  background: $Accent;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0%;
-}
-.underline:hover:after {
-  width: 100%;
-  left: 0;
+
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 3px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: $Accent;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
 }
 
-li {
+ol, ul, li {
   list-style: none;
   padding: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1100px){
-    .project-container{
-        margin: 30px 0 !important;
-        height: 385px !important;
-    }
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
 
-}
-@media (min-width: 1100px) and (max-width: 1300px){
-    .container{
-        max-width: 950px;
-    }
-}
+  .grid-item {
+    flex: 0 0 calc(33% - 20px);
+    margin: 10px;
+    padding: 5px 0;
+    box-sizing: border-box;
+    background-color: $Background;
 
-@media (min-width: 992px) and (max-width: 1100px){
-    .container{
-        max-width: 800px;
+    &:hover {
+      transform: translateY(-5px);
     }
-
-}
-
-@media (min-width: 880px) and (max-width: 992px){
-    .container{
-        max-width: 700px;
-    }
+  }
 }
 
-@media (min-width: 768px) and (max-width: 880px){
-    .container{
-        max-width: 600px;
-    }
+@media (min-width: 768px) and (max-width: 1100px) {
+  .project-container {
+    margin: 30px 0 !important;
+    height: 385px !important;
+  }
+
 }
 
-@media (max-width: 768em){
-    .section-title {
-        font-size: 24px;
-    }
-    .container {
-        width: 90%;
-    }
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .container {
+    max-width: 800px;
+  }
+
+}
+
+@media (min-width: 880px) and (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 880px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768em) {
+  .section-title {
+    font-size: 24px;
+  }
+  .container {
+    width: 80% !important;
+  }
 }
 
 
-@media (max-width: 1000px){
-    .big-subtitle{
-        font-size: 14px !important;
-    }
+@media (max-width: 1000px) {
+  .big-subtitle {
+    font-size: 14px !important;
+  }
 }
 
-@media (max-width: 30em){
-    body {
-        font-size: 18px;
-    }
+@media (max-width: 30em) {
+  body {
+    font-size: 18px;
+  }
 }
 
 

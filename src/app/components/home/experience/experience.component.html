@@ -1,4 +1,4 @@
-<section class="section" id='experience'>
+<section>
   <div class="container">
     <div class="section-box">
       <div class="title mb-5" data-aos="fade-up" data-aos-duration="500">
@@ -8,11 +8,11 @@
       </div>
       <ul class="jobs">
         <li class="job" *ngFor='let item of "Experience.Items" | translate; let i = index' [title]="item.Tab"
-            data-aos="fade-up" data-aos-duration="500" [attr.data-aos-delay]="i*200">
-          <h4>{{item.Tab}} <img data-aos="zoom-out" data-aos-duration="500" class="job-logo" [src]="item.Logo" [alt]="item.Tab"></h4>
-          <h4>{{item.Title}}</h4>
-          <h6 class="job-location">{{item.Location}}</h6>
-          <h5 class="job-time">{{item.Date}}</h5>
+            data-aos="fade-up" data-aos-duration="500" [attr.data-aos-delay]="i*100">
+          <h2>{{item.Tab}} <img data-aos="zoom-out" data-aos-duration="500" class="job-logo" [src]="item.Logo" [alt]="item.Tab"></h2>
+          <h3>{{item.Title}}</h3>
+          <h4 class="job-location">{{item.Location}}</h4>
+          <h4 class="job-time">{{item.Date}}</h4>
           <p class="job-description" *ngFor='let jobDescriptionParagraph of item.Description; let i = index'
              [innerHTML]="jobDescriptionParagraph | translate"></p>
             <div class="job-environment">

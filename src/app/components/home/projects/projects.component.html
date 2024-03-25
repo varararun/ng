@@ -1,31 +1,25 @@
-<section class="section more-projects">
+<section>
   <div class="container">
     <div class="section-box">
-      <div class="">
+      <div>
         <h3 class="section-title">
           {{"FeatureProjects.Title" | translate}}
         </h3>
       </div>
-      <div class="mt-5">
-        <div class="row p-0">
-          <div *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index'
-               class="col-12 col-md-6 col-lg-6 col-xl-4 project-col" data-aos="fade-up" data-aos-duration="500"
-               [attr.data-aos-delay]="i*100">
-            <div class="more-project-box">
-              <div class="w-100 text-left m-0 p-0">
-                <h5 class="other-project-title mt-4">{{project.Title}}</h5>
-                <p class="other-project-description">
-                  {{project.Description}}
-                </p>
-              </div>
-              <div>
-                <ul class="more-projects-skills">
-                  <li *ngFor='let technology of project.Technologies'>
-                    <span class="underline">{{technology}}</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+      <div class="grid">
+        <div *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index'
+             class="grid-item project-box" data-aos="fade-up" data-aos-duration="500"
+             [attr.data-aos-delay]="i*100">
+          <div>
+            <h5 class="title">{{project.Title}}</h5>
+            <p class="description">
+              {{project.Description}}
+            </p>
+          </div>
+          <div>
+              <span class="skills" *ngFor='let technology of project.Technologies'>
+                <span class="underline">{{technology}}</span>
+              </span>
           </div>
         </div>
       </div>
@@ -36,32 +30,26 @@
           {{"PersonalProjects.Title" | translate}}
         </h3>
       </div>
-      <div class="mt-5">
-        <div class="row p-0">
-          <div *ngFor='let project of "PersonalProjects.Projects" | translate; let i = index'
-               class="col-12 col-md-6 col-lg-6 col-xl-4 project-col" data-aos="fade-up" data-aos-duration="500"
-               [attr.data-aos-delay]="i*100">
-            <div class="more-project-box">
-              <div class="w-100 text-left m-0 p-0">
-                <div class="d-flex p-0 justify-content-end">
-                  <a style='color: inherit' *ngIf="project['DemoLink']" [href]="project['DemoLink']" target="_blank"><i
-                     class="external-link-btn ml-3 fas fa-external-link-alt"></i></a>
-                  <a style='color: inherit' *ngIf="project['GithubLink']" [href]="project['GithubLink']"
-                     target="_blank"><i id="ghLink" class="external-link-btn ml-4 fab fa-github"></i></a>
-                </div>
-                <h5 class="other-project-title mt-4">{{project.Title}}</h5>
-                <p class="other-project-description">
-                  {{project.Description}}
-                </p>
-              </div>
-              <div>
-                <ul class="more-projects-skills">
-                  <li *ngFor='let technology of project.Technologies'>
-                    <span class="underline">{{technology}}</span>
-                  </li>
-                </ul>
-              </div>
+      <div class="grid">
+        <div *ngFor='let project of "PersonalProjects.Projects" | translate; let i = index'
+             class="grid-item project-box" data-aos="fade-up" data-aos-duration="500"
+             [attr.data-aos-delay]="i*100">
+          <div>
+            <div class="external-links">
+              <a style='color: inherit' *ngIf="project['DemoLink']" [href]="project['DemoLink']" target="_blank"><i
+                class="external-link-btn ml-3 fas fa-external-link-alt"></i></a>
+              <a style='color: inherit' *ngIf="project['GithubLink']" [href]="project['GithubLink']"
+                 target="_blank"><i id="ghLink" class="external-link-btn ml-4 fab fa-github"></i></a>
             </div>
+            <h5 class="title">{{project.Title}}</h5>
+            <p class="description">
+              {{project.Description}}
+            </p>
+          </div>
+          <div>
+              <span class="skills" *ngFor='let technology of project.Technologies'>
+                <span class="underline">{{technology}}</span>
+              </span>
           </div>
         </div>
       </div>

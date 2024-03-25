@@ -1,14 +1,12 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer/footer.component'
-import { HeaderComponent } from './header/header.component'
-import { NgbModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
-import { RouterModule } from '@angular/router';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { HttpClient } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { BackgroundComponent } from './background/background.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {MenuComponent} from './menu/menu.component'
+import {RouterModule} from '@angular/router';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {HttpClient} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {BackgroundComponent} from './background/background.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -16,15 +14,12 @@ export function HttpLoaderFactory(http: HttpClient){
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    FooterComponent,
+    MenuComponent,
     BackgroundComponent
   ],
   imports: [
     CommonModule,
-    NgbModule,
     RouterModule,
-    NgbDropdownModule,
     FormsModule,
     ReactiveFormsModule,
     TranslateModule.forChild({
@@ -35,6 +30,6 @@ export function HttpLoaderFactory(http: HttpClient){
       }
     })
   ],
-  exports: [HeaderComponent, FooterComponent, BackgroundComponent]
+  exports: [MenuComponent, BackgroundComponent]
 })
 export class GeneralModule { }

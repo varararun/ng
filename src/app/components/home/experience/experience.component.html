@@ -1,28 +1,27 @@
-<section class="section jobs" id='experience'>
-    <div class="container">
-        <div class="section-box">
-            <div class="title mb-5" data-aos="fade-up" data-aos-duration="1000">
-                <h3 class="e-font section-title">
-                    {{"Experience.Title" | translate}}
-                </h3>
+<section class="section" id='experience'>
+  <div class="container">
+    <div class="section-box">
+      <div class="title mb-5" data-aos="fade-up" data-aos-duration="500">
+        <h3 class="e-font section-title">
+          {{"Experience.Title" | translate}}
+        </h3>
+      </div>
+      <ul class="jobs">
+        <li class="job" *ngFor='let item of "Experience.Items" | translate; let i = index' [title]="item.Tab"
+            data-aos="fade-up" data-aos-duration="500" [attr.data-aos-delay]="i*200">
+          <h4>{{item.Tab}} <img data-aos="zoom-out" data-aos-duration="500" class="job-logo" [src]="item.Logo" [alt]="item.Tab"></h4>
+          <h4>{{item.Title}}</h4>
+          <h6 class="job-location">{{item.Location}}</h6>
+          <h5 class="job-time">{{item.Date}}</h5>
+          <p class="job-description" *ngFor='let jobDescriptionParagraph of item.Description; let i = index'
+             [innerHTML]="jobDescriptionParagraph | translate"></p>
+            <div class="job-environment">
+              <span class="technology" *ngFor='let technology of item.Environment'>
+                <span class="underline">{{technology}}</span>
+              </span>
             </div>
-            <div class="job-tabs" data-aos="fade-up" data-aos-duration="1000">
-              <ul ngbNav #nav="ngbNav" [(activeId)]="active" orientation="vertical" class="nav-tabs job-tabs">
-                    <li *ngFor='let item of "Experience.Items" | translate; let i = index' [title]="item.Tab" [ngbNavItem]="i">
-                      <a ngbNavLink>{{item.Tab}}</a>
-                        <ng-template ngbNavContent>
-                          <h4 class="title-tab-content">{{item.Title}} | <img class="job-logo" [src]="item.Logo" [alt]="item.Tab"></h4>
-                          <h6 class="job-location">{{item.Location}}</h6>
-                          <h5 class="job-time">{{item.Date}}</h5>
-                          <p *ngFor='let jobDescriptionParagraph of item.Description; let i = index' class="job-description"
-                          [innerHTML]="jobDescriptionParagraph | translate"></p>
-                          <span></span>
-                        </ng-template>
-                    </li>
-              </ul>
-              <div [ngbNavOutlet]="nav" class="mt-2"></div>
-            </div>
-
-        </div>
+        </li>
+      </ul>
     </div>
+  </div>
 </section>

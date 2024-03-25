@@ -1,0 +1,76 @@
+
+@import "./../../../../variables.scss";
+
+.about{
+  min-height: 100vh;
+
+  .container{
+    height: 100vh;
+
+    .section-box-about{
+      vertical-align: middle;
+
+      .content{
+        margin-top: 200px;
+      }
+
+      h1{
+
+        color: $Accent;
+        margin: 0 0 20px 3px;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: $MainFont;
+      }
+
+      h2, h3 {
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 0;
+      }
+
+      h2{
+        font-size: 80px;
+        color: $Primary;
+        font-family: $MainFont;
+      }
+      h3{
+        font-size: 60px;
+        color: $Primary;
+        font-family: $CodeFont;
+      }
+
+      .about-description{
+        margin-bottom: 50px;
+      }
+
+      p{
+        max-width: 500px;
+      }
+
+      .div-btn-about{
+        height: 43px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .title, .name, .role {
+    text-align: center;
+  }
+  .name {
+    font-size: 45px !important;
+  }
+  .role {
+    font-size: 30px !important;
+  }
+
+  .resume-btn {
+    left: 25%;
+    position: relative;
+  }
+}
+
+
+

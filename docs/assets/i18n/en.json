@@ -1,253 +1,398 @@
 {
-    "Email": "arunv4700@gmail.com",
-    "Github" : "https://github.com/vararun",
-    "Repo" : "https://github.com/varararun/ng",
-    "ResumeFileName": "arunvarghese_resume.pdf",
-
-    "Background.Img" : "assets/images/background/code.png",
-
-
-    "Header.InitialsLogo" : "AV",
-    "Header.ResumeBtn" : "Resume",
-    "Header.NavItems": [
-      {
-        "label":"Home",
-        "link": "home"
-      },
-      {
-        "label":"Highlights",
-        "link": "highlights"
-      },
-      {
-        "label":"Experience",
-        "link": "experience"
-      },
-      {
-        "label":"Projects",
-        "link": "projects"
-      },
-      {
-        "label": "Contact",
-        "link": "contact"
-      }
-    ],
-
-
-    "Banner.Pretitle": "Hello! My name is",
-    "Banner.Name": "Arun Varghese",
-    "Banner.Role": "Software Engineer",
-    "Banner.Description": "I am a results-oriented and self-motivated with over <span class='underline'>10 years of industry experience</span> in the complete SDLC of distributed web applications. Looking to further expand scope of technical knowledge, establish a professional identity, and contribute to the company's success. In my free time, I work on front-end web development with popular frameworks to learn more about <span class='underline'>UI/UX</span> and <span class='underline'>Software Architecture</span>",
-    "Banner.ResumeBtn": "View My Resume",
-
-
-    "Highlights.Title": "Highlights",
-    "Highlights.Qualifications": [
-      "10+ years of java development experience using agile methodology",
-      "Strong technical and interactive communication skills, excellent collaboration skills",
-      "Client-focused, interested in working with scalable technology to solve business problems",
-      "Flexible and capable of performing well on team-oriented tasks and meeting deadlines",
-      "Effective leadership skills with respect to influencing team members and delegating abilities",
-      "Adaptable and successful in handling multiple responsibilities in high-stress environments",
-      "Exceptional job at maintaining relationships with business/customers, vendors, and stakeholders",
-      "Proactively analyzes and recommends ways to reduce technical debt and automate repetitive tasks",
-      "Able to drive delivery of complex projects with distributed teams, managing time and resources effectively",
-      "Writes scalable and resilient code by utilizing emerging technology and researching latest software patterns"
-    ],
-    "Highlights.Skills" : [
-      {
-        "Category":"Languages",
-        "Elements": ["Java/J2EE", "JavaScript ES5/ES6", "TypeScript", "Shell"]
-      },
-      {
-        "Category":"Source Control",
-        "Elements": ["Github", "Bitbucket"]
-      },
-      {
-        "Category":"Frameworks & Architecture",
-        "Elements": ["Agile", "Scrum", "Micro Services", "Spring Boot", "REST", "SOAP", "Hibernate", "Event Driven", "Domain Driven"]
-      },
-      {
-        "Category":"Front End",
-        "Elements": ["Angular 15+", "NPM", "JSON", "CSS3", "SCSS", "HMTL5"]
-      },
-      {
-        "Category":"Back End",
-        "Elements": ["JPA", "MyBatis", "Liquibase", "Oracle 11g", "JDBC"]
-      },
-      {
-        "Category":"Testing",
-        "Elements": ["JUnit", "Karma", "Jasmine"]
-      },
-      {
-        "Category":"Build & Automation",
-        "Elements": ["Jenkins", "Maven", "Nexus", "Bamboo", "Sonar", "Ant"]
-      },
-      {
-        "Category":"Tools",
-        "Elements": ["IntelliJ", "Eclipse", "Postman", "SoapUI", "Chrome Dev Tools"]
-      },
-      {
-        "Category":"Data Monitoring",
-        "Elements": ["Elastic", "Kibana"]
-      },
-      {
-        "Category":"Current Interests",
-        "Elements": ["ChatGPT",  "CoPilot",  "AI",  "AWS",  "Kubernetes",  "Docker"]
-      }
-    ],
-
-
-    "Experience.Title": "Experience",
-    "Experience.Items": [
-        {
-            "Tab": "Comcast",
-            "Title": "Senior Software Engineer",
-            "Date": "January 2022 - Present",
-            "Location": "Plano, TX",
-            "Logo": "assets/images/logos/logo-comcast.png",
-            "Description": [
-              "Designed and developed reusable angular material components to streamline development of new features and provide consistency for the look and feel of internal and external web applications",
-              "Proficiently troubleshooted complex issues across multilayered architecture and documented solutions to reduce repetitive investigations and improve triage times for support teams by 20%",
-              "Identified and revamped workflow tool search/filtering by implementing enhancements like server-side pagination to improve page load performance from 10+sec to <2sec",
-              "Partnered with DevOps team to get Spring Boot instance of legacy webservice into Production in a timely manner to improve stability, streamline deployments, and debugging",
-              "Migrated manual processes and form submissions to self-service digitized forms to increase customer onboarding throughput by 10x"
-            ]
-        },
-        {
-            "Tab": "Masergy, Inc.",
-            "Title": "Senior Software Engineer",
-            "Date": "June 2018 - December 2021",
-            "Location": "Plano, TX",
-            "Logo": "assets/images/logos/logo-masergy.png",
-            "Description": [
-              "Decomposed company sales workflow by domains, took isolated contexts and migrated them to micro services that are a part of a new event driven messaging architecture",
-              "Implemented versioned APIs and bounded contexts using DTOs and JPA to reduce dependencies, remove cross-schema communications, improve scalability, and properly define domains",
-              "Leveraged front-end expertise to successfully migrate legacy application pages to Angular, thus reducing page load times, improving maintainability, and enriching the customer experience",
-              "Designed and developed solution for persisting user application preferences through a micro service using a mongo data store; presented during company hackathon and was approved for implementation",
-              "Organized lunch and learn on Angular practices, standards, and problems/solutions, providing the team with a collaborative atmosphere while increasing knowledge and promoting work culture"
-            ]
-        },
-        {
-            "Tab": "Spireon, Inc.",
-            "Title": "Senior Software Engineer",
-            "Date": "August 2015 - June 2018",
-            "Location": "Irving, TX",
-            "Logo": "assets/images/logos/logo-spireon.png",
-            "Description": [
-              " Focused on our core platform, taking part in solution design and implementation of RESTful web services as part of a push for a more micro service-oriented architecture using Spring Boot, Kafka, JPA, and Docker",
-              "Managed onboarding for new team members, including mentorship and best practices. In addition, managed ongoing relationships with major carriers like Sprint/T-Mobile/Verizon/AT&T",
-              "Worked on internal tool development, vendor API integrations for M2M architecture, and UI/UX enhancements while successfully collaborating with distributed teams to drive consistent feature delivery",
-              "Owned the development and successful rollout of SIM management features for new vendors/partners, which decreased device airtime costs up to fifty percent and support team’s involvement in the process",
-              "Collaborated with core platform team to design architecture for new features"
-            ]
-        },
-        {
-            "Tab": "Fidelity",
-            "Title": "Software Developer",
-            "Date": "July 2012 - May August 2015",
-            "Location": "Westlake, TX",
-            "Logo": "assets/images/logos/logo-fidelity.png",
-            "Description": [
-              "Owned and maintained high visibility maturing application dealing with Reference Data Consolidation as well as supported over five other applications within the company’s data access layer",
-              "Automated test data setup by incorporating real time data through Java, reducing testing setup time from hours to minutes; this also reduced scripts and manual inputs required to complete E2E integration tests",
-              "Piloted disaster recovery automation efforts, utilized HP Operations Orchestration studio to create release engineering processes to minimize manual inputs and reduce resources on call",
-              "Led integration with vendor-developed IRA to connect to systems for automating data setup, effectively reducing manual setup process from weeks to minutes",
-              "Identified issues with deployment process, learned and implemented UNIX shell scripts to automate deployment process in application environments to reduce deployment errors and overall execution time"
-            ]
-        },
-        {
-          "Tab": "Education",
-          "Title": "[BS] Software Engineering",
-          "Date": "Graduated May 2012",
-          "Location": "Richardson, TX",
-          "Logo": "assets/images/logos/logo-utd.png"
-        }
-    ],
-
-    "FeatureProjects.Title": "Projects",
-    "FeatureProjects.Label": "Featured Project",
-    "FeatureProjects.Projects": [
-        {
-          "Title": "[ISC] Intelligent Service Control",
-          "Description": "Customer facing web application that unifies network and application management with real-time visibility, analytics and service control purpose-built for multi-cloud enterprises.",
-          "Technologies": ["MacOS", "Angular 15", "Docker", "Kubernetes", "Spring Boot", "Maven", "MyBatis", "BitBucket", "Elastic", "MySQL"]
-        },
-        {
-            "Title": "Environment Dashboard",
-            "Description": "Web application used to consolidate all internal environment data including health checks, build tags, etc.",
-            "Technologies": ["Angular 4.0", "Linux", "Tomcat", "Spring Boot", "Maven"]
-        },
-        {
-            "Title": "Nspire Platform",
-            "Description": "Groovy/Grails web application used for internal company operations such as warehousing, customer support, problem diagnosis, and migration operations.",
-            "Technologies": ["Linux", "Tomcat", "MySql", "MongoDB", "Elastic Search", "RabbitMQ", "Logic Monitor", "Redis", "Vendor APIs"]
-        },
-        {
-            "Title": "[FundRef] - Fund Reference Application",
-            "Description": "Java and Spring based web application for consolidating/provisioning fund attributes to downstream systems.",
-            "Technologies": ["Linux", "Tomcat", "Oracle database", "IPP", "PowerCenter", "IBM HATS", "Apache Solr"]
-        },
-        {
-            "Title": "[IRA] Integrated Routing Adapter",
-            "Description": "Vendor product that exposes APIs to enable applications to deliver changes to downstream system.",
-            "Technologies": ["Linux", "Tomcat", "Oracle database"]
-        },
-        {
-            "Title": "[DAL SDS] Data Access Layer Shared Data Services",
-            "Description": "Java and Spring based RESTful web services project used for raw data management, capture, and delivery.",
-            "Technologies": ["Linux", "Tomcat", "Oracle Database", "SQL Server", "Composite", "Maven"]
-        },
-        {
-            "Title": "[FEAS] Fund Event Automation System",
-            "Description": "Java based web application that enables business users to post changes to downstream systems utilizing IRA.",
-            "Technologies": ["Linux", "Tomcat", "Apache ActiveMQ", "Oracle database", "Apache Jasper Reports"]
-        },
-        {
-            "Title": "[SWAP] Single Window Approval Project",
-            "Description": " Linux servers, Tomcat application servers, Apache ActiveMQ, Oracle database, Apache Jasper Reports.",
-            "Technologies": ["Tomcat", "Bootstrap", "Maven", "Apache POI"]
-        },
-        {
-            "Title": "[CAR] Counterparty Approval Requests",
-            "Description": "Java, Spring, Bootstrap based web dashboard used to replace previously manual email approval process.",
-            "Technologies": ["Linux", "Tomcat", "Bootstrap", "Oracle database", "Maven"]
-        }
-    ],
-
-
-
-    "PersonalProjects.Title": "Personal projects",
-    "PersonalProjects.Projects": [{
-            "Title": "Resume Builder",
-            "Description": "Web application used as a tool for Resume edit/proofread/format/styles/guidelines.",
-            "Technologies": ["Angular 1.5", "Heroku", "Mongo", "Travis-CI"]
-        },
-        {
-            "Title": "Photo Tiles",
-            "Description": "Front End package, javascript implementation of Mac's Photo Tiles Screensaver.",
-            "GithubLink": "https://github.com/varararun/photo-tiles",
-            "DemoLink": "https://avarghese.me/photo-tiles",
-            "Technologies": ["HTML", "Javascript", "SCSS", "Travis-CI", "Hound-CI", "Gulp", "Bower"]
-        },
-        {
-            "Title": "Car Dashboard",
-            "Description": "Web application used for viewing, tracking, and assigning expenses for friends' investments in a rally car.",
-            "GithubLink": "https://github.com/gitwrecked/carDashAng2CliV2",
-            "DemoLink": "https://www.car-dash.site/",
-            "Technologies": ["Angular 2", "Heroku", "Mongo", "Travis-CI", "Node", "Express", "Frisby.js"]
-        },
-        {
-          "Title": "US Patent 9491178 B2",
-          "Description": "Identifying a measure of online security. A computer-implemented method includes retrieving, by one or more processing devices and from one or more data repositories, user information; generating, based on the retrieved user information, a digital personal profile that is a composite of a set of pre-defined attributes. ",
-          "DemoLink": "https://patents.google.com/patent/US9491178",
-          "Technologies": ["Published November 2016"]
-        }
-    ],
-
-
-    "Contact.Pretitle": "Contact",
-    "Contact.Title": "Get in Touch!",
-    "Contact.Btn": "Send me an Email",
-
-    "Footer.Logo": "assets/images/logos/logo-angular.png"
+  "Email": "arunv4700@gmail.com",
+  "Github": "https://github.com/vararun",
+  "Repo": "https://github.com/varararun/ng",
+  "ResumeFileName": "arunvarghese_resume.pdf",
+  "Background.Img": "assets/images/background/code.png",
+  "Menu.Initials": "AV",
+  "Menu.Img": "assets/images/profile/profile-small.png",
+  "Menu.NavItems": [
+    {
+      "label": "Home",
+      "link": ""
+    },
+    {
+      "label": "Highlights",
+      "link": "highlights"
+    },
+    {
+      "label": "Experience",
+      "link": "experience"
+    },
+    {
+      "label": "Projects",
+      "link": "projects"
+    },
+    {
+      "label": "Contact",
+      "link": "contact"
+    },
+    {
+      "label": "Resume",
+      "link": ""
+    }
+  ],
+  "About.Pretitle": "Hello! My name is",
+  "About.Name": "Arun Varghese",
+  "About.Role": "Software Engineer",
+  "About.Description": "Software Engineer with over <span class='underline'>10 years</span> of full-stack experience in the complete development life cycle of distributed web applications, from design to development to delivery. In my free time, I work on front-end web development with popular frameworks to learn more about <span class='underline'>UI/UX</span> and <span class='underline'>Software Architecture</span>",
+  "About.ResumeBtn": "View My Resume",
+  "Highlights.Title": "Highlights",
+  "Highlights.Qualifications": [
+    "10+ years of java development experience using agile methodology",
+    "Strong technical and interactive communication skills, excellent collaboration skills",
+    "Client-focused, interested in working with scalable technology to solve business problems",
+    "Flexible and capable of performing well on team-oriented tasks and meeting deadlines",
+    "Effective leadership skills with respect to influencing team members and delegating abilities",
+    "Adaptable and successful in handling multiple responsibilities in high-stress environments",
+    "Exceptional job at maintaining relationships with business/customers, vendors, and stakeholders",
+    "Proactively analyzes and recommends ways to reduce technical debt and automate repetitive tasks",
+    "Able to drive delivery of complex projects with distributed teams, managing time and resources effectively",
+    "Writes scalable and resilient code by utilizing emerging technology and researching latest software patterns"
+  ],
+  "Highlights.Skills": [
+    {
+      "Category": "Languages",
+      "Elements": [
+        "Java/J2EE",
+        "JavaScript ES5/ES6",
+        "TypeScript",
+        "Shell"
+      ]
+    },
+    {
+      "Category": "Source Control",
+      "Elements": [
+        "Github",
+        "Bitbucket"
+      ]
+    },
+    {
+      "Category": "Frameworks & Architecture",
+      "Elements": [
+        "Agile",
+        "Scrum",
+        "Micro Services",
+        "Spring Boot",
+        "REST",
+        "SOAP",
+        "Hibernate",
+        "Event Driven",
+        "Domain Driven"
+      ]
+    },
+    {
+      "Category": "Front End",
+      "Elements": [
+        "Angular 15+",
+        "NPM",
+        "JSON",
+        "CSS3",
+        "SCSS",
+        "HMTL5"
+      ]
+    },
+    {
+      "Category": "Back End",
+      "Elements": [
+        "JPA",
+        "MyBatis",
+        "Liquibase",
+        "Oracle 11g",
+        "JDBC"
+      ]
+    },
+    {
+      "Category": "Testing",
+      "Elements": [
+        "JUnit",
+        "Karma",
+        "Jasmine"
+      ]
+    },
+    {
+      "Category": "Build & Automation",
+      "Elements": [
+        "Jenkins",
+        "Maven",
+        "Nexus",
+        "Bamboo",
+        "Sonar",
+        "Ant"
+      ]
+    },
+    {
+      "Category": "Tools",
+      "Elements": [
+        "IntelliJ",
+        "Eclipse",
+        "Postman",
+        "SoapUI",
+        "Chrome Dev Tools"
+      ]
+    },
+    {
+      "Category": "Data Monitoring",
+      "Elements": [
+        "Elastic",
+        "Kibana"
+      ]
+    },
+    {
+      "Category": "Current Interests",
+      "Elements": [
+        "ChatGPT",
+        "CoPilot",
+        "AI",
+        "AWS",
+        "Kubernetes",
+        "Docker"
+      ]
+    }
+  ],
+  "Experience.Title": "Experience",
+  "Experience.Items": [
+    {
+      "Tab": "Comcast",
+      "Title": "Senior Software Engineer",
+      "Date": "January 2022 - Present",
+      "Location": "Plano, TX",
+      "Logo": "assets/images/logos/logo-comcast.png",
+      "Description": [
+        "Designed and developed reusable angular material components to streamline development of new features and provide consistency for the look and feel of internal and external web applications",
+        "Proficiently troubleshooted complex issues across multilayered architecture and documented solutions to reduce repetitive investigations and improve triage times for support teams by 20%",
+        "Identified and revamped workflow tool search/filtering by implementing enhancements like server-side pagination to improve page load performance from 10+sec to <2sec",
+        "Partnered with DevOps team to get Spring Boot instance of legacy webservice into Production in a timely manner to improve stability, streamline deployments, and debugging",
+        "Migrated manual processes and form submissions to self-service digitized forms to increase customer onboarding throughput by 10x"
+      ],
+      "Environment": [
+        "Mac OS", "Linux", "ZSH", "Elastic Search", "HTML", "SCSS", "MySQL", "MyBatis", "IntelliJ", "Micro Services", "Agile", "Scrum", "Karma", "Spring MVC", "REST", "Github", "GIT", "Kubernetes", "Nexus", "Maven", "Docker", "JUnit", "Postman", "Slack", "JIRA", "Confluence Wiki", "Angular", "TypeScript"
+      ]
+    },
+    {
+      "Tab": "Masergy, Inc.",
+      "Title": "Senior Software Engineer",
+      "Date": "June 2018 - December 2021",
+      "Location": "Plano, TX",
+      "Logo": "assets/images/logos/logo-masergy.png",
+      "Description": [
+        "Decomposed company sales workflow by domains, took isolated contexts and migrated them to micro services that are a part of a new event driven messaging architecture",
+        "Implemented versioned APIs and bounded contexts using DTOs and JPA to reduce dependencies, remove cross-schema communications, improve scalability, and properly define domains",
+        "Leveraged front-end expertise to successfully migrate legacy application pages to Angular, thus reducing page load times, improving maintainability, and enriching the customer experience",
+        "Designed and developed solution for persisting user application preferences through a micro service using a mongo data store; presented during company hackathon and was approved for implementation",
+        "Organized lunch and learn on Angular practices, standards, and problems/solutions, providing the team with a collaborative atmosphere while increasing knowledge and promoting work culture"
+      ],
+      "Environment": [
+        "Mac OS", "Linux", "Elastic Search", "HTML", "JQuery", "AJAX", "CSS", "XML", "MySQL", "MyBatis", "Mongo", "JPA", "DTO", "IntelliJ", "Micro Services", "Agile", "Scrum", "Kanban", "TDD", "Karma", "Selenium", "Spring MVC", "REST", "OO", "GIT", "Cobertura", "Nexus", "Maven", "Tomcat", "JUnit", "SoapUI", "Postman", "Slack", "JIRA", "Pivotal", "MS PowerPoint/Word/Excel", "Confluence Wiki", "Splunk", "AngularJS/Angular", "TypeScript", "JavaScript"
+      ]
+    },
+    {
+      "Tab": "Spireon, Inc.",
+      "Title": "Senior Software Engineer",
+      "Date": "August 2015 - June 2018",
+      "Location": "Irving, TX",
+      "Logo": "assets/images/logos/logo-spireon.png",
+      "Description": [
+        "Focused on our core platform, taking part in solution design and implementation of RESTful web services as part of a push for a more micro service-oriented architecture using Spring Boot, Kafka, JPA, and Docker",
+        "Managed onboarding for new team members, including mentorship and best practices. In addition, managed ongoing relationships with major carriers like Sprint/T-Mobile/Verizon/AT&T",
+        "Worked on internal tool development, vendor API integrations for M2M architecture, and UI/UX enhancements while successfully collaborating with distributed teams to drive consistent feature delivery",
+        "Owned the development and successful rollout of SIM management features for new vendors/partners, which decreased device airtime costs up to fifty percent and support team’s involvement in the process",
+        "Collaborated with core platform team to design architecture for new features"
+      ],
+      "Environment": [
+        "Mac OS", "Linux", "M2M", "Groovy", "Grails", "Elastic Search", "CXF", "HTML", "JavaScript", "JQuery", "AJAX", "CSS", "XML", "MySQL", "Agile", "TDD", "Spring MVC", "REST", "SOAP", "OO", "GIT", "Bamboo", "Cobertura", "Nexus", "Maven", "Tomcat", "Spock", "JUnit", "SoapUI", "Postman", "Slack", "JIRA", "Pivotal", "MS PowerPoint/Word/Excel", "Confluence Wiki", "Logic Monitor", "Splunk", "Angular", "TypeScript"
+      ]
+    },
+    {
+      "Tab": "Fidelity",
+      "Title": "Software Developer",
+      "Date": "July 2012 - May August 2015",
+      "Location": "Westlake, TX",
+      "Logo": "assets/images/logos/logo-fidelity.png",
+      "Description": [
+        "Owned and maintained high visibility maturing application dealing with Reference Data Consolidation as well as supported over five other applications within the company’s data access layer",
+        "Automated test data setup by incorporating real time data through Java, reducing testing setup time from hours to minutes; this also reduced scripts and manual inputs required to complete E2E integration tests",
+        "Piloted disaster recovery automation efforts, utilized HP Operations Orchestration studio to create release engineering processes to minimize manual inputs and reduce resources on call",
+        "Led integration with vendor-developed IRA to connect to systems for automating data setup, effectively reducing manual setup process from weeks to minutes",
+        "Identified issues with deployment process, learned and implemented UNIX shell scripts to automate deployment process in application environments to reduce deployment errors and overall execution time"
+      ],
+      "Environment": [
+        "Windows", "Linux", "Java/J2EE", "HTML", "JavaScript", "JQuery", "AJAX", "CSS", "XML/XSD", "XSLT", "Shell Scripting", "Oracle 11g", "Oracle SQL Developer", "PL/SQL", "JDBC", "iBatis", "MyBatis", "Agile", "TDD", "Selenium", "Spring MVC", "REST", "SOAP", "SOA", "OO", "SVN", "Bamboo", "Sonar", "FishEye/Crucible", "Ant", "Maven", "SpringSource", "Tomcat", "WinSCP", "Putty", "JUnit", "SoapUI", "Postman", "Selenium", "JIRA", "HP Quality Center", "HP Operations Orchestration", "HP Service Manager", "MS PowerPoint/Word/Excel", "SharePoint"
+      ]
+    },
+    {
+      "Tab": "Education",
+      "Title": "[BS] Software Engineering",
+      "Date": "Graduated May 2012",
+      "Location": "Richardson, TX",
+      "Logo": "assets/images/logos/logo-utd.png"
+    }
+  ],
+  "FeatureProjects.Title": "Projects",
+  "FeatureProjects.Label": "Featured Project",
+  "FeatureProjects.Projects": [
+    {
+      "Title": "[ISC] Intelligent Service Control",
+      "Description": "Customer facing web application that unifies network and application management with real-time visibility, analytics and service control purpose-built for multi-cloud enterprises.",
+      "Technologies": [
+        "MacOS",
+        "Angular 15",
+        "Docker",
+        "Kubernetes",
+        "Spring Boot",
+        "Maven",
+        "MyBatis",
+        "BitBucket",
+        "Elastic",
+        "MySQL"
+      ]
+    },
+    {
+      "Title": "Environment Dashboard",
+      "Description": "Web application used to consolidate all internal environment data including health checks, build tags, etc.",
+      "Technologies": [
+        "Angular 4.0",
+        "Linux",
+        "Tomcat",
+        "Spring Boot",
+        "Maven"
+      ]
+    },
+    {
+      "Title": "Nspire Platform",
+      "Description": "Groovy/Grails web application used for internal company operations such as warehousing, customer support, problem diagnosis, and migration operations.",
+      "Technologies": [
+        "Linux",
+        "Tomcat",
+        "MySql",
+        "MongoDB",
+        "Elastic Search",
+        "RabbitMQ",
+        "Logic Monitor",
+        "Redis",
+        "Vendor APIs"
+      ]
+    },
+    {
+      "Title": "[FundRef] - Fund Reference Application",
+      "Description": "Java and Spring based web application for consolidating/provisioning fund attributes to downstream systems.",
+      "Technologies": [
+        "Linux",
+        "Tomcat",
+        "Oracle database",
+        "IPP",
+        "PowerCenter",
+        "IBM HATS",
+        "Apache Solr"
+      ]
+    },
+    {
+      "Title": "[IRA] Integrated Routing Adapter",
+      "Description": "Vendor product that exposes APIs to enable applications to deliver changes to downstream system.",
+      "Technologies": [
+        "Linux",
+        "Tomcat",
+        "Oracle database"
+      ]
+    },
+    {
+      "Title": "[DAL SDS] Data Access Layer Shared Data Services",
+      "Description": "Java and Spring based RESTful web services project used for raw data management, capture, and delivery.",
+      "Technologies": [
+        "Linux",
+        "Tomcat",
+        "Oracle Database",
+        "SQL Server",
+        "Composite",
+        "Maven"
+      ]
+    },
+    {
+      "Title": "[FEAS] Fund Event Automation System",
+      "Description": "Java based web application that enables business users to post changes to downstream systems utilizing IRA.",
+      "Technologies": [
+        "Linux",
+        "Tomcat",
+        "Apache ActiveMQ",
+        "Oracle database",
+        "Apache Jasper Reports"
+      ]
+    },
+    {
+      "Title": "[SWAP] Single Window Approval Project",
+      "Description": " Linux servers, Tomcat application servers, Apache ActiveMQ, Oracle database, Apache Jasper Reports.",
+      "Technologies": [
+        "Tomcat",
+        "Bootstrap",
+        "Maven",
+        "Apache POI"
+      ]
+    },
+    {
+      "Title": "[CAR] Counterparty Approval Requests",
+      "Description": "Java, Spring, Bootstrap based web dashboard used to replace previously manual email approval process.",
+      "Technologies": [
+        "Linux",
+        "Tomcat",
+        "Bootstrap",
+        "Oracle database",
+        "Maven"
+      ]
+    }
+  ],
+  "PersonalProjects.Title": "Personal projects",
+  "PersonalProjects.Projects": [
+    {
+      "Title": "Resume Builder",
+      "Description": "Web application used as a tool for Resume edit/proofread/format/styles/guidelines.",
+      "Technologies": [
+        "Angular 1.5",
+        "Heroku",
+        "Mongo",
+        "Travis-CI"
+      ]
+    },
+    {
+      "Title": "Photo Tiles",
+      "Description": "Front End package, javascript implementation of Mac's Photo Tiles Screensaver.",
+      "GithubLink": "https://github.com/varararun/photo-tiles",
+      "DemoLink": "https://avarghese.me/photo-tiles",
+      "Technologies": [
+        "HTML",
+        "Javascript",
+        "SCSS",
+        "Travis-CI",
+        "Hound-CI",
+        "Gulp",
+        "Bower"
+      ]
+    },
+    {
+      "Title": "Car Dashboard",
+      "Description": "Web application used for viewing, tracking, and assigning expenses for friends' investments in a rally car.",
+      "GithubLink": "https://github.com/gitwrecked/carDashAng2CliV2",
+      "DemoLink": "https://www.car-dash.site/",
+      "Technologies": [
+        "Angular 2",
+        "Heroku",
+        "Mongo",
+        "Travis-CI",
+        "Node",
+        "Express",
+        "Frisby.js"
+      ]
+    },
+    {
+      "Title": "US Patent 9491178 B2",
+      "Description": "Identifying a measure of online security. A computer-implemented method includes retrieving, by one or more processing devices and from one or more data repositories, user information; generating, based on the retrieved user information, a digital personal profile that is a composite of a set of pre-defined attributes. ",
+      "DemoLink": "https://patents.google.com/patent/US9491178",
+      "Technologies": [
+        "Published November 2016"
+      ]
+    }
+  ],
+  "Contact.Pretitle": "Contact",
+  "Contact.Title": "Get in Touch!",
+  "Contact.Btn": "Send me an Email",
+  "Footer.Logo": "assets/images/logos/logo-angular.png"
 }

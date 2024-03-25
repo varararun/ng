@@ -9,14 +9,14 @@
             <div>
                 <div class="description">
                     <ul class="qualifications-list" data-aos="fade-up">
-                      <li *ngFor='let text of "Highlights.Qualifications" | translate' [innerHTML]="text" class="qualifications-element" data-aos="fade-up" data-aos-duration="1000">
+                      <li *ngFor='let text of "Highlights.Qualifications" | translate' [innerHTML]="text" class="qualifications-element" data-aos="fade-up" data-aos-duration="500">
                         <hr></li>
                     </ul>
 
                     <div *ngFor='let skill of "Highlights.Skills" | translate' class="skills">
                       <div data-aos="fade-up"><b>{{skill.Category}}</b></div>
-                      <span *ngFor="let s of skill.Elements; let i = index" class="skill-element" data-aos="zoom-out" data-aos-duration="1000" [attr.data-aos-delay]="i*50">
-                        {{s}}
+                      <span *ngFor="let s of skill.Elements; let i = index" class="skill-element" data-aos="zoom-out" data-aos-duration="500" [attr.data-aos-delay]="i*50">
+                        <span class="underline">{{s}}</span>
                       </span>
                     </div>
                 </div>

@@ -8,7 +8,8 @@
 
     .qualifications-list {
       padding: 0;
-      list-style: none;
+      margin-bottom: 50px;
+
       li{
         margin: 15px 0;
       }
@@ -21,7 +22,7 @@
             font-family: $MainFont;
             color: $Accent;
                 &:after {
-                    content: "/";
+                    content: $Divider;
                     color: $Primary;
                     font-weight: 600;
                     opacity: .7;
@@ -30,6 +31,9 @@
                 &:last-child:after {
                     content: "";
               }
+          span {
+            padding-bottom: 5px;
+          }
         }
     }
 

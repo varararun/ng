@@ -6,7 +6,4 @@ import {Component} from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
-
-  active = 0
-
 }

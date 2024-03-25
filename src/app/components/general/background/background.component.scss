@@ -1,5 +1,7 @@
+@import "./../../../../variables.scss";
+
 .bg-img {
-  background: #282f35 no-repeat center center;
+  background: $Gray no-repeat;
   transform-origin: center;
   background-size: cover;
   width: 100%;

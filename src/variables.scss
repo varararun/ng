@@ -1,7 +1,10 @@
 $Primary      : #e6f1ff;
 $Accent       : #089ee5;
 $AccentOpaque : #089ee569;
-$Gray         : #1c1c1c;
+$Gray         : #0f0f0f;
 
-$MainFont: Montserrat, 'Helvetica Neue', Arial, sans-serif;
-$CodeFont: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Lucida Console', Monaco, Monospace;
+$Divider      : "/";
+$Transition   : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+$Cursor       : pointer;
+$MainFont     : Montserrat, 'Helvetica Neue', Arial, sans-serif;
+$CodeFont     : 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Lucida Console', Monaco, Monospace;

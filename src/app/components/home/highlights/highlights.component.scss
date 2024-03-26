@@ -20,6 +20,7 @@
         position: relative;
         font-size: 12px;
         color: $Accent;
+        font-family: $CodeFont;
 
         &:after {
             content: $Divider;

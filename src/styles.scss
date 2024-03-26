@@ -1,4 +1,5 @@
 @import "src/variables";
+@import "src/assets/fonts/fonts.scss";
 
 body {
     margin: 0;
@@ -37,16 +38,7 @@ section {
     font-size: 32px;
     font-weight: 600;
     color: $Primary;
-    font-family: $MainFont;
-
-    .n-section-title {
-        margin-right: 10px;
-        font-family: $MainFont;
-        font-weight: normal;
-        color: $Accent;
-        font-size: 20px;
-        position: relative;
-    }
+    font-family: $CodeFont;
 
     &:after {
         content: '';

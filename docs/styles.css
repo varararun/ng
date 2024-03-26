@@ -4576,6 +4576,18 @@ readers do not read off random characters that represent icons */
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].rules[1].use[1]!./src/styles.scss?ngGlobalStyle ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Fira Code";
+  src: url('FiraCode-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url('DMSans-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   margin: 0;
   width: 100%;
@@ -4584,7 +4596,7 @@ body {
   background-color: #0f0f0f;
   color: #e6f1ff;
   line-height: 1.3;
-  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+  font-family: "DM Sans", Montserrat, "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
 }
 
@@ -4613,15 +4625,7 @@ section {
   font-size: 32px;
   font-weight: 600;
   color: #e6f1ff;
-  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
-}
-.section-title .n-section-title {
-  margin-right: 10px;
-  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
-  font-weight: normal;
-  color: #089ee5;
-  font-size: 20px;
-  position: relative;
+  font-family: "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, Monospace;
 }
 .section-title:after {
   content: "";
@@ -4639,7 +4643,7 @@ section {
   border: 1px solid #089ee5;
   border-radius: 3px;
   font-size: 13px;
-  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+  font-family: "DM Sans", Montserrat, "Helvetica Neue", Arial, sans-serif;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;

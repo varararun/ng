@@ -37,7 +37,7 @@
     "About.Pretitle": "Hello! My name is",
     "About.Name": "Arun Varghese",
     "About.Role": "Software Engineer",
-    "About.Description": "With over <span class='highlight'>10 years</span> of full-stack experience in the complete development life cycle of distributed web applications, from design to development to delivery. In my free time, I work on front-end web development with popular frameworks to learn more about <span class='highlight'>UI/UX</span> and <span class='highlight'>Software Architecture</span>",
+    "About.Description": "With over <span class='highlight'>10 years</span> of full-stack experience in the complete development life cycle of distributed web applications, from design to delivery. In my free time, I work on front-end web development with popular frameworks to learn more about <span class='highlight'>UI/UX</span> and <span class='highlight'>Software Architecture</span>",
     "About.ResumeBtn": "View My Resume",
     "Highlights.Title": "Highlights",
     "Highlights.Qualifications": [
@@ -161,7 +161,7 @@
             "Location": "Plano, TX",
             "Logo": "assets/images/logos/logo-comcast.png",
             "Description": [
-                "Designed and developed reusable <span class='highlight'>Angular Material</span> components to streamline development of new features and provide consistency for the look and feel of internal and external web applications",
+                "Designed and developed reusable Angular Material components to streamline development of new features and provide consistency for the look and feel of internal and external web applications",
                 "Proficiently troubleshooted complex issues across multilayered architecture and documented solutions to reduce repetitive investigations and improve triage times for support teams by 20%",
                 "Identified and revamped workflow tool search/filtering by implementing enhancements like server-side pagination to improve page load performance from 10+sec to <2sec",
                 "Partnered with DevOps team to get Spring Boot instance of legacy webservice into Production in a timely manner to improve stability, streamline deployments, and debugging",

@@ -41,10 +41,7 @@ footer {
         font-size: 12px;
         line-height: 1;
         text-align: center;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-top: -60px;
+        height: 15vh;
 
         .credit {
             margin-bottom: 15px;
@@ -71,18 +68,29 @@ footer {
     }
 
     .scroll-top-btn {
+        border: 1px solid #089ee5;
+        border-radius: 3px;
+        padding: .5em 2em;
         font-size: 20px;
         line-height: 1;
         position: fixed;
-        right: 37px;
-        bottom: 25px;
+        left: 50%;
+        bottom: -15px;
+        margin-left: -48.5px;
+        width: 20px;
+        text-align: center;
         cursor: pointer;
         transition: $Transition;
-        color: $Primary;
+        color: $Accent;
         box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
         opacity: 0;
         &.show-scroll-btn {
             opacity: 1;
+            transform: translateY(-5px);
+        }
+        &:hover {
+            background-color: $BgOpaque;
+            transform: translateY(-10px);
         }
     }
 }

@@ -2,23 +2,29 @@
     <div class="container">
         <div class="section-box-about">
             <div class="content">
-                <div data-aos="fade-right" data-aos-duration="500">
-                    <h1 class="title">{{"About.Pretitle" | translate}}</h1>
+                <div class="row">
+                    <div class="column">
+                        <div data-aos="fade-right" data-aos-duration="500">
+                            <h1 class="title">{{"About.Pretitle" | translate}}</h1>
+                        </div>
+                        <div class="about-title">
+                            <h2 class="name" data-aos="fade-right" data-aos-delay="100"
+                                data-aos-duration="500">{{"About.Name" | translate}}</h2>
+                            <h3 class="role" data-aos="fade-right" data-aos-delay="200"
+                                data-aos-duration="500">{{"About.Role" | translate}}</h3>
+                        </div>
+                        <div class='about-description' data-aos="fade-right" data-aos-delay="300"
+                             data-aos-duration="500">
+                            <p [innerHTML]='"About.Description" | translate' class="mt-4"></p>
+                        </div>
+                        <a (click)="downloadResume()" class="main-btn resume-btn">
+                            {{"About.ResumeBtn" | translate}}
+                        </a>
+                    </div>
+                    <div class="column loader" data-aos="zoom-out" data-aos-duration="3000">
+                        <app-loader></app-loader>
+                    </div>
                 </div>
-                <div class="about-title">
-                    <h2 class="name" data-aos="fade-right" data-aos-delay="100"
-                        data-aos-duration="500">{{"About.Name" | translate}}</h2>
-                    <h3 class="role" data-aos="fade-right" data-aos-delay="200"
-                        data-aos-duration="500">{{"About.Role" | translate}}</h3>
-                </div>
-                <div class='about-description' data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
-                    <p [innerHTML]='"About.Description" | translate' class="mt-4"></p>
-                </div>
-            </div>
-            <div class="div-btn-about" data-aos="fade-right" data-aos-delay="400" data-aos-duration="500">
-                <a (click)="downloadResume()" class="main-btn resume-btn">
-                    {{"About.ResumeBtn" | translate}}
-                </a>
             </div>
         </div>
     </div>

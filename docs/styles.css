@@ -4659,27 +4659,15 @@ a:hover {
   color: #089ee5;
 }
 
-.underline {
+.highlight {
   text-decoration: none;
   display: inline-block;
   position: relative;
   color: #089ee5 !important;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.underline:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 3px;
-  content: "";
-  display: block;
-  height: 1px;
-  left: 50%;
-  position: absolute;
-  background: #089ee5;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.underline:hover:after {
-  width: 100%;
-  left: 0;
+.highlight:hover {
+  font-size: larger;
 }
 
 ol, ul, li {
@@ -4724,11 +4712,6 @@ ol, ul, li {
 @media (max-width: 1000px) {
   .big-subtitle {
     font-size: 14px !important;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    font-size: 18px;
   }
 }
 

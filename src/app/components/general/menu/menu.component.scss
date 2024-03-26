@@ -68,7 +68,7 @@
 
         .menu-item {
             margin: 20px 0;
-            font-size: 50px;
+            font-size: 3em;
             cursor: $Cursor;
             transition: $Transition;
 
@@ -104,9 +104,17 @@
     }
 }
 
-@media (max-width: 827px) {
+@media (max-width: 1000px) {
     .menu-items {
-        left: 15% !important;
+        font-size: smaller;
+        left: 35% !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .menu-items {
+        font-size: smaller;
+        left: 20% !important;
     }
 }
 

@@ -1,7 +1,6 @@
 @import "src/variables";
 
 .container {
-    height: 100vh;
 
     .section-box-about {
         vertical-align: middle;
@@ -26,13 +25,13 @@
         }
 
         h2 {
-            font-size: 80px;
+            font-size: 60px;
             color: $Primary;
             font-family: $MainFont;
         }
 
         h3 {
-            font-size: 60px;
+            font-size: 40px;
             color: $Primary;
             font-family: $CodeFont;
         }
@@ -44,10 +43,24 @@
         p {
             max-width: 500px;
         }
+    }
+}
 
-        .div-btn-about {
-            height: 43px;
-        }
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+
+    .column {
+        display: block;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: center;
+        order: 0;
     }
 }
 
@@ -59,6 +72,15 @@
         font-size: 30px !important;
     }
 }
+
+@media(max-width: 1160px) {
+    .column.loader {
+        width: 100%;
+        margin-left: -30px;
+        margin-bottom: 15vh;
+    }
+}
+
 
 
 

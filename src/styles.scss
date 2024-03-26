@@ -87,28 +87,15 @@ a {
     }
 }
 
-.underline {
+.highlight {
     text-decoration: none;
     display: inline-block;
     position: relative;
     color: $Accent !important;
+    transition: $Transition;
 
-    &:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 3px;
-        content: "";
-        display: block;
-        height: 1px;
-        left: 50%;
-        position: absolute;
-        background: $Accent;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-    }
-
-    &:hover:after {
-        width: 100%;
-        left: 0;
+    &:hover {
+        font-size: larger;
     }
 }
 
@@ -163,12 +150,6 @@ ol, ul, li {
 @media (max-width: 1000px) {
     .big-subtitle {
         font-size: 14px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 18px;
     }
 }
 

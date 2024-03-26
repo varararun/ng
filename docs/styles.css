@@ -4679,6 +4679,12 @@ ol, ul, li {
   padding: 0;
 }
 
+.bullet::marker {
+  content: "> ";
+  font-size: 1.2em;
+  color: #089ee5;
+}
+
 @media (min-width: 768px) and (max-width: 1100px) {
   .project-container {
     margin: 30px 0 !important;

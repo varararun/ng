@@ -36,9 +36,12 @@
         margin-bottom: 30px;
     }
 
-    .job-description {
-        position: relative;
-        font-size: 15px;
+    .job-descriptions {
+        margin-bottom: 15px;
+        .job-description {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
     }
 
     .job-location {

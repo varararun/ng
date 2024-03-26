@@ -9,13 +9,15 @@
             <ul class="jobs">
                 <li *ngFor='let item of "Experience.Items" | translate; let i = index' [attr.data-aos-delay]="i*100"
                     [title]="item.Tab" class="job" data-aos="fade-up" data-aos-duration="500">
-                    <h2>{{item.Tab}} <img [alt]="item.Tab" [src]="item.Logo" class="job-logo" data-aos="zoom-out" data-aos-duration="500"></h2>
+                    <h2>{{item.Tab}} <img [alt]="item.Tab" [src]="item.Logo" class="job-logo" data-aos="zoom-out"
+                                          data-aos-duration="500"></h2>
                     <h3>{{item.Title}}</h3>
-                    <h4 class="job-location">{{item.Location}}</h4>
-                    <h4 class="job-time">{{item.Date}}</h4>
-                    <p *ngFor='let jobDescriptionParagraph of item.Description; let i = index'
-                       [innerHTML]="jobDescriptionParagraph | translate"
-                       class="job-description"></p>
+                    <h4 class="job-location">{{item.Location}} - <span class="job-time">{{item.Date}}</span></h4>
+                    <ul class="job-descriptions">
+                        <li *ngFor='let jobDescriptionParagraph of item.Description; let i = index'
+                            [innerHTML]="jobDescriptionParagraph | translate"
+                            class="job-description bullet"></li>
+                    </ul>
                     <div class="job-environment">
                     <span *ngFor='let technology of item.Environment' class="technology">
                         <span class="highlight">{{technology}}</span>

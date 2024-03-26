@@ -1,6 +1,7 @@
 @import "src/variables";
 
 .menu-btn {
+    display: none;
     font-size: 35px;
     position: fixed;
     top: 0;
@@ -9,26 +10,37 @@
     margin-top: 30px;
     color: $Primary;
     cursor: $Cursor;
-    z-index: 20;
+    z-index: 2;
 
     .menu-container {
         display: block;
         cursor: pointer;
         box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        border: 1px solid $Accent;
+        border-radius: 3px;
+        color: blue;
+        padding: 5px;
+        transition: $Transition;
+
+        &:hover {
+            background: $BgOpaque;
+        }
 
         .bar1, .bar2, .bar3 {
             transition: $Transition;
             width: 35px;
             height: 2px;
-            background-color: $Primary;
+            background-color: $Accent;
             margin: 6px 0;
             transition: 0.4s;
             box-shadow: 2px 2px 10px 0px #000;
         }
 
         &.menu-open {
+            border: 1px solid transparent;
+
             .bar1, .bar2, .bar3 {
-                background-color: $Accent;
+                background-color: $Primary;
                 box-shadow: none;
             }
 
@@ -49,18 +61,19 @@
 }
 
 .menu-overlay {
+    display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     background: $Background;
-    z-index: 10;
+    z-index: 1;
 
     .menu-items {
-        position: fixed;
+        position: absolute;
         top: 15%;
-        left: 36%;
+        left: 0;
         width: 100vw;
         margin: auto;
         list-style: none;
@@ -74,48 +87,86 @@
             transition: $Transition;
 
             &:before {
-                content: '<';
-                opacity: 0;
-                margin-right: 10px;
-                color: $Accent;
-                transition: $Transition;
-            }
-            &:after {
                 content: '>';
                 opacity: 0;
-                margin-left: 10px;
+                margin: 20px 10px;
                 color: $Accent;
                 transition: $Transition;
             }
+
             &:hover {
-                color: $Accent;
-                transform: translateX(5px);
-                &:before {
-                    content: '<';
-                    opacity: 1;
-                    margin: 0;
+                a {
+                    color: $Primary;
                 }
-                &:after {
-                    content: '>';
+
+                transform: translateX(5px);
+
+                &:before {
                     opacity: 1;
-                    margin: 0;
+                }
+
+                &:after {
+                    opacity: 1;
                 }
             }
         }
     }
 }
 
+.menu-bar {
+    width: 100vw;
+    height: 50px;
+    z-index: 1;
+
+    .menu-bar-items {
+        padding: 2em 1.5em 1.25em;
+        float: left;
+        border: 1px solid $Accent;
+        border-radius: 3px;
+        position: fixed;
+        top: -30px;
+        width: 505px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: $Transition;
+        z-index: 1;
+        &:hover {
+            background: $Background;
+            top: -25px;
+        }
+
+        .menu-bar-item {
+            cursor: pointer;
+            float: left;
+            color: $Primary;
+
+            &:after {
+                content: $Divider;
+                color: $Accent;
+                font-weight: 600;
+                opacity: .7;
+                margin: 10px;
+            }
+
+            &:last-child:after {
+                content: "";
+            }
+        }
+    }
+}
+
+.active {
+    color: $Accent;
+}
+
 @media (max-width: 1000px) {
-    .menu-items {
-        font-size: smaller;
-        left: 32% !important;
+    .menu-btn {
+        display: block;
+    }
+    .menu-bar-items {
+        display: none;
+    }
+    .menu-overlay {
+        display: block;
     }
 }
-
-@media (max-width: 750px) {
-    .menu-items {
-        font-size: smaller;
-        left: 15% !important;
-    }
-}
-

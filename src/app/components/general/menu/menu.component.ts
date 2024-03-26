@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
+import {NavigationEnd, Router} from '@angular/router';
 import {animate, style, transition, trigger} from '@angular/animations'
 import {FormControl} from '@angular/forms';
 import {LanguageService} from 'src/app/services/language/language.service';
@@ -28,7 +28,8 @@ export class MenuComponent implements OnInit {
 
     menuOpen = false;
     languageFormControl: FormControl = new FormControl();
-    fileName = "";
+    fileName = '';
+    route = '';
 
     constructor(
         private router: Router,
@@ -37,7 +38,13 @@ export class MenuComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.languageFormControl.setValue(this.languageService.DEFAULT)
+        this.languageFormControl.setValue(this.languageService.DEFAULT);
+
+        this.router.events.subscribe(event => {
+            if (event instanceof NavigationEnd) {
+                this.route = event.url.split('/')[1] || 'home';
+            }
+        });
     }
 
     navigate(item) {

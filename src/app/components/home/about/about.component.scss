@@ -64,12 +64,32 @@
     }
 }
 
+.dark-highlight {
+    background: $BgOpaque;
+    padding: 0 0px 0px 10px;
+    margin-left: -10px;
+}
+
+.blinking {
+    color: $Accent;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: $Accent;
+    }
+}
+
 @media (max-width: 480px) {
     .name {
         font-size: 45px !important;
     }
     .role {
-        font-size: 30px !important;
+        font-size: 28px !important;
     }
 }
 

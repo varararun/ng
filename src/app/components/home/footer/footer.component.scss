@@ -4,16 +4,16 @@ footer {
     color: $Primary;
     font-family: $CodeFont;
 
-    .footer-left-bar:after, .footer-right-bar:after {
+    .footer-left-bar:after {
         content: '';
         display: block;
         width: 1px;
         height: 90px;
-        margin: 0 auto;
+        margin: 0 auto 0px 7.5px;
         background-color: $Accent;
     }
 
-    .footer-left-bar li, .footer-right-bar li {
+    .footer-left-bar li {
         list-style: none;
     }
 
@@ -34,26 +34,6 @@ footer {
             &:last-of-type {
                 margin-bottom: 33px;
             }
-        }
-    }
-
-    .footer-right-bar {
-        position: fixed;
-        bottom: 0px;
-        right: 41px;
-        padding: 0;
-
-        li {
-            transform: rotate(90deg);
-        }
-
-        a {
-            font-size: 12px;
-            letter-spacing: 0.1em;
-            writing-mode: vertical-rl;
-            margin: 20px auto;
-            padding: 10px;
-            color: $Primary;
         }
     }
 
@@ -89,10 +69,26 @@ footer {
         margin-top: -5px;
         margin-left: 5px;
     }
+
+    .scroll-top-btn {
+        font-size: 20px;
+        line-height: 1;
+        position: fixed;
+        right: 37px;
+        bottom: 25px;
+        cursor: pointer;
+        transition: $Transition;
+        color: $Primary;
+        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        opacity: 0;
+        &.show-scroll-btn {
+            opacity: 1;
+        }
+    }
 }
 
 @media(max-width: 768px) {
-    .footer-right-bar, .footer-left-bar {
+    .footer-left-bar {
         display: none;
     }
 }

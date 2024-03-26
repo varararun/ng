@@ -37,7 +37,7 @@
     "About.Pretitle": "Hello! My name is",
     "About.Name": "Arun Varghese",
     "About.Role": "Software Engineer",
-    "About.Description": "With over <span class='highlight'>10 years</span> of full-stack experience in the complete development life cycle of distributed web applications, from design to delivery. In my free time, I work on front-end web development with popular frameworks to learn more about <span class='highlight'>UI/UX</span> and <span class='highlight'>Software Architecture</span>",
+    "About.Description": "Over <span class='highlight'>10 years</span> of full-stack experience in the complete development life cycle of distributed web applications, from design to delivery. In my free time, I work on front-end web development with popular frameworks to learn more about <span class='highlight'>UI/UX</span> and <span class='highlight'>Software Architecture</span>",
     "About.ResumeBtn": "View My Resume",
     "Highlights.Title": "Highlights",
     "Highlights.Qualifications": [
@@ -384,6 +384,8 @@
     "FeatureProjects.Projects": [
         {
             "Title": "[ISC] Intelligent Service Control",
+            "Company": "Comcast",
+            "CompanyLogo": "assets/images/logos/logo-comcast.png",
             "Description": "Customer facing web application that unifies network and application management with real-time visibility, analytics and service control purpose-built for multi-cloud enterprises.",
             "Technologies": [
                 "MacOS",
@@ -399,18 +401,8 @@
             ]
         },
         {
-            "Title": "Environment Dashboard",
-            "Description": "Web application used to consolidate all internal environment data including health checks, build tags, etc.",
-            "Technologies": [
-                "Angular 4.0",
-                "Linux",
-                "Tomcat",
-                "Spring Boot",
-                "Maven"
-            ]
-        },
-        {
             "Title": "Nspire Platform",
+            "CompanyLogo": "assets/images/logos/logo-spireon.png",
             "Description": "Groovy/Grails web application used for internal company operations such as warehousing, customer support, problem diagnosis, and migration operations.",
             "Technologies": [
                 "Linux",
@@ -426,6 +418,7 @@
         },
         {
             "Title": "[FundRef] - Fund Reference Application",
+            "CompanyLogo": "assets/images/logos/logo-fidelity.png",
             "Description": "Java and Spring based web application for consolidating/provisioning fund attributes to downstream systems.",
             "Technologies": [
                 "Linux",
@@ -438,16 +431,8 @@
             ]
         },
         {
-            "Title": "[IRA] Integrated Routing Adapter",
-            "Description": "Vendor product that exposes APIs to enable applications to deliver changes to downstream system.",
-            "Technologies": [
-                "Linux",
-                "Tomcat",
-                "Oracle database"
-            ]
-        },
-        {
             "Title": "[DAL SDS] Data Access Layer Shared Data Services",
+            "CompanyLogo": "assets/images/logos/logo-fidelity.png",
             "Description": "Java and Spring based RESTful web services project used for raw data management, capture, and delivery.",
             "Technologies": [
                 "Linux",
@@ -455,38 +440,6 @@
                 "Oracle Database",
                 "SQL Server",
                 "Composite",
-                "Maven"
-            ]
-        },
-        {
-            "Title": "[FEAS] Fund Event Automation System",
-            "Description": "Java based web application that enables business users to post changes to downstream systems utilizing IRA.",
-            "Technologies": [
-                "Linux",
-                "Tomcat",
-                "Apache ActiveMQ",
-                "Oracle database",
-                "Apache Jasper Reports"
-            ]
-        },
-        {
-            "Title": "[SWAP] Single Window Approval Project",
-            "Description": " Linux servers, Tomcat application servers, Apache ActiveMQ, Oracle database, Apache Jasper Reports.",
-            "Technologies": [
-                "Tomcat",
-                "Bootstrap",
-                "Maven",
-                "Apache POI"
-            ]
-        },
-        {
-            "Title": "[CAR] Counterparty Approval Requests",
-            "Description": "Java, Spring, Bootstrap based web dashboard used to replace previously manual email approval process.",
-            "Technologies": [
-                "Linux",
-                "Tomcat",
-                "Bootstrap",
-                "Oracle database",
                 "Maven"
             ]
         }

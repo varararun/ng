@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    padding: 2rem 1.75rem;
+    padding: 1.5rem;
     border-radius: 3px;
 
     &:after {
@@ -34,6 +34,12 @@
 
     .external-links {
         text-align: end;
+    }
+    .project-img {
+        img {
+            height: 35px;
+            margin-bottom: 10px;
+        }
     }
 
     .title {

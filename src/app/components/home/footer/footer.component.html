@@ -1,6 +1,11 @@
 <footer>
     <ul class="footer-left-bar" data-aos="fade-up" data-aos-duration="500">
-        <li data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
+        <li data-aos="fade-right" data-aos-delay="800" data-aos-duration="500">
+            <a href="mailto:{{'Email' | translate}}" target='_blank'>
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="700" data-aos-duration="500">
             <a href="{{'Github' | translate}}" target='_blank'>
                 <i class="fab fa-github"></i>
             </a>
@@ -10,16 +15,12 @@
                 <i class="fab fa-linkedin"></i>
             </a>
         </li>
-        <li data-aos="fade-right" data-aos-delay="700" data-aos-duration="500">
+        <li data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
             <a href="{{'Instagram' | translate}}" target='_blank'>
                 <i class="fab fa-instagram"></i>
             </a>
         </li>
     </ul>
-    <div class="footer-right-bar" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
-        <a data-aos="fade-up" data-aos-delay="600" data-aos-duration="500" href="{{'mailto:' + ('Email' | translate) }}"
-           target='_blank'>{{"Email" | translate}}</a>
-    </div>
 
     <div class="footer-credits">
         <div class="credit">Designed by Arun Varghese</div>
@@ -28,5 +29,8 @@
                 <img alt="Angular" class="logo" src="{{'Footer.Logo' | translate}}">
             </a>
         </div>
+    </div>
+    <div class="scroll-top-btn" (click)="scrollTop()" [ngClass]="{'show-scroll-btn': scrollPosition > 100}">
+        <i class="fas fa-chevron-up"></i>
     </div>
 </footer>

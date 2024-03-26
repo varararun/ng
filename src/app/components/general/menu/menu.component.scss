@@ -60,7 +60,7 @@
     .menu-items {
         position: fixed;
         top: 15%;
-        left: 38%;
+        left: 36%;
         width: 100vw;
         margin: auto;
         list-style: none;
@@ -108,14 +108,14 @@
 @media (max-width: 1000px) {
     .menu-items {
         font-size: smaller;
-        left: 35% !important;
+        left: 32% !important;
     }
 }
 
 @media (max-width: 750px) {
     .menu-items {
         font-size: smaller;
-        left: 20% !important;
+        left: 15% !important;
     }
 }
 

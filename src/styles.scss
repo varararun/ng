@@ -55,7 +55,7 @@ section {
     color: var(--btn-text-color);
     background-color: transparent;
     border: var(--border);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     font-size: 13px;
     font-family: var(--primary-font);
     line-height: 1;
@@ -63,7 +63,7 @@ section {
     cursor: var(--cursor-type);
     transition: var(--transition);
     padding: 1.25rem 1.75rem;
-
+    box-shadow: var(--shadow);
     &:hover, &:focus, &:active {
         background-color: var(--bg-color-opaque);
         outline: none;
@@ -100,6 +100,10 @@ ol, ul, li {
     content: '> ';
     font-size: 1.2em;
     color: var(--accent-color);
+}
+
+.scroll-lock {
+    overflow: hidden;
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {

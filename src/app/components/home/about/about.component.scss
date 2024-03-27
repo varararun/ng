@@ -64,15 +64,15 @@
     }
 }
 
-.dark-highlight {
-    background: var(--bg-color-opaque);
+.code-highlight {
+    background: var(--code-highlight-color);
     padding: 0 0px 0px 10px;
     margin-left: -10px;
-}
+    color: var(--code-highlight-text-color);
+    .blinking-cursor {
+        animation: 1s blink step-end infinite;
+    }
 
-.blinking {
-    color: var(--accent-color);
-    animation: 1s blink step-end infinite;
 }
 
 @keyframes blink {
@@ -80,7 +80,7 @@
         color: transparent;
     }
     50% {
-        color: var(--accent-color);
+        color: var(--code-highlight-text-color);
     }
 }
 

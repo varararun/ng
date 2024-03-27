@@ -15,8 +15,7 @@
     .menu-container {
         display: block;
         cursor: pointer;
-        border: var(--border);
-        border-radius: 3px;
+        border-radius: var(--border-radius);
         color: blue;
         padding: 5px;
         transition: var(--transition);
@@ -35,8 +34,6 @@
         }
 
         &.menu-open {
-            border: 1px solid transparent;
-
             .bar1, .bar2, .bar3 {
                 background-color: var(--primary-color);
             }
@@ -64,7 +61,8 @@
     height: 100vh;
     top: 0;
     left: 0;
-    background: var(--bg-color);
+    background: var(--menu-overlay-bg-color);
+    backdrop-filter: blur(3px);
     z-index: 1;
 
     .menu-items {
@@ -119,7 +117,7 @@
         padding: 2em 1.5em 1.25em;
         float: left;
         border: 1px solid transparent;
-        border-radius: 3px;
+        border-radius: var(--border-radius);
         position: fixed;
         top: -30px;
         left: 50%;
@@ -130,8 +128,9 @@
 
         &.show-menu-bg {
             background: var(--menu-bar-bg-color);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(4px);
             border: var(--border) !important;
-            backdrop-filter: blur(2px);
         }
 
         .menu-bar-item {

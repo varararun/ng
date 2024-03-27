@@ -49,6 +49,11 @@ export class MenuComponent implements OnInit {
         });
     }
 
+    toggleOverlayMenu() {
+        this.menuOpen = !this.menuOpen;
+        document.body.classList.toggle('scroll-lock');
+    }
+
     navigate(item) {
         if (item.label === 'Resume') {
             this.downloadResume();

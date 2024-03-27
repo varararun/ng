@@ -69,7 +69,7 @@ footer {
 
     .scroll-top-btn {
         border: var(--border);
-        border-radius: 3px;
+        border-radius: var(--border-radius);
         padding: .5em 2em;
         font-size: 20px;
         line-height: 1;
@@ -83,7 +83,7 @@ footer {
         transition: var(--transition);
         color: var(--scroll-btn-color);
         background-color: var(--scroll-btn-bg-color);
-        box-shadow: 0px 5px 30px -10px rgba(2, 12, 27, 0.7);
+        box-shadow: 0 0px 10px -5px black;
         opacity: 0;
         &.show-scroll-btn {
             opacity: 1;

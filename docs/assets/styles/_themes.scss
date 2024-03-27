@@ -1,0 +1,53 @@
+[data-theme="light"] {
+    --primary-color: black;
+    --accent-color: #089ee5;
+    --accent-color-opaque: #089ee569;
+    --title-color: black;
+    --btn-text-color: black;
+    --bg-color: white;
+    --bg-color-opaque: transparent;
+    --bg-img: white;
+    --border-color: black;
+    --border: 1px solid black;
+    --scroll-btn-color: black;
+    --scroll-btn-bg-color: white;
+    --menu-btn-color: black;
+    --btn-bg-color: white;
+    --btn-hover-bg-color: white;
+    --menu-bar-bg-color: white;
+    --cube-face: rgba(15, 15, 15, 0.68);
+    --cube-icon-color: white;
+    --bullet-color: black;
+    --divider: "/";
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --cursor-type: pointer;
+    --primary-font: 'DM Sans', Montserrat, 'Helvetica Neue', Arial, sans-serif;
+    --code-font: 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Lucida Console', Monaco, Monospace;
+}
+
+[data-theme="dark"] {
+    --primary-color: #e6f1ff;
+    --accent-color: #089ee5;
+    --accent-color-opaque: #089ee569;
+    --title-color: #089ee5;
+    --btn-text-color: #089ee5;
+    --bg-color: #0f0f0f;
+    --bg-color-opaque: rgba(15, 15, 15, 0.68);
+    --bg-img: url('../images/background/code.png') no-repeat;
+    --border-color: #089ee5;
+    --border: 1px solid #089ee5;
+    --scroll-btn-color: #089ee5;
+    --scroll-btn-bg-color: rgba(15, 15, 15, 0.68);
+    --menu-btn-color: #089ee5;
+    --btn-bg-color: transparent;
+    --btn-hover-bg-color: rgba(15, 15, 15, 0.68);
+    --menu-bar-bg-color: rgba(15, 15, 15, 0.68);;
+    --cube-face: rgba(15, 15, 15, 0.68);
+    --cube-icon-color: #e6f1ff;
+    --bullet-color: #089ee5;
+    --divider: "/";
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --cursor-type: pointer;
+    --primary-font: 'DM Sans', Montserrat, 'Helvetica Neue', Arial, sans-serif;
+    --code-font: 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Lucida Console', Monaco, Monospace;
+}

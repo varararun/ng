@@ -1,7 +1,7 @@
-@import "src/variables";
+@import "src/assets/styles/themes";
 
 .contact-box {
-    margin-top: 20%;
+    margin: 20vh auto 30vh;
 
     .contact-title {
         position: relative;
@@ -10,7 +10,7 @@
         white-space: nowrap;
         font-size: 50px;
         font-weight: 600;
-        color: $Primary;
+        color: var(--primary-color);
         margin: auto;
         width: fit-content;
     }
@@ -22,9 +22,9 @@
         width: 100%;
         white-space: nowrap;
         display: block;
-        color: $Accent;
+        color: var(--title-color);
         font-size: 16px;
-        font-family: $MainFont;
+        font-family: var(--primary-font);
         font-weight: normal;
         justify-content: center;
         text-align: center;

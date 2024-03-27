@@ -1,15 +1,15 @@
-@import "src/variables";
 @import "src/assets/fonts/fonts.scss";
+@import "src/assets/styles/themes";
 
 body {
     margin: 0;
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
-    background-color: $Background;
-    color: $Primary;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
     line-height: 1.3;
-    font-family: $MainFont;
+    font-family: var(--primary-font);
     font-size: 15px;
 }
 
@@ -37,35 +37,35 @@ section {
     white-space: nowrap;
     font-size: 32px;
     font-weight: 600;
-    color: $Primary;
-    font-family: $CodeFont;
+    color: var(--primary-color);
+    font-family: var(--code-font);
 
     &:after {
         content: '';
         display: block;
         height: 1px;
         width: 300px;
-        background-color: $Accent;
+        background-color: var(--border-color);
         position: relative;
         margin-left: 20px;
     }
 }
 
 .main-btn {
-    color: $Accent;
+    color: var(--btn-text-color);
     background-color: transparent;
-    border: 1px solid $Accent;
+    border: var(--border);
     border-radius: 3px;
     font-size: 13px;
-    font-family: $MainFont;
+    font-family: var(--primary-font);
     line-height: 1;
     text-decoration: none;
-    cursor: $Cursor;
-    transition: $Transition;
+    cursor: var(--cursor-type);
+    transition: var(--transition);
     padding: 1.25rem 1.75rem;
 
     &:hover, &:focus, &:active {
-        background-color: $BgOpaque;
+        background-color: var(--bg-color-opaque);
         outline: none;
     }
 }
@@ -75,7 +75,7 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: $Accent;
+        color: var(--accent-color);
     }
 }
 
@@ -83,8 +83,8 @@ a {
     text-decoration: none;
     display: inline-block;
     position: relative;
-    color: $Accent !important;
-    transition: $Transition;
+    color: var(--accent-color) !important;
+    transition: var(--transition);
 
     &:hover {
         font-size: larger;
@@ -99,7 +99,7 @@ ol, ul, li {
 .bullet::marker {
     content: '> ';
     font-size: 1.2em;
-    color: $Accent;
+    color: var(--accent-color);
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
 import {animate, style, transition, trigger} from '@angular/animations'
 import {FormControl} from '@angular/forms';
@@ -30,6 +30,8 @@ export class MenuComponent implements OnInit {
     languageFormControl: FormControl = new FormControl();
     fileName = '';
     route = '';
+    theme;
+    scrollPosition = 0;
 
     constructor(
         private router: Router,
@@ -59,5 +61,15 @@ export class MenuComponent implements OnInit {
             this.fileName = val
             window.open(window.location.href + "/../assets/resume/" + this.fileName, "_blank");
         })
+    }
+
+    switchTheme() {
+        this.theme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.body.setAttribute('data-theme', this.theme);
+    }
+
+    @HostListener('window:scroll')
+    checkScroll() {
+        this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     }
 }

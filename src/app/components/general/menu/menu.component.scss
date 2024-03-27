@@ -1,4 +1,4 @@
-@import "src/variables";
+@import "src/assets/styles/themes";
 
 .menu-btn {
     display: none;
@@ -6,42 +6,39 @@
     position: fixed;
     top: 0;
     right: 0;
-    margin-right: 40px;
-    margin-top: 30px;
-    color: $Primary;
-    cursor: $Cursor;
+    margin-right: 15px;
+    margin-top: 15px;
+    color: var(--primary-color);
+    cursor: var(--cursor-type);
     z-index: 2;
 
     .menu-container {
         display: block;
         cursor: pointer;
-        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-        border: 1px solid $Accent;
+        border: var(--border);
         border-radius: 3px;
         color: blue;
         padding: 5px;
-        transition: $Transition;
+        transition: var(--transition);
 
         &:hover {
-            background: $BgOpaque;
+            background: var(--bg-color-opaque);
         }
 
         .bar1, .bar2, .bar3 {
-            transition: $Transition;
+            transition: var(--transition);
             width: 35px;
             height: 2px;
-            background-color: $Accent;
+            background-color: var(--menu-btn-color);
             margin: 6px 0;
             transition: 0.4s;
-            box-shadow: 2px 2px 10px 0px #000;
         }
 
         &.menu-open {
             border: 1px solid transparent;
 
             .bar1, .bar2, .bar3 {
-                background-color: $Primary;
-                box-shadow: none;
+                background-color: var(--primary-color);
             }
 
             .bar1 {
@@ -67,7 +64,7 @@
     height: 100vh;
     top: 0;
     left: 0;
-    background: $Background;
+    background: var(--bg-color);
     z-index: 1;
 
     .menu-items {
@@ -77,26 +74,26 @@
         width: 100vw;
         margin: auto;
         list-style: none;
-        color: $Primary;
-        font-family: $CodeFont;
+        color: var(--primary-color);
+        font-family: var(--code-font);
 
         .menu-item {
             margin: 20px 0;
             font-size: 3em;
-            cursor: $Cursor;
-            transition: $Transition;
+            cursor: var(--cursor-type);
+            transition: var(--transition);
 
             &:before {
                 content: '>';
                 opacity: 0;
                 margin: 20px 10px;
-                color: $Accent;
-                transition: $Transition;
+                color: var(--bullet-color);
+                transition: var(--transition);
             }
 
             &:hover {
                 a {
-                    color: $Primary;
+                    color: var(--primary-color);
                 }
 
                 transform: translateX(5px);
@@ -121,28 +118,30 @@
     .menu-bar-items {
         padding: 2em 1.5em 1.25em;
         float: left;
-        border: 1px solid $Accent;
+        border: 1px solid transparent;
         border-radius: 3px;
         position: fixed;
         top: -30px;
-        width: 505px;
         left: 50%;
         transform: translateX(-50%);
-        transition: $Transition;
+        transition: var(--transition);
         z-index: 1;
-        &:hover {
-            background: $Background;
-            top: -25px;
+        min-width: 553px;
+
+        &.show-menu-bg {
+            background: var(--menu-bar-bg-color);
+            border: var(--border) !important;
+            backdrop-filter: blur(2px);
         }
 
         .menu-bar-item {
             cursor: pointer;
             float: left;
-            color: $Primary;
+            color: var(--primary-color);
 
             &:after {
-                content: $Divider;
-                color: $Accent;
+                content: var(--divider);
+                color: var(--accent-color);
                 font-weight: 600;
                 opacity: .7;
                 margin: 10px;
@@ -156,8 +155,29 @@
 }
 
 .active {
-    color: $Accent;
+    color: var(--accent-color);
 }
+
+.menu-bar-item {
+    span {
+        .theme-toggle {
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+    }
+}
+
+.overlay-theme-toggle {
+    font-size: 40px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.theme-toggle {
+    font-size: 19px;
+    color: var(--primary-color);
+}
+
 
 @media (max-width: 1000px) {
     .menu-btn {

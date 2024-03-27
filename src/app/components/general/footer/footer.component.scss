@@ -1,8 +1,8 @@
-@import "src/variables";
+@import "src/assets/styles/themes";
 
 footer {
-    color: $Primary;
-    font-family: $CodeFont;
+    color: var(--primary-color);
+    font-family: var(--code-font);
 
     .footer-left-bar:after {
         content: '';
@@ -10,7 +10,7 @@ footer {
         width: 1px;
         height: 90px;
         margin: 0 auto 0px 7.5px;
-        background-color: $Accent;
+        background-color: var(--border-color);
     }
 
     .footer-left-bar li {
@@ -25,7 +25,7 @@ footer {
 
         i {
             font-size: 19px;
-            color: $Primary;
+            color: var(--primary-color);
         }
 
         li {
@@ -48,15 +48,15 @@ footer {
         }
 
         a {
-            color: $Primary;
-            transition: $Transition;
+            color: var(--primary-color);
+            transition: var(--transition);
             transition-property: all;
             transition-duration: 0.25s;
             transition-delay: 0s;
 
             &:hover, &:focus {
                 text-decoration: none;
-                color: $Accent;
+                color: var(--accent-color);
             }
         }
     }
@@ -68,7 +68,7 @@ footer {
     }
 
     .scroll-top-btn {
-        border: 1px solid #089ee5;
+        border: var(--border);
         border-radius: 3px;
         padding: .5em 2em;
         font-size: 20px;
@@ -80,16 +80,17 @@ footer {
         width: 20px;
         text-align: center;
         cursor: pointer;
-        transition: $Transition;
-        color: $Accent;
-        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        transition: var(--transition);
+        color: var(--scroll-btn-color);
+        background-color: var(--scroll-btn-bg-color);
+        box-shadow: 0px 5px 30px -10px rgba(2, 12, 27, 0.7);
         opacity: 0;
         &.show-scroll-btn {
             opacity: 1;
             transform: translateY(-5px);
+            backdrop-filter: blur(2px);
         }
         &:hover {
-            background-color: $BgOpaque;
             transform: translateY(-10px);
         }
     }

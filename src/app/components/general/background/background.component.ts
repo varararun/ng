@@ -5,7 +5,4 @@ import {Component} from '@angular/core';
     templateUrl: './background.component.html',
     styleUrls: ['./background.component.scss']
 })
-export class BackgroundComponent {
-
-    readonly BG_IMG = 'assets/images/background/code.png';
-}
+export class BackgroundComponent {}

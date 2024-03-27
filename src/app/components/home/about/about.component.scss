@@ -1,4 +1,4 @@
-@import "src/variables";
+@import "src/assets/styles/themes";
 
 .container {
 
@@ -10,12 +10,11 @@
         }
 
         h1 {
-
-            color: $Accent;
+            color: var(--title-color);
             margin: 0 0 20px 3px;
             font-size: 16px;
             font-weight: normal;
-            font-family: $CodeFont;
+            font-family: var(--code-font);
         }
 
         h2, h3 {
@@ -26,15 +25,15 @@
 
         h2 {
             font-size: 60px;
-            color: $Primary;
-            font-family: $MainFont;
+            color: var(--primary-color);
+            font-family: var(--primary-font);
         }
 
         h3 {
             margin-top: 10px;
             font-size: 40px;
-            color: $Primary;
-            font-family: $CodeFont;
+            color: var(--primary-color);
+            font-family: var(--code-font);
         }
 
         .about-description {
@@ -66,13 +65,13 @@
 }
 
 .dark-highlight {
-    background: $BgOpaque;
+    background: var(--bg-color-opaque);
     padding: 0 0px 0px 10px;
     margin-left: -10px;
 }
 
 .blinking {
-    color: $Accent;
+    color: var(--accent-color);
     animation: 1s blink step-end infinite;
 }
 
@@ -81,7 +80,7 @@
         color: transparent;
     }
     50% {
-        color: $Accent;
+        color: var(--accent-color);
     }
 }
 

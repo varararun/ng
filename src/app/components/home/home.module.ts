@@ -10,6 +10,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {ExperienceComponent} from "./experience/experience.component";
 import {AboutComponent} from './about/about.component';
 import {LoaderComponent} from "./loader/loader.component";
+import {CreditComponent} from "./credit/credit.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -23,7 +24,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         ExperienceComponent,
         ProjectsComponent,
         ContactComponent,
-        LoaderComponent
+        LoaderComponent,
+        CreditComponent
     ],
     imports: [
         CommonModule,

@@ -34,12 +34,20 @@
         left: 0;
     }
 
-    .external-links {
-        text-align: end;
+    .header {
+        width: 100%;
+        .title {
+            float: left;
+            text-align: start;
+        }
+        .external-links, .project-img {
+            text-align: end;
+        }
     }
+
     .project-img {
         img {
-            height: 35px;
+            height: 30px;
             margin-bottom: 10px;
         }
     }
@@ -51,6 +59,7 @@
     }
 
     .description {
+        float: left;
         font-size: 17px;
     }
 

@@ -383,7 +383,7 @@
     "FeatureProjects.Label": "Featured Project",
     "FeatureProjects.Projects": [
         {
-            "Title": "[ISC] Intelligent Service Control",
+            "Title": "ISC Portal",
             "Company": "Comcast",
             "CompanyLogo": "assets/images/logos/logo-comcast.png",
             "Description": "Customer facing web application that unifies network and application management with real-time visibility, analytics and service control purpose-built for multi-cloud enterprises.",
@@ -417,7 +417,7 @@
             ]
         },
         {
-            "Title": "[FundRef] - Fund Reference Application",
+            "Title": "Fund Reference",
             "CompanyLogo": "assets/images/logos/logo-fidelity.png",
             "Description": "Java and Spring based web application for consolidating/provisioning fund attributes to downstream systems.",
             "Technologies": [
@@ -431,7 +431,7 @@
             ]
         },
         {
-            "Title": "[DAL SDS] Data Access Layer Shared Data Services",
+            "Title": "Data Access Layer",
             "CompanyLogo": "assets/images/logos/logo-fidelity.png",
             "Description": "Java and Spring based RESTful web services project used for raw data management, capture, and delivery.",
             "Technologies": [

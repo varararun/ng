@@ -51,7 +51,7 @@ export class MenuComponent implements OnInit {
 
     toggleOverlayMenu() {
         this.menuOpen = !this.menuOpen;
-        document.body.classList.toggle('scroll-lock');
+        this.menuOpen ? document.body.classList.add('scroll-lock') : document.body.classList.remove('scroll-lock');
     }
 
     navigate(item) {
@@ -59,6 +59,7 @@ export class MenuComponent implements OnInit {
             this.downloadResume();
         }
         this.router.navigate([item.link]);
+        document.body.classList.remove('scroll-lock');
     }
 
     downloadResume() {

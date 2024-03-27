@@ -1,11 +1,11 @@
 @import "src/assets/styles/themes";
 
 .job {
-    background-color: var(--bg-color-opaque);
+    background-color: var(--bg-color-30);
     transition: var(--transition);
     border: var(--border);
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--box-shadow);
     padding: 25px;
     margin-bottom: 25px;
     backdrop-filter: blur(5px);

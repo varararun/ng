@@ -21,7 +21,7 @@
         transition: var(--transition);
 
         &:hover {
-            background: var(--bg-color-opaque);
+            background: var(--bg-color-30);
         }
 
         .bar1, .bar2, .bar3 {
@@ -128,7 +128,7 @@
 
         &.show-menu-bg {
             background: var(--menu-bar-bg-color);
-            box-shadow: var(--shadow);
+            box-shadow: var(--box-shadow);
             backdrop-filter: blur(4px);
             border: var(--border) !important;
         }

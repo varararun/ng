@@ -23,7 +23,7 @@ section {
 }
 
 .container {
-    min-height: 100vh !important;
+    min-height: 100%;
     margin: auto;
     width: 70% !important;
 }
@@ -61,13 +61,18 @@ section {
     line-height: 1;
     text-decoration: none;
     cursor: var(--cursor-type);
-    transition: var(--transition);
     padding: 1.25rem 1.75rem;
-    box-shadow: var(--shadow);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition) !important;
+
     &:hover, &:focus, &:active {
-        background-color: var(--bg-color-opaque);
+        background-color: var(--bg-color-30);
         outline: none;
     }
+}
+
+i {
+    transition: var(--transition);
 }
 
 a {

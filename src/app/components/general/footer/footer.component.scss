@@ -50,9 +50,6 @@ footer {
         a {
             color: var(--primary-color);
             transition: var(--transition);
-            transition-property: all;
-            transition-duration: 0.25s;
-            transition-delay: 0s;
 
             &:hover, &:focus {
                 text-decoration: none;
@@ -80,18 +77,16 @@ footer {
         width: 20px;
         text-align: center;
         cursor: pointer;
-        transition: var(--transition);
+        transition: var(--transition) !important;
         color: var(--scroll-btn-color);
         background-color: var(--scroll-btn-bg-color);
-        box-shadow: 0 0px 10px -5px black;
+        box-shadow: var(--box-shadow);
         opacity: 0;
+
         &.show-scroll-btn {
             opacity: 1;
             transform: translateY(-5px);
             backdrop-filter: blur(2px);
-        }
-        &:hover {
-            transform: translateY(-10px);
         }
     }
 }

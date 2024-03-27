@@ -3,9 +3,9 @@
 .project-box {
     height: 350px;
     border: var(--border);
-    box-shadow: var(--shadow);
+    box-shadow: var(--box-shadow);
     transition: var(--transition);
-    background-color: var(--bg-color-opaque);
+    background-color: var(--bg-color-30);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
     display: flex;
@@ -47,6 +47,7 @@
     .title {
         margin: 0 0 10px;
         font-size: 22px;
+        transition: var(--transition);
     }
 
     .description {
@@ -87,7 +88,7 @@
     ". . .";
 
     .grid-item {
-        background-color: var(--bg-color-opaque);
+        background-color: var(--bg-color-30);
 
         &:hover {
             transform: translateY(-5px);

@@ -3,3 +3,4 @@
 
 nx build --output-path docs --base-href /
 nx run lint --fix
+git add -A

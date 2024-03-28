@@ -9,7 +9,7 @@
         vertical-align: middle;
 
         .content {
-            margin-top: 200px;
+            margin-top: 175px;
         }
 
         h1 {
@@ -49,24 +49,6 @@
     }
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-
-    .column {
-        display: block;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: auto;
-        align-self: center;
-        order: 0;
-    }
-}
-
 .code-highlight {
     background: var(--code-highlight-color);
     padding: 0 0px 0px 10px;
@@ -75,7 +57,10 @@
     .blinking-cursor {
         animation: 1s blink step-end infinite;
     }
+}
 
+.loader {
+    display: none;
 }
 
 @keyframes blink {
@@ -96,10 +81,11 @@
     }
 }
 
-@media(max-width: 1160px) {
-    .column.loader {
+@media(max-width: 1000px) {
+    .loader {
+        display: block;
         width: 100%;
-        margin-left: -30px;
+        margin-left: -35px;
         margin-bottom: 15vh;
     }
 }

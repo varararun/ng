@@ -466,6 +466,19 @@
     "PersonalProjects.Title": "Personal projects",
     "PersonalProjects.Projects": [
         {
+            "Title": "Personal Website",
+            "Description": "4th iteration of my personal website. Designed and developed to showcase my web development and design skills.",
+            "Technologies": [
+                "Angular 17",
+                "Github Pages",
+                "SCSS",
+                "Node",
+                "NX",
+                "Husky",
+                "Font Awesome"
+            ]
+        },
+        {
             "Title": "Resume Builder",
             "Description": "Web application used as a tool for Resume edit/proofread/format/styles/guidelines.",
             "Technologies": [
@@ -514,6 +527,8 @@
             ]
         }
     ],
+    "Projects.ShowMoreBtn": "Show More",
+    "Projects.ShowLessBtn": "Show Less",
     "Contact.Pretitle": "Contact",
     "Contact.Title": "Get in Touch!",
     "Contact.Btn": "Send me an Email",

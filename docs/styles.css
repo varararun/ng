@@ -4613,7 +4613,7 @@ readers do not read off random characters that represent icons */
   --accent-color-opaque: var(--blue-50);
   --bg-color: white;
   --bg-color-0: transparent;
-  --bg-color-30: var(--white);
+  --bg-color-30: var(--white-30);
   --bg-overlay-color: var(--white);
   --title-color: var(--black);
   --btn-text-color: var(--black);

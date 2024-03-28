@@ -13,16 +13,11 @@
     z-index: 2;
 
     .menu-container {
+        border-radius: var(--border-radius);
+        transition: var(--transition);
         display: block;
         cursor: pointer;
-        border-radius: var(--border-radius);
-        color: blue;
         padding: 5px;
-        transition: var(--transition);
-
-        &:hover {
-            background: var(--bg-color-30);
-        }
 
         .bar1, .bar2, .bar3 {
             transition: var(--transition);

@@ -14,6 +14,7 @@ export class BackgroundComponent {
         'fa-java',
         'fa-js',
         'fa-css3',
-        'fa-html5'
+        'fa-html5',
+        'fa-codepen'
     ]
 }

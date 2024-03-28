@@ -7,26 +7,30 @@
                 </h3>
             </div>
             <div class="grid">
-                <div *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index'
-                     [attr.data-aos-delay]="i*100" class="grid-item project-box" data-aos="fade-up"
+                <div *ngFor='let project of featured; let i = index' class="grid-item project-box" data-aos="fade-up"
                      data-aos-duration="500">
                     <div>
                         <div class="header">
-                            <div class="title">{{project.Title}}</div>
+                            <div class="title">{{project['Title']}}</div>
                             <div class="project-img">
-                                <img alt="CompanyLogo" [src]="project.CompanyLogo">
+                                <img alt="CompanyLogo" [src]="project['CompanyLogo']">
                             </div>
                         </div>
                         <p class="description">
-                            {{project.Description}}
+                            {{project['Description']}}
                         </p>
                     </div>
                     <div>
-                        <span *ngFor='let technology of project.Technologies' class="skills">
+                        <span *ngFor="let technology of project['Technologies']" class="skills">
                             <span class="highlight">{{technology}}</span>
                         </span>
                     </div>
                 </div>
+            </div>
+            <div class="show-btn">
+                <a (click)="toggleFeatured()" class="main-btn" data-aos="fade-up" data-aos-duration="500">
+                    {{this.featured.length < this.allFeatured.length ? ("Projects.ShowMoreBtn" | translate): ("Projects.ShowLessBtn" | translate)}}
+                </a>
             </div>
         </div>
         <div class="section-box">
@@ -36,13 +40,12 @@
                 </h3>
             </div>
             <div class="grid">
-                <div *ngFor='let project of "PersonalProjects.Projects" | translate; let i = index'
-                     [attr.data-aos-delay]="i*100" class="grid-item project-box" data-aos="fade-up"
+                <div *ngFor='let project of personal; let i = index' class="grid-item project-box" data-aos="fade-up"
                      data-aos-duration="500">
                     <div>
                         <div class="header">
                             <div class="title">
-                                {{project.Title}}
+                                {{project['Title']}}
                             </div>
                             <div class="external-links">
                                 <a *ngIf="project['DemoLink']" [href]="project['DemoLink']" style='color: inherit'
@@ -53,16 +56,22 @@
                             </div>
                         </div>
                         <p class="description">
-                            {{project.Description}}
+                            {{project['Description']}}
                         </p>
                     </div>
                     <div>
-                        <span *ngFor='let technology of project.Technologies' class="skills">
+                        <span *ngFor="let technology of project['Technologies']" class="skills">
                             <span class="highlight">{{technology}}</span>
                         </span>
                     </div>
                 </div>
             </div>
+            <div class="show-btn">
+                <a (click)="togglePersonal()" class="main-btn" data-aos="fade-up" data-aos-duration="500">
+                    {{this.personal.length < this.allPersonal.length ? ("Projects.ShowMoreBtn" | translate) : ("Projects.ShowLessBtn" | translate)}}
+                </a>
+            </div>
         </div>
     </div>
 </section>
+

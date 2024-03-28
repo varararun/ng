@@ -40,30 +40,27 @@ $Colors: [$Pink, $Green, $Blue, $White, $Orange, $Yellow];
     overflow: hidden;
     z-index: -1;
     filter: var(--bg-animated-filter);
-    @for $i from 1 through 8 {
+
+    @for $i from 1 through 9 {
         i:nth-child(#{$i}) {
-            animation: random(3)*10 + 10 + s linear random(5) + s infinite forwards scroll;
+            animation: random(3)*10 + 10+s linear random(5)+s infinite forwards scroll;
             filter: blur(random(4)+2+px);
-            font-size: random(100) + 50 + px;
+            font-size: random(100)+50+px;
             position: absolute;
-            left: random(80) + 10 + vw;
+            left: $i*10+vw;
             top: 100vh;
-            color: list.nth($Colors, random(6));
+            color: list.nth($Colors, $i%6+1);
         }
     }
 }
 
 @keyframes scroll {
-    0% {
+    95% {
+        top: -10vh;
     }
 
     100% {
+        opacity: 0;
         top: -15vh;
-    }
-}
-
-@media(max-width: 1000px) {
-    .bg-animated-elements {
-        display: none;
     }
 }

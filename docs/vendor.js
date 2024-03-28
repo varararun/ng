@@ -2916,6 +2916,25 @@ function shareReplay(configOrBufferSize, windowTime, scheduler) {
 
 /***/ }),
 
+/***/ 8013:
+/*!***************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm/internal/operators/skip.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   skip: () => (/* binding */ skip)
+/* harmony export */ });
+/* harmony import */ var _filter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./filter */ 6560);
+
+function skip(count) {
+  return (0,_filter__WEBPACK_IMPORTED_MODULE_0__.filter)((_, index) => count <= index);
+}
+
+/***/ }),
+
 /***/ 1792:
 /*!********************************************************************!*\
   !*** ./node_modules/rxjs/dist/esm/internal/operators/startWith.js ***!
@@ -77345,6 +77364,780 @@ class TranslateHttpLoader {
     return this.http.get(`${this.prefix}${lang}${this.suffix}`);
   }
 }
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
+/***/ 4256:
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ngx-google-analytics/fesm2020/ngx-google-analytics.mjs ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   GaActionEnum: () => (/* binding */ GaActionEnum),
+/* harmony export */   GaEventCategoryDirective: () => (/* binding */ GaEventCategoryDirective),
+/* harmony export */   GaEventDirective: () => (/* binding */ GaEventDirective),
+/* harmony export */   GaEventFormInputDirective: () => (/* binding */ GaEventFormInputDirective),
+/* harmony export */   GoogleAnalyticsInitializer: () => (/* binding */ GoogleAnalyticsInitializer),
+/* harmony export */   GoogleAnalyticsRouterInitializer: () => (/* binding */ GoogleAnalyticsRouterInitializer),
+/* harmony export */   GoogleAnalyticsService: () => (/* binding */ GoogleAnalyticsService),
+/* harmony export */   NGX_DATA_LAYER: () => (/* binding */ NGX_DATA_LAYER),
+/* harmony export */   NGX_GOOGLE_ANALYTICS_INITIALIZER_PROVIDER: () => (/* binding */ NGX_GOOGLE_ANALYTICS_INITIALIZER_PROVIDER),
+/* harmony export */   NGX_GOOGLE_ANALYTICS_ROUTER_INITIALIZER_PROVIDER: () => (/* binding */ NGX_GOOGLE_ANALYTICS_ROUTER_INITIALIZER_PROVIDER),
+/* harmony export */   NGX_GOOGLE_ANALYTICS_ROUTING_SETTINGS_TOKEN: () => (/* binding */ NGX_GOOGLE_ANALYTICS_ROUTING_SETTINGS_TOKEN),
+/* harmony export */   NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN: () => (/* binding */ NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN),
+/* harmony export */   NGX_GTAG_FN: () => (/* binding */ NGX_GTAG_FN),
+/* harmony export */   NGX_WINDOW: () => (/* binding */ NGX_WINDOW),
+/* harmony export */   NgxGoogleAnalyticsModule: () => (/* binding */ NgxGoogleAnalyticsModule),
+/* harmony export */   NgxGoogleAnalyticsRouterModule: () => (/* binding */ NgxGoogleAnalyticsRouterModule),
+/* harmony export */   getDataLayerFn: () => (/* binding */ getDataLayerFn),
+/* harmony export */   getGtagFn: () => (/* binding */ getGtagFn)
+/* harmony export */ });
+/* harmony import */ var _Users_avarghese_Workspace_varararun_github_io_node_modules_angular_devkit_build_angular_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 292);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 4280);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 3244);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 2676);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ 4040);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ 6560);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ 8013);
+
+
+
+
+
+
+
+class GaEventCategoryDirective {
+  constructor() {}
+}
+GaEventCategoryDirective.ɵfac = function GaEventCategoryDirective_Factory(t) {
+  return new (t || GaEventCategoryDirective)();
+};
+GaEventCategoryDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
+  type: GaEventCategoryDirective,
+  selectors: [["", "gaEvent", "", "gaCategory", ""], ["", "gaCategory", ""]],
+  inputs: {
+    gaCategory: "gaCategory"
+  },
+  exportAs: ["gaCategory"]
+});
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](GaEventCategoryDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Directive,
+    args: [{
+      selector: `[gaEvent][gaCategory],
+             [gaCategory]`,
+      exportAs: 'gaCategory'
+    }]
+  }], function () {
+    return [];
+  }, {
+    gaCategory: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+    }]
+  });
+})();
+
+/**
+ * Provide a Injection Token to global settings.
+ */
+const NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('ngx-google-analytics-settings', {
+  factory: () => ({
+    trackingCode: '',
+    enableTracing: false
+  })
+});
+
+/**
+ * Provide DOM Window reference.
+ */
+const NGX_WINDOW = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('ngx-window', {
+  providedIn: 'root',
+  factory: () => {
+    const {
+      defaultView
+    } = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT);
+    if (!defaultView) {
+      throw new Error('Window is not available');
+    }
+    return defaultView;
+  }
+});
+
+/**
+ * Check if there is some global function called gtag on Window object, or create an empty function to doesn't brake codes...
+ */
+function getDataLayerFn(window) {
+  return window ? window['dataLayer'] = window['dataLayer'] || [] : null;
+}
+/**
+ * Provides an injection token to access Google Analytics DataLayer Collection
+ */
+const NGX_DATA_LAYER = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('ngx-data-layer', {
+  providedIn: 'root',
+  factory: () => getDataLayerFn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(NGX_WINDOW))
+});
+
+/**
+ * Check if there is some global function called gtag on Window object, or create an empty function to doesn't brake codes...
+ */
+function getGtagFn(window, dataLayer) {
+  return window ? window['gtag'] = window['gtag'] || function () {
+    dataLayer.push(arguments);
+  } : null;
+}
+/**
+ * Provides an injection token to access Google Analytics Gtag Function
+ */
+const NGX_GTAG_FN = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('ngx-gtag-fn', {
+  providedIn: 'root',
+  factory: () => getGtagFn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(NGX_WINDOW), (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(NGX_DATA_LAYER))
+});
+class GoogleAnalyticsService {
+  constructor(settings, _document, _gtag) {
+    this.settings = settings;
+    this._document = _document;
+    this._gtag = _gtag;
+  }
+  get document() {
+    return this._document;
+  }
+  throw(err) {
+    if ((this.settings.enableTracing || (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.isDevMode)()) && console && console.error) {
+      console.error(err);
+    }
+  }
+  /** @todo Change this to `Object.fromEntity()` in the future... */
+  toKeyValue(map) {
+    return map.size > 0 ? Array.from(map).reduce((obj, [key, value]) => Object.defineProperty(obj, key, {
+      value,
+      enumerable: true
+    }), {}) : undefined;
+  }
+  /**
+   * Call native GA Tag
+   */
+  gtag(...args) {
+    try {
+      this._gtag(...args.filter(x => x !== undefined));
+    } catch (err) {
+      this.throw(err);
+    }
+  }
+  /**
+   * Send an event trigger to GA. It is the same as call:
+   * ```js
+   * gtag('event', 'video_auto_play_start', {
+   *   'event_label': 'My promotional video',
+   *   'event_category': 'video_auto_play'
+   * });
+   * ```
+   *
+   * @param action 'video_auto_play_start'
+   * @param category 'video_auto_play'
+   * @param label 'My promotional video'
+   * @param value An value to measure something
+   * @param interaction If user interaction is performed
+   */
+  event(action, category, label, value, interaction, options) {
+    try {
+      const opt = new Map();
+      if (category) {
+        opt.set('event_category', category);
+      }
+      if (label) {
+        opt.set('event_label', label);
+      }
+      if (value) {
+        opt.set('value', value);
+      }
+      if (interaction !== undefined) {
+        opt.set('interaction', interaction);
+      }
+      if (options) {
+        Object.entries(options).map(([key, value]) => opt.set(key, value));
+      }
+      const params = this.toKeyValue(opt);
+      if (params) {
+        this.gtag('event', action, params);
+      } else {
+        this.gtag('event', action);
+      }
+    } catch (error) {
+      this.throw(error);
+    }
+  }
+  /**
+   * Send an page view event. This is the same as
+   *
+   * ```js
+   * gtag('config', 'GA_TRACKING_ID', {
+   *   'page_title' : 'Homepage',
+   *   'page_path': '/home'
+   * });
+   * ```
+   *
+   * The tracking ID is injected automatically by Inject Token NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN
+   *
+   * @param path /home
+   * @param title Homepage
+   * @param location '{ page_location }'
+   * @param options '{ ... custom dimentions }'
+   */
+  pageView(path, title, location, options) {
+    try {
+      const opt = new Map([['page_path', path]]);
+      if (title) {
+        opt.set('page_title', title);
+      }
+      if (location || this.document) {
+        opt.set('page_location', location || this.document.location.href);
+      }
+      if (options) {
+        Object.entries(options).map(([key, value]) => opt.set(key, value));
+      }
+      this.gtag('config', this.settings.trackingCode, this.toKeyValue(opt));
+    } catch (error) {
+      this.throw(error);
+    }
+  }
+  /**
+   * Send an event to report a App Page View. It is the same as
+   *
+   * ```js
+   * gtag('event', 'screen_view', {
+   *   'app_name': 'myAppName',
+   *   'screen_name' : 'Home'
+   * });
+   *
+   * ```
+   *
+   * @param screen 'screen_name'
+   * @param appName 'app_name'
+   * @param appId 'app_id'
+   * @param appVersion 'app_version'
+   * @param installerId 'app_installer_id'
+   */
+  appView(screen, appName, appId, appVersion, installerId) {
+    try {
+      const opt = new Map([['screen_name', screen], ['app_name', appName]]);
+      if (appId) {
+        opt.set('app_id', appId);
+      }
+      if (appVersion) {
+        opt.set('app_version', appVersion);
+      }
+      if (installerId) {
+        opt.set('app_installer_id', installerId);
+      }
+      this.gtag('event', 'screen_view', this.toKeyValue(opt));
+    } catch (error) {
+      this.throw(error);
+    }
+  }
+  /**
+   * Defines persistent values on GoogleAnalytics
+   *
+   * @see https://developers.google.com/analytics/devguides/collection/gtagjs/setting-values
+   *
+   * ```js
+   * gtag('set', {
+   *   'currency': 'USD',
+   *   'country': 'US'
+   * });
+   * ```
+   */
+  set(...options) {
+    try {
+      this._gtag('set', ...options);
+    } catch (err) {
+      this.throw(err);
+    }
+  }
+  /**
+   * Send an event to GA to report an application error. It is the same as
+   *
+   * ```js
+   * gtag('event', 'exception', {
+   *   'description': 'error_description',
+   *   'fatal': false   // set to true if the error is fatal
+   * });
+   * ```
+   *
+   * @param description 'error_description'
+   * @param fatal set to true if the error is fatal
+   */
+  exception(description, fatal) {
+    try {
+      const opt = new Map();
+      if (description) {
+        opt.set('description', description);
+      }
+      if (fatal) {
+        opt.set('fatal', fatal);
+      }
+      const params = this.toKeyValue(opt);
+      if (params) {
+        this.gtag('event', 'exception', this.toKeyValue(opt));
+      } else {
+        this.gtag('event', 'exception');
+      }
+    } catch (error) {
+      this.throw(error);
+    }
+  }
+}
+GoogleAnalyticsService.ɵfac = function GoogleAnalyticsService_Factory(t) {
+  return new (t || GoogleAnalyticsService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](NGX_GTAG_FN));
+};
+GoogleAnalyticsService.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
+  token: GoogleAnalyticsService,
+  factory: GoogleAnalyticsService.ɵfac,
+  providedIn: 'root'
+});
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](GoogleAnalyticsService, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], function () {
+    return [{
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Inject,
+        args: [NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN]
+      }]
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Inject,
+        args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT]
+      }]
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Inject,
+        args: [NGX_GTAG_FN]
+      }]
+    }];
+  }, null);
+})();
+class GaEventDirective {
+  constructor(gaCategoryDirective, gaService, settings, el) {
+    this.gaCategoryDirective = gaCategoryDirective;
+    this.gaService = gaService;
+    this.settings = settings;
+    this.el = el;
+    this.gaBind = 'click';
+  }
+  set gaBind(gaBind) {
+    if (this.bindSubscription) {
+      this.bindSubscription.unsubscribe();
+    }
+    this._gaBind = gaBind;
+    this.bindSubscription = (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.fromEvent)(this.el.nativeElement, gaBind).subscribe(() => this.trigger());
+  }
+  get gaBind() {
+    return this._gaBind;
+  }
+  ngOnDestroy() {
+    if (this.bindSubscription) {
+      this.bindSubscription.unsubscribe();
+    }
+  }
+  trigger() {
+    try {
+      // Observação: não é obrigatório especificar uma categoria, uma etiqueta ou um valor. Consulte Eventos padrão do Google Analytics abaixo.
+      // if (!this.$gaCategoryDirective) {
+      //   throw new Error('You must provide a gaCategory attribute w/ gaEvent Directive.');
+      // }
+      if (!this.gaAction && !this.gaEvent) {
+        throw new Error('You must provide a gaAction attribute to identify this event.');
+      }
+      this.gaService.event(this.gaAction || this.gaEvent, this.gaCategoryDirective ? this.gaCategoryDirective.gaCategory : undefined, this.gaLabel || this.label, this.gaValue, this.gaInteraction);
+    } catch (err) {
+      this.throw(err);
+    }
+  }
+  throw(err) {
+    if (((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.isDevMode)() || this.settings.enableTracing) && console && console.warn) {
+      console.warn(err);
+    }
+  }
+}
+GaEventDirective.ɵfac = function GaEventDirective_Factory(t) {
+  return new (t || GaEventDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](GaEventCategoryDirective, 8), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](GoogleAnalyticsService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef));
+};
+GaEventDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
+  type: GaEventDirective,
+  selectors: [["", "gaEvent", ""]],
+  inputs: {
+    gaAction: "gaAction",
+    gaLabel: "gaLabel",
+    label: "label",
+    gaValue: "gaValue",
+    gaInteraction: "gaInteraction",
+    gaEvent: "gaEvent",
+    gaBind: "gaBind"
+  },
+  exportAs: ["gaEvent"]
+});
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](GaEventDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Directive,
+    args: [{
+      selector: `[gaEvent]`,
+      exportAs: 'gaEvent'
+    }]
+  }], function () {
+    return [{
+      type: GaEventCategoryDirective,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Optional
+      }]
+    }, {
+      type: GoogleAnalyticsService
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Inject,
+        args: [NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN]
+      }]
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef
+    }];
+  }, {
+    gaAction: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+    }],
+    gaLabel: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+    }],
+    label: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+    }],
+    gaValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+    }],
+    gaInteraction: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+    }],
+    gaEvent: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+    }],
+    gaBind: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+    }]
+  });
+})();
+class GaEventFormInputDirective {
+  constructor(gaEvent) {
+    this.gaEvent = gaEvent;
+    this.gaBind = 'focus';
+  }
+  set gaBind(bind) {
+    if (this.gaEvent) {
+      this.gaEvent.gaBind = bind;
+    }
+  }
+}
+GaEventFormInputDirective.ɵfac = function GaEventFormInputDirective_Factory(t) {
+  return new (t || GaEventFormInputDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](GaEventDirective, 9));
+};
+GaEventFormInputDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
+  type: GaEventFormInputDirective,
+  selectors: [["input", "gaEvent", ""], ["select", "gaEvent", ""], ["textarea", "gaEvent", ""]],
+  inputs: {
+    gaBind: "gaBind"
+  }
+});
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](GaEventFormInputDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Directive,
+    args: [{
+      selector: `input[gaEvent],
+             select[gaEvent],
+             textarea[gaEvent]`
+    }]
+  }], function () {
+    return [{
+      type: GaEventDirective,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Host
+      }, {
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Optional
+      }]
+    }];
+  }, {
+    gaBind: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+    }]
+  });
+})();
+var GaActionEnum;
+(function (GaActionEnum) {
+  GaActionEnum["ADD_PAYMENT_INFO"] = "add_payment_info";
+  GaActionEnum["ADD_TO_CART"] = "add_to_cart";
+  GaActionEnum["ADD_TO_WISHLIST"] = "add_to_wishlist";
+  GaActionEnum["BEGIN_CHECKOUT"] = "begin_checkout";
+  GaActionEnum["CHECKOUT_PROGRESS"] = "checkout_progress";
+  GaActionEnum["GENERATE_LEAD"] = "generate_lead";
+  GaActionEnum["LOGIN"] = "login";
+  GaActionEnum["PURCHASE"] = "purchase";
+  GaActionEnum["REFUND"] = "refund";
+  GaActionEnum["REMOVE_FROM_CART"] = "remove_from_cart";
+  GaActionEnum["SEARCH"] = "search";
+  GaActionEnum["SELECT_CONTENT"] = "select_content";
+  GaActionEnum["SET_CHECKOUT_OPTION"] = "set_checkout_option";
+  GaActionEnum["SHARE"] = "share";
+  GaActionEnum["SIGN_UP"] = "sign_up";
+  GaActionEnum["VIEW_ITEM"] = "view_item";
+  GaActionEnum["VIEW_ITEM_LIST"] = "view_item_list";
+  GaActionEnum["VIEW_PROMOTION"] = "view_promotion";
+  GaActionEnum["VIEW_SEARCH_RESULT"] = "view_search_results";
+  GaActionEnum["VIEW_SEARCH_RESULTS"] = "view_search_results";
+})(GaActionEnum || (GaActionEnum = {}));
+
+/**
+ * Provide a DI Configuration to attach GA Initialization at Angular Startup Cycle.
+ */
+const NGX_GOOGLE_ANALYTICS_INITIALIZER_PROVIDER = {
+  provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_INITIALIZER,
+  multi: true,
+  useFactory: GoogleAnalyticsInitializer,
+  deps: [NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN, NGX_GTAG_FN, _angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT]
+};
+/**
+ * Create a script element on DOM and link it to Google Analytics tracking code URI.
+ * After that, execute exactly same init process as tracking snippet code.
+ */
+function GoogleAnalyticsInitializer(settings, gtag, document) {
+  return /*#__PURE__*/(0,_Users_avarghese_Workspace_varararun_github_io_node_modules_angular_devkit_build_angular_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    if (!settings.trackingCode) {
+      if (!(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.isDevMode)()) {
+        console.error('Empty tracking code for Google Analytics. Make sure to provide one when initializing NgxGoogleAnalyticsModule.');
+      }
+      return;
+    }
+    if (!gtag) {
+      if (!(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.isDevMode)()) {
+        console.error('Was not possible create or read gtag() fn. Make sure this module is running on a Browser w/ access to Window interface.');
+      }
+      return;
+    }
+    if (!document) {
+      if (!(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.isDevMode)()) {
+        console.error('Was not possible to access Document interface. Make sure this module is running on a Browser w/ access do Document interface.');
+      }
+    }
+    // Set default ga.js uri
+    settings.uri = settings.uri || `https://www.googletagmanager.com/gtag/js?id=${settings.trackingCode}`;
+    // these commands should run first!
+    settings.initCommands = settings?.initCommands ?? [];
+    // assert config command
+    if (!settings.initCommands.find(x => x.command === 'config')) {
+      settings.initCommands.unshift({
+        command: 'config',
+        values: [settings.trackingCode]
+      });
+    }
+    // assert js command
+    if (!settings.initCommands.find(x => x.command === 'js')) {
+      settings.initCommands.unshift({
+        command: 'js',
+        values: [new Date()]
+      });
+    }
+    for (const command of settings.initCommands) {
+      gtag(command.command, ...command.values);
+    }
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = settings.uri;
+    if (settings.nonce) {
+      s.setAttribute('nonce', settings.nonce);
+    }
+    const head = document.getElementsByTagName('head')[0];
+    head.appendChild(s);
+  });
+}
+
+/**
+ * Provide a Injection Token to global settings.
+ */
+const NGX_GOOGLE_ANALYTICS_ROUTING_SETTINGS_TOKEN = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('ngx-google-analytics-routing-settings', {
+  factory: () => ({})
+});
+
+/**
+ * Provide a DI Configuration to attach GA Trigger to Router Events at Angular Startup Cycle.
+ */
+const NGX_GOOGLE_ANALYTICS_ROUTER_INITIALIZER_PROVIDER = {
+  provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_BOOTSTRAP_LISTENER,
+  multi: true,
+  useFactory: GoogleAnalyticsRouterInitializer,
+  deps: [NGX_GOOGLE_ANALYTICS_ROUTING_SETTINGS_TOKEN, GoogleAnalyticsService]
+};
+/**
+ * Attach a listener to `NavigationEnd` Router event. So, every time Router finish the page resolution it should call `NavigationEnd` event.
+ * We assume that NavigationEnd is the final page resolution and call GA `page_view` command.
+ *
+ * To avoid double binds, we also destroy the subscription when de Bootstrap Component is destroied. But, we don't know for sure
+ * that this strategy does not cause double bind on multiple bootstrap components.
+ *
+ * We are using de component's injector reference to resolve Router, sou I hope there is no problem w/ double bing.
+ *
+ * If you have this problem, I encourage not Use NgxGoogleAnalyticsRouterModule and atach the listener on AppComponent initialization.
+ */
+function GoogleAnalyticsRouterInitializer(settings, gaService) {
+  return /*#__PURE__*/function () {
+    var _ref2 = (0,_Users_avarghese_Workspace_varararun_github_io_node_modules_angular_devkit_build_angular_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (c) {
+      const router = c.injector.get(_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router);
+      const {
+        include = [],
+        exclude = []
+      } = settings ?? {};
+      const includeRules = normalizePathRules(include);
+      const excludeRules = normalizePathRules(exclude);
+      const subs = router.events.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.filter)(event => event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_4__.NavigationEnd), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.skip)(1),
+      // Prevend double views on the first tigger (because GA Already send one ping on setup)
+      (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.filter)(event => includeRules.length > 0 ? includeRules.some(rule => rule.test(event.urlAfterRedirects)) : true), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.filter)(event => excludeRules.length > 0 ? !excludeRules.some(rule => rule.test(event.urlAfterRedirects)) : true)).subscribe(event => gaService.pageView(event.urlAfterRedirects, undefined));
+      // Cleanup
+      c.onDestroy(() => subs.unsubscribe());
+    });
+    return function (_x) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+}
+/** Converts all path rules from string to Regex instances */
+function normalizePathRules(rules) {
+  return rules.map(rule => rule instanceof RegExp ? rule : new RegExp(`^${rule.replace('*', '.*')}$`, 'i'));
+}
+
+/**
+ * Install Google Analytics Tracking code on your environment and configure tracking ID.
+ *
+ * This module should be a dependency on the highest level module of the application, i.e. AppModule in most use cases.
+ */
+class NgxGoogleAnalyticsModule {
+  /**
+   * You should provide a valid Google TrackingCode. This code will be provided to the entire application by
+   * `NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN` token. You can inject this code in you components if you like by
+   * use the following injection code `@Inject(NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN) gaConfig: IGoogleAnalyticsSettings`
+   *
+   * @param trackingCode The Google Tracking Code
+   * @param initCommands When placed, it will run any GA Commands in sequence after setup GA environment.
+   * @param uri When placed, it will change the default js URI to the provided one.
+   * @param enableTracing When true, trace GA tracking errors on production mode.
+   * @param nonce When placed, nonce will be added to script tag.
+   */
+  static forRoot(trackingCode, initCommands = [], uri, enableTracing, nonce) {
+    return {
+      ngModule: NgxGoogleAnalyticsModule,
+      providers: [{
+        provide: NGX_GOOGLE_ANALYTICS_SETTINGS_TOKEN,
+        useValue: {
+          trackingCode,
+          initCommands,
+          uri,
+          enableTracing,
+          nonce
+        }
+      }, NGX_GOOGLE_ANALYTICS_INITIALIZER_PROVIDER]
+    };
+  }
+}
+NgxGoogleAnalyticsModule.ɵfac = function NgxGoogleAnalyticsModule_Factory(t) {
+  return new (t || NgxGoogleAnalyticsModule)();
+};
+NgxGoogleAnalyticsModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
+  type: NgxGoogleAnalyticsModule
+});
+NgxGoogleAnalyticsModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({});
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NgxGoogleAnalyticsModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModule,
+    args: [{
+      imports: [],
+      declarations: [GaEventDirective, GaEventCategoryDirective, GaEventFormInputDirective],
+      exports: [GaEventDirective, GaEventCategoryDirective, GaEventFormInputDirective]
+    }]
+  }], null, null);
+})();
+
+/**
+ * Attach a listener to `NavigationEnd` Router event. So, every time Router finish the page resolution it should call `NavigationEnd` event.
+ * We assume that NavigationEnd is the final page resolution and call GA `page_view` command.
+ *
+ * To avoid double binds, we also destroy the subscription when de Bootstrap Component is destroied. But, we don't know for sure
+ * that this strategy does not cause double bind on multiple bootstrap components.
+ *
+ * We are using de component's injector reference to resolve Router, sou I hope there is no problem w/ double bing.
+ *
+ * If you have this problem, I encourage not Use NgxGoogleAnalyticsRouterModule and atach the listener on AppComponent initialization.
+ *
+ * This Module is just a sugar for:
+ *
+```typescript
+constructor(private router: Router) {}
+...
+ngOnInit() {
+  ...
+  this.router
+    .events
+    .pipe(takeUntil(this.onDestroy$))
+    .subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        gaService.pageView(event.urlAfterRedirects, undefined);
+      }
+    });
+```
+ */
+class NgxGoogleAnalyticsRouterModule {
+  static forRoot(settings) {
+    return {
+      ngModule: NgxGoogleAnalyticsRouterModule,
+      providers: [{
+        provide: NGX_GOOGLE_ANALYTICS_ROUTING_SETTINGS_TOKEN,
+        useValue: settings ?? {}
+      }]
+    };
+  }
+}
+NgxGoogleAnalyticsRouterModule.ɵfac = function NgxGoogleAnalyticsRouterModule_Factory(t) {
+  return new (t || NgxGoogleAnalyticsRouterModule)();
+};
+NgxGoogleAnalyticsRouterModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
+  type: NgxGoogleAnalyticsRouterModule
+});
+NgxGoogleAnalyticsRouterModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
+  providers: [NGX_GOOGLE_ANALYTICS_ROUTER_INITIALIZER_PROVIDER],
+  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule, NgxGoogleAnalyticsModule]
+});
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NgxGoogleAnalyticsRouterModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModule,
+    args: [{
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule, NgxGoogleAnalyticsModule],
+      providers: [NGX_GOOGLE_ANALYTICS_ROUTER_INITIALIZER_PROVIDER],
+      declarations: []
+    }]
+  }], null, null);
+})();
+
+/*
+ * Public API Surface of ngx-google-analytics
+ */
 
 /**
  * Generated bundle index. Do not edit.

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {LanguageService} from "../../../services/language/language.service";
+import {AnalyticsService} from "../../../services/analytics/analytics.service";
 
 @Component({
     selector: 'app-about',
@@ -8,7 +9,7 @@ import {LanguageService} from "../../../services/language/language.service";
 })
 export class AboutComponent {
 
-    constructor(public languageService: LanguageService) {
+    constructor(private languageService: LanguageService, public analyticsService: AnalyticsService) {
     }
 
     downloadResume() {

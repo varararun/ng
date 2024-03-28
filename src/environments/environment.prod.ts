@@ -1,4 +1,5 @@
 export const environment = {
+    theme: 'dark',
     production: true,
-    trackAnalyticID: "G-4ML1VNCP9T"
+    gaAnalyticID: "UA-88384820-1"
 };

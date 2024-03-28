@@ -35,7 +35,7 @@ export class MenuComponent implements OnInit {
 
     constructor(
         private router: Router,
-        public languageService: LanguageService
+        private languageService: LanguageService
     ) {
     }
 

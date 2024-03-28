@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit{
     allFeatured = [];
 
     constructor(
-        public languageService: LanguageService
+        private languageService: LanguageService
     ) {
     }
 

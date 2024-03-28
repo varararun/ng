@@ -11,6 +11,7 @@ import {environment} from '../environments/environment';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader'
 import {HttpClient, HttpClientModule} from '@angular/common/http'
 import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
+import {NgxGoogleAnalyticsModule} from "ngx-google-analytics";
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
+        NgxGoogleAnalyticsModule.forRoot(environment.gaAnalyticID),
         ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
         TranslateModule.forRoot({
             defaultLanguage: 'en',

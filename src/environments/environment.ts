@@ -3,8 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+    theme: 'dark',
     production: false,
-    trackAnalyticID: "G-4ML1VNCP9T"
+    gaAnalyticID: "UA-88384820-1"
 };
 
 /*

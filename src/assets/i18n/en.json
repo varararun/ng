@@ -383,6 +383,15 @@
     "FeatureProjects.Label": "Featured Project",
     "FeatureProjects.Projects": [
         {
+            "Title": "US Patent 9491178 B2",
+            "CompanyLogo": "assets/images/logos/logo-fidelity.png",
+            "Description": "Identifying a measure of online security. A computer-implemented method includes retrieving, by one or more processing devices and from one or more data repositories, user information; generating, based on the retrieved user information, a digital personal profile that is a composite of a set of pre-defined attributes. ",
+            "DemoLink": "https://patents.google.com/patent/US9491178",
+            "Technologies": [
+                "Published November 2016"
+            ]
+        },
+        {
             "Title": "ISC Portal",
             "Company": "Comcast",
             "CompanyLogo": "assets/images/logos/logo-comcast.png",
@@ -448,28 +457,19 @@
                 "IBM HATS",
                 "Apache Solr"
             ]
-        },
-        {
-            "Title": "Data Access Layer",
-            "CompanyLogo": "assets/images/logos/logo-fidelity.png",
-            "Description": "Java and Spring based RESTful web services project used for raw data management, capture, and delivery.",
-            "Technologies": [
-                "Linux",
-                "Tomcat",
-                "Oracle Database",
-                "SQL Server",
-                "Composite",
-                "Maven"
-            ]
         }
     ],
     "PersonalProjects.Title": "Personal projects",
     "PersonalProjects.Projects": [
         {
             "Title": "Personal Website",
-            "Description": "4th iteration of my personal website. Designed and developed to showcase my web development and design skills.",
+            "Description": "Latest iteration of my personal website. Designed and developed to showcase my web development and design skills using the latest front end technologies.",
+            "GithubLink": "https://github.com/varararun/varararun.github.io",
+            "DemoLink": "https://avarghese.me",
             "Technologies": [
+                "PWA",
                 "Angular 17",
+                "TypeScript",
                 "Github Pages",
                 "SCSS",
                 "Node",
@@ -479,13 +479,18 @@
             ]
         },
         {
-            "Title": "Resume Builder",
-            "Description": "Web application used as a tool for Resume edit/proofread/format/styles/guidelines.",
+            "Title": "Personal Website v3",
+            "Description": "3rd iteration of my personal website, Hosted on Github Pages. Designed and developed to showcase my web development and design skills.",
+            "GithubLink": "https://github.com/varararun/version-3",
+            "DemoLink": "https://avarghese.me/version-3",
             "Technologies": [
-                "Angular 1.5",
-                "Heroku",
-                "Mongo",
-                "Travis-CI"
+                "Github Pages",
+                "PWA",
+                "TypeScript",
+                "HTML",
+                "SCSS",
+                "Node",
+                "Gulp"
             ]
         },
         {
@@ -504,6 +509,39 @@
             ]
         },
         {
+            "Title": "Personal Website v2",
+            "Description": "2nd iteration of my personal website. Incorporated better design and included build process automation to streamline development.",
+            "GithubLink": "https://github.com/varararun/version-2",
+            "DemoLink": "https://avarghese.me/version-2",
+            "Technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS3",
+                "Gulp"
+            ]
+        },
+        {
+            "Title": "Personal Website v1",
+            "Description": "1st iteration of my personal website created to learn more about front end development.",
+            "GithubLink": "https://github.com/varararun/version-1",
+            "DemoLink": "https://avarghese.me/version-1",
+            "Technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "Title": "Resume Builder",
+            "Description": "Web application used as a tool for Resume edit/proofread/format/styles/guidelines.",
+            "Technologies": [
+                "Angular 1.5",
+                "Heroku",
+                "Mongo",
+                "Travis-CI"
+            ]
+        },
+        {
             "Title": "Car Dashboard",
             "Description": "Web application used for viewing, tracking, and assigning expenses for friends' investments in a rally car.",
             "GithubLink": "https://github.com/gitwrecked/carDashAng2CliV2",
@@ -516,14 +554,6 @@
                 "Node",
                 "Express",
                 "Frisby.js"
-            ]
-        },
-        {
-            "Title": "US Patent 9491178 B2",
-            "Description": "Identifying a measure of online security. A computer-implemented method includes retrieving, by one or more processing devices and from one or more data repositories, user information; generating, based on the retrieved user information, a digital personal profile that is a composite of a set of pre-defined attributes. ",
-            "DemoLink": "https://patents.google.com/patent/US9491178",
-            "Technologies": [
-                "Published November 2016"
             ]
         }
     ],

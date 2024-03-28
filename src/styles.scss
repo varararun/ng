@@ -90,10 +90,6 @@ a {
     position: relative;
     color: var(--accent-color) !important;
     transition: var(--transition);
-
-    &:hover {
-        font-size: larger;
-    }
 }
 
 ol, ul, li {

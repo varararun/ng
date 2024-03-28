@@ -4750,9 +4750,6 @@ a:hover {
   color: var(--accent-color) !important;
   transition: var(--transition);
 }
-.highlight:hover {
-  font-size: larger;
-}
 
 ol, ul, li {
   list-style: none;

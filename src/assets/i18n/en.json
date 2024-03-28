@@ -401,6 +401,25 @@
             ]
         },
         {
+            "Title": "Landscape",
+            "Company": "Masergy",
+            "CompanyLogo": "assets/images/logos/logo-masergy.png",
+            "Description": "Web application used by internal users to support customers and perform network management across all business domains.",
+            "Technologies": [
+                "MacOS",
+                "Angular 15",
+                "Micro Services",
+                "Zuul",
+                "Keycloak",
+                "NX",
+                "NPM",
+                "Github",
+                "IntelliJ",
+                "TypeScript",
+                "SCSS"
+            ]
+        },
+        {
             "Title": "Nspire Platform",
             "CompanyLogo": "assets/images/logos/logo-spireon.png",
             "Description": "Groovy/Grails web application used for internal company operations such as warehousing, customer support, problem diagnosis, and migration operations.",

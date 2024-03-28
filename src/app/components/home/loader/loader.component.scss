@@ -20,7 +20,7 @@ $CubeSize: 150px;
 
     .profile {
         background-image: url('../../../../assets/images/profile/profile-small.png') !important;
-        filter: grayscale(1);
+        filter: grayscale(1) !important;
         transform-origin: center;
         background-size: cover;
         width: 100%;
@@ -34,6 +34,7 @@ $CubeSize: 150px;
         position: absolute;
         background-color: var(--cube-face);
         color: var(--cube-icon-color);
+        filter: blur(1px);
     }
 
     .cube-face-front {

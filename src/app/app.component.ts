@@ -17,9 +17,8 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
-
+        document.body.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
         this.titleService.setTitle("Arun Varghese | Software Engineer");
-
         this.metaService.addTags([
             {name: 'keywords', content: 'software, engineer, developer'},
             {name: 'description', content: '#engineer #husband #traveler'},

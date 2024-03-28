@@ -40,6 +40,7 @@ export class MenuComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        this.theme = document.body.getAttribute('data-theme') || 'dark';
         this.languageFormControl.setValue(this.languageService.DEFAULT);
 
         this.router.events.subscribe(event => {
@@ -72,6 +73,7 @@ export class MenuComponent implements OnInit {
     switchTheme() {
         this.theme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         document.body.setAttribute('data-theme', this.theme);
+        localStorage.setItem('theme', this.theme);
     }
 
     @HostListener('window:scroll')

@@ -29,8 +29,12 @@ footer {
         }
 
         li {
+            filter: blur(0.5px);
             margin: 20px 0px;
-
+            transition: var(--transition);
+            &:hover {
+                filter: none;
+            }
             &:last-of-type {
                 margin-bottom: 33px;
             }
@@ -44,7 +48,7 @@ footer {
         font-size: 20px;
         line-height: 1;
         position: fixed;
-        left: 50%;
+        right: 10vw;
         bottom: -15px;
         margin-left: -48.5px;
         width: 20px;

@@ -4700,7 +4700,7 @@ section {
   font-size: 32px;
   font-weight: 600;
   color: var(--primary-color);
-  font-family: var(--code-font);
+  font-family: var(--primary-font);
 }
 .section-title:after {
   content: "";

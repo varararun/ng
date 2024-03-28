@@ -7,7 +7,7 @@
                 </h3>
             </div>
             <div class="grid">
-                <div *ngFor='let project of featured; let i = index' class="grid-item project-box" data-aos="fade-up"
+                <div @ExitAnimation *ngFor='let project of featured; let i = index' class="grid-item project-box" data-aos="fade-up"
                      data-aos-duration="500">
                     <div>
                         <div class="header">
@@ -40,7 +40,7 @@
                 </h3>
             </div>
             <div class="grid">
-                <div *ngFor='let project of personal; let i = index' class="grid-item project-box" data-aos="fade-up"
+                <div @ExitAnimation *ngFor='let project of personal; let i = index' class="grid-item project-box" data-aos="fade-up"
                      data-aos-duration="500">
                     <div>
                         <div class="header">

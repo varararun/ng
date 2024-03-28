@@ -10,7 +10,7 @@ import {LanguageService} from 'src/app/services/language/language.service';
     styleUrls: ['./menu.component.scss'],
     animations: [
         trigger(
-            'OutAnimation',
+            'HideAnimation',
             [
                 transition(
                     ':leave',

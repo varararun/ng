@@ -1,10 +1,25 @@
 import {Component, OnInit} from '@angular/core';
 import {LanguageService} from "../../../services/language/language.service";
+import {animate, style, transition, trigger} from "@angular/animations";
 
 @Component({
     selector: 'app-projects',
     templateUrl: './projects.component.html',
-    styleUrls: ['./projects.component.scss']
+    styleUrls: ['./projects.component.scss'],
+    animations: [
+        trigger(
+            'ExitAnimation',
+            [
+                transition(
+                    ':leave',
+                    [
+                        style({opacity: 1 }),
+                        animate('.5s ease', style({opacity: 0, transform: 'translateY(100px)'}))
+                    ]
+                )
+            ]
+        )
+    ]
 })
 export class ProjectsComponent implements OnInit{
     personal = [];

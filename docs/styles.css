@@ -4631,6 +4631,8 @@ readers do not read off random characters that represent icons */
   --cube-face: var(--bg-dark-60);
   --cube-icon-color: var(--white);
   --bullet-color: var(--black);
+  --animated-icon-color: var(--black-30);
+  --bg-animated-filter: grayscale(1) saturate(0);
 }
 
 [data-theme=dark] {
@@ -4657,6 +4659,8 @@ readers do not read off random characters that represent icons */
   --cube-face: var(--bg-dark-30);
   --cube-icon-color: var(--white);
   --bullet-color: var(--blue);
+  --animated-icon-color: var(--white-30);
+  --bg-animated-filter: none;
 }
 
 body {
@@ -4710,21 +4714,21 @@ section {
 
 .main-btn {
   color: var(--btn-text-color);
-  background-color: transparent;
   border: var(--border);
   border-radius: var(--border-radius);
-  font-size: 13px;
-  font-family: var(--primary-font);
-  line-height: 1;
-  text-decoration: none;
-  cursor: var(--cursor-type);
-  padding: 1.25rem 1.75rem;
   box-shadow: var(--box-shadow);
   transition: var(--transition) !important;
+  font-family: var(--primary-font);
+  cursor: var(--cursor-type);
+  background-color: transparent;
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: none;
+  padding: 1.25rem 1.75rem;
 }
-.main-btn:hover, .main-btn:focus, .main-btn:active {
+.main-btn:hover {
   background-color: var(--bg-color-30);
-  outline: none;
+  color: var(--btn-text-color) !important;
 }
 
 i {

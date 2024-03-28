@@ -53,21 +53,21 @@ section {
 
 .main-btn {
     color: var(--btn-text-color);
-    background-color: transparent;
     border: var(--border);
     border-radius: var(--border-radius);
-    font-size: 13px;
-    font-family: var(--primary-font);
-    line-height: 1;
-    text-decoration: none;
-    cursor: var(--cursor-type);
-    padding: 1.25rem 1.75rem;
     box-shadow: var(--box-shadow);
     transition: var(--transition) !important;
+    font-family: var(--primary-font);
+    cursor: var(--cursor-type);
+    background-color: transparent;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none;
+    padding: 1.25rem 1.75rem;
 
-    &:hover, &:focus, &:active {
+    &:hover {
         background-color: var(--bg-color-30);
-        outline: none;
+        color: var(--btn-text-color) !important;
     }
 }
 

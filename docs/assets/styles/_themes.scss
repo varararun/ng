@@ -24,6 +24,8 @@
     --cube-face: var(--bg-dark-60);
     --cube-icon-color: var(--white);
     --bullet-color: var(--black);
+    --animated-icon-color: var(--black-30);
+    --bg-animated-filter: grayscale(1) saturate(0);
 }
 
 [data-theme="dark"] {
@@ -50,4 +52,6 @@
     --cube-face: var(--bg-dark-30);
     --cube-icon-color: var(--white);
     --bullet-color: var(--blue);
+    --animated-icon-color: var(--white-30);
+    --bg-animated-filter: none;
 }

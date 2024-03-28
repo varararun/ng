@@ -5,4 +5,15 @@ import {Component} from '@angular/core';
     templateUrl: './background.component.html',
     styleUrls: ['./background.component.scss']
 })
-export class BackgroundComponent {}
+export class BackgroundComponent {
+    readonly ICON_LIST = [
+        'fa-github',
+        'fa-angular',
+        'fa-docker',
+        'fa-npm',
+        'fa-java',
+        'fa-js',
+        'fa-css3',
+        'fa-html5'
+    ]
+}

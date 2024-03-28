@@ -22,7 +22,8 @@
         "noPropertyAccessFromIndexSignature": true,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
-        "noImplicitAny": false
+        "noImplicitAny": false,
+        "resolveJsonModule": true
     },
     "files": [],
     "include": [],

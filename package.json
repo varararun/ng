@@ -11,10 +11,7 @@
         "start": "nx serve",
         "test": "nx test",
         "lint": "nx lint",
-        "build": "nx build --base-href / --configuration production",
-        "deploy": "gh-pages -d dist",
-        "e2e": "nx e2e"
-
+        "deploy": "nx build --output-path dist --base-href / --configuration production && gh-pages -d dist && exit 1"
     },
     "private": true,
     "dependencies": {

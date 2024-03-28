@@ -1,4 +1,5 @@
 import {Component, HostListener} from '@angular/core';
+import { environment } from '../../../../environments/environment';
 
 @Component({
     selector: 'app-footer',
@@ -8,6 +9,7 @@ import {Component, HostListener} from '@angular/core';
 export class FooterComponent {
 
     scrollPosition = 0;
+    readonly APP_VERSION = environment.version;
 
     @HostListener('window:scroll')
     checkScroll() {

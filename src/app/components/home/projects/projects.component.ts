@@ -13,7 +13,7 @@ import {animate, style, transition, trigger} from "@angular/animations";
                 transition(
                     ':leave',
                     [
-                        style({opacity: 1 }),
+                        style({opacity: 1}),
                         animate('.5s ease', style({opacity: 0, transform: 'translateY(100px)'}))
                     ]
                 )
@@ -21,11 +21,10 @@ import {animate, style, transition, trigger} from "@angular/animations";
         )
     ]
 })
-export class ProjectsComponent implements OnInit{
-    personal = [];
-    allPersonal = [];
-    featured = [];
-    allFeatured = [];
+export class ProjectsComponent implements OnInit {
+    filtered = [];
+    all = [];
+    selectedTag = 'featured';
 
     constructor(
         private languageService: LanguageService
@@ -33,22 +32,20 @@ export class ProjectsComponent implements OnInit{
     }
 
     ngOnInit() {
-        this.languageService.translateService.get("FeatureProjects.Projects").subscribe(val => {
-            this.allFeatured = val;
-            this.featured = this.allFeatured.slice(0, 3);
-        });
-
-        this.languageService.translateService.get("PersonalProjects.Projects").subscribe(val => {
-            this.allPersonal = val;
-            this.personal = this.allPersonal.slice(0, 3);
+        this.languageService.translateService.get("Projects.Projects").subscribe(val => {
+            this.all = val;
+            this.filterProjects(this.selectedTag);
         });
     }
 
-    toggleFeatured() {
-        this.featured = this.featured.length < this.allFeatured.length ? this.allFeatured : this.allFeatured.slice(0, 3);
-    }
-
-    togglePersonal() {
-        this.personal = this.personal.length < this.allPersonal.length ? this.allPersonal : this.allPersonal.slice(0, 3);
+    filterProjects(tag: string) {
+        this.selectedTag = tag;
+        this.filtered = this.all.filter((project) => {
+            const tags: string[] = project['Tags'];
+            if (!this.selectedTag) {
+                return true;
+            }
+            return tags ? tags.includes(this.selectedTag) : false
+        });
     }
 }

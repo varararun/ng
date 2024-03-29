@@ -3,49 +3,26 @@
         <div class="section-box">
             <div>
                 <h3 class="section-title">
-                    {{"FeatureProjects.Title" | translate}}
+                    {{"Projects.Title" | translate}}
                 </h3>
             </div>
+            <div>
+                <ul class="project-categories">
+                    <li *ngFor='let tag of "Projects.Tags" | translate'
+                        (click)="filterProjects(tag)" [class.active]="selectedTag === tag">
+                        {{tag || 'All' | titlecase}}
+                    </li>
+                </ul>
+            </div>
             <div class="grid">
-                <div @ExitAnimation *ngFor='let project of featured; let i = index' class="grid-item project-box" data-aos="fade-up"
+                <div @ExitAnimation *ngFor='let project of filtered; let i = index' class="grid-item project-box"
+                     data-aos="fade-up"
                      data-aos-duration="500">
                     <div>
                         <div class="header">
                             <div class="title">{{project['Title']}}</div>
-                            <div class="project-img">
+                            <div class="project-img" *ngIf="project['CompanyLogo']">
                                 <img alt="CompanyLogo" [src]="project['CompanyLogo']">
-                            </div>
-                        </div>
-                        <p class="description">
-                            {{project['Description']}}
-                        </p>
-                    </div>
-                    <div>
-                        <span *ngFor="let technology of project['Technologies']" class="skills">
-                            <span class="highlight">{{technology}}</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="show-btn">
-                <a (click)="toggleFeatured()" class="main-btn" data-aos="fade-up" data-aos-duration="500">
-                    {{this.featured.length < this.allFeatured.length ? ("Projects.ShowMoreBtn" | translate): ("Projects.ShowLessBtn" | translate)}}
-                </a>
-            </div>
-        </div>
-        <div class="section-box">
-            <div class="">
-                <h3 class="section-title">
-                    {{"PersonalProjects.Title" | translate}}
-                </h3>
-            </div>
-            <div class="grid">
-                <div @ExitAnimation *ngFor='let project of personal; let i = index' class="grid-item project-box" data-aos="fade-up"
-                     data-aos-duration="500">
-                    <div>
-                        <div class="header">
-                            <div class="title">
-                                {{project['Title']}}
                             </div>
                             <div class="external-links">
                                 <a *ngIf="project['GithubLink']" [href]="project['GithubLink']" style='color: inherit'
@@ -62,11 +39,6 @@
                         </span>
                     </div>
                 </div>
-            </div>
-            <div class="show-btn">
-                <a (click)="togglePersonal()" class="main-btn" data-aos="fade-up" data-aos-duration="500">
-                    {{this.personal.length < this.allPersonal.length ? ("Projects.ShowMoreBtn" | translate) : ("Projects.ShowLessBtn" | translate)}}
-                </a>
             </div>
         </div>
     </div>

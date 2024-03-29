@@ -87,9 +87,31 @@
     }
 }
 
+.project-categories {
+    li {
+        display: inline;
+        cursor: var(--cursor-type);
+
+        &.active {
+            color: var(--accent-color);
+        }
+
+        &:after {
+            content: var(--divider);
+            color: var(--accent-color);
+            font-weight: 600;
+            opacity: .7;
+            margin: 10px;
+        }
+
+        &:last-child:after {
+            content: "";
+        }
+    }
+}
 .grid {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: auto;
     gap: 15px 15px;
     grid-template-areas:

@@ -10,11 +10,12 @@ import {AnalyticsService} from "../../../services/analytics/analytics.service";
 export class AboutComponent {
 
     constructor(private languageService: LanguageService, public analyticsService: AnalyticsService) {
+        window.matchMedia('(display-mode: standalone)').matches;
     }
 
     downloadResume() {
-        this.languageService.translateService.get("ResumeFileName").subscribe(val => {
-            window.open(window.location.href + "/../assets/resume/" + val, "_blank");
+        this.languageService.translateService.get("Resume").subscribe(val => {
+            window.open(val, "_blank");
         })
     }
 }

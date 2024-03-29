@@ -3,6 +3,7 @@ import {NavigationEnd, Router} from '@angular/router';
 import {animate, style, transition, trigger} from '@angular/animations'
 import {FormControl} from '@angular/forms';
 import {LanguageService} from 'src/app/services/language/language.service';
+import * as config from "../../../../environments/environment";
 
 @Component({
     selector: 'app-menu',
@@ -64,9 +65,8 @@ export class MenuComponent implements OnInit {
     }
 
     downloadResume() {
-        this.languageService.translateService.get("ResumeFileName").subscribe(val => {
-            this.fileName = val
-            window.open(window.location.href + "/../assets/resume/" + this.fileName, "_blank");
+        this.languageService.translateService.get("Resume").subscribe(val => {
+            window.open(val, "_blank");
         })
     }
 
@@ -74,10 +74,15 @@ export class MenuComponent implements OnInit {
         this.theme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         document.body.setAttribute('data-theme', this.theme);
         localStorage.setItem('theme', this.theme);
+        document.body.classList.remove('scroll-lock');
     }
 
     @HostListener('window:scroll')
     checkScroll() {
         this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    }
+
+    get appVersion() {
+        return config.environment.version;
     }
 }

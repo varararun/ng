@@ -64,7 +64,6 @@
         position: absolute;
         top: 15%;
         left: 0;
-        width: 100vw;
         margin: auto;
         list-style: none;
         color: var(--primary-color);
@@ -172,6 +171,13 @@
     color: var(--primary-color);
 }
 
+.version {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--code-font);
+}
 
 @media (max-width: 1000px) {
     .menu-btn {
@@ -184,3 +190,5 @@
         display: block;
     }
 }
+
+

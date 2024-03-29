@@ -5,7 +5,7 @@
         <div class="bar3"></div>
     </div>
 </div>
-<div @HideAnimation *ngIf="menuOpen" class="menu-overlay" data-aos="fade-out">
+<div @HideAnimation *ngIf="menuOpen" class="menu-overlay" data-aos="fade-out" (click)="toggleOverlayMenu()">
     <ol class="menu-items" data-aos="fade-up" data-aos-duration="500">
         <li *ngFor='let item of "Menu.NavItems" | translate; let i = index' class="menu-item">
             <a (click)="navigate(item); menuOpen = !menuOpen">{{item.label}}</a>
@@ -14,6 +14,7 @@
             <i class="fas {{theme === 'light' ? 'fa-toggle-on' : 'fa-toggle-off'}}"></i>
         </li>
     </ol>
+    <div class="version">{{appVersion}}</div>
 </div>
 <div class="menu-bar">
     <ol class="menu-bar-items" [ngClass]="{'show-menu-bg': scrollPosition > 100}">

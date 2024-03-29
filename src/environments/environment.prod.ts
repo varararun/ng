@@ -1,6 +1,7 @@
-import { version } from '../../package.json';
+import pkg from '../../package.json';
+
 export const environment = {
-    version: version,
+    version: pkg.version,
     theme: 'dark',
     production: true,
     gaAnalyticID: "UA-88384820-1"

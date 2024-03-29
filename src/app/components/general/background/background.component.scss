@@ -43,11 +43,17 @@ $Colors: [$Pink, $Green, $Blue, $White, $Orange, $Yellow];
 
     @for $i from 1 through 9 {
         i:nth-child(#{$i}) {
-            animation: random(4)*10 + 10+s linear random(10)+s infinite forwards scroll;
+            animation-duration: random(4)*10 + 10+s;
+            animation-delay: random(20)+s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            animation-name: scroll;
+
             filter: blur(random(4)+2+px);
             font-size: random(100)+50+px;
             position: absolute;
-            left: $i*10+vw;
+            left: $i*10-5+vw;
             top: 100vh;
             color: list.nth($Colors, $i%6+1);
         }

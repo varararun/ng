@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import * as AOS from 'aos';
 import {Meta, Title} from '@angular/platform-browser';
-import {environment} from "../environments/environment";
+import * as config from "../environments/environment";
 
 @Component({
     selector: 'app-root',
@@ -18,12 +18,9 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        document.body.setAttribute('data-theme', localStorage.getItem('theme') || environment.theme);
+        document.body.setAttribute('data-theme', localStorage.getItem('theme') || config.environment.theme);
         this.titleService.setTitle("Arun Varghese | Software Engineer");
-        this.metaService.addTags([
-            {name: 'keywords', content: 'software, engineer, developer'},
-            {name: 'description', content: '#engineer #husband #traveler'},
-        ]);
+        this.metaService.addTag({name: 'appVersion', id: config.environment.version});
 
         AOS.init();
 

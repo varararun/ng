@@ -1,6 +1,6 @@
 {
     "name": "ng",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "node": "^18.10.0",
         "yarn": ">=1.22.0 <2",
@@ -11,6 +11,7 @@
         "start": "nx serve",
         "test": "nx test",
         "lint": "nx lint",
+        "bump": "npm --no-git-tag-version version patch",
         "deploy": "nx build --output-path dist --base-href / --configuration production && gh-pages -d dist && exit 1"
     },
     "private": true,

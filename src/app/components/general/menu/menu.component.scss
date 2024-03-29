@@ -173,10 +173,17 @@
 
 .version {
     position: absolute;
-    top: 2vh;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
     font-family: var(--code-font);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1em 1em .5em;
+    transition: var(--transition) !important;
+    color: var(--scroll-btn-color);
+    background-color: var(--scroll-btn-bg-color);
+    box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 1000px) {

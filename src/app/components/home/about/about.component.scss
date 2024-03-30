@@ -46,6 +46,22 @@
         p {
             max-width: 500px;
         }
+
+        .social-icons {
+            display: none;
+            margin: 0 0 50px;
+            font-size: 20px;
+
+            li {
+                display: inline;
+                margin: 0 10px;
+
+                a:hover {
+                    color: inherit;
+                }
+            }
+
+        }
     }
 }
 
@@ -87,6 +103,14 @@
         width: 100%;
         margin-left: -35px;
         margin-bottom: 15vh;
+    }
+
+    .social-icons {
+        display: block !important;
+    }
+
+    .about-description {
+        margin-bottom: 30px !important;
     }
 }
 

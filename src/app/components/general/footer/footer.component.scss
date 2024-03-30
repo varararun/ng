@@ -30,13 +30,8 @@ footer {
         }
 
         li {
-            filter: blur(0.5px);
             margin: 20px 0px;
             transition: var(--transition);
-
-            &:hover {
-                filter: none;
-            }
 
             &:last-of-type {
                 margin-bottom: 33px;
@@ -71,7 +66,7 @@ footer {
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
     .footer-left-bar {
         display: none;
     }

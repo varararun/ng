@@ -1,6 +1,6 @@
 {
     "name": "ng",
-    "version": "1.0.9",
+    "version": "1.0.13",
     "engines": {
         "node": "^18.10.0",
         "yarn": ">=1.22.0 <2",
@@ -12,7 +12,7 @@
         "test": "nx test",
         "lint": "nx lint",
         "bump": "npm --no-git-tag-version version patch",
-        "deploy": "nx build --prod && gh-pages -d dist/ng && exit 1"
+        "deploy": "nx build && gh-pages -d dist/ng && exit 1"
     },
     "private": true,
     "dependencies": {

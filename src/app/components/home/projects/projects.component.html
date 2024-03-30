@@ -26,8 +26,12 @@
                                 <img alt="CompanyLogo" [src]="project['CompanyLogo']">
                             </div>
                             <div class="external-links">
-                                <a *ngIf="project['GithubLink']" [href]="project['GithubLink']" style='color: inherit'
-                                   target="_blank"><i class="external-link-btn fab fa-github" id="ghLink"></i></a>
+                                <a *ngIf="project['GithubLink']" [href]="project['GithubLink']" target="_blank">
+                                    <i class="external-link-btn fab fa-github" id="ghLink"></i>
+                                </a>
+                                <a *ngIf="project['Link']" [href]="project['Link']" target="_blank">
+                                    <i class="external-link-btn fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                         <p class="description">

@@ -2,6 +2,7 @@
 
 .about {
     min-height: 35vw;
+    margin-top: 20vh;
 }
 .container {
 
@@ -27,20 +28,16 @@
         }
 
         h2 {
-            font-size: 60px;
+            font-size: 70px;
             color: var(--primary-color);
             font-family: var(--primary-font);
         }
 
         h3 {
             margin-top: 10px;
-            font-size: 40px;
+            font-size: 45px;
             color: var(--primary-color);
             font-family: var(--code-font);
-        }
-
-        .about-description {
-            margin-bottom: 50px;
         }
 
         p {
@@ -49,7 +46,7 @@
 
         .social-icons {
             display: none;
-            margin: 0 0 50px;
+            margin: 1.5em 0 2.5em;
             font-size: 20px;
 
             li {
@@ -60,7 +57,10 @@
                     color: inherit;
                 }
             }
+        }
 
+        .download-resume {
+            margin: 3em 0;
         }
     }
 }
@@ -88,7 +88,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
     .name {
         font-size: 45px !important;
     }
@@ -107,10 +107,6 @@
 
     .social-icons {
         display: block !important;
-    }
-
-    .about-description {
-        margin-bottom: 30px !important;
     }
 }
 

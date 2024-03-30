@@ -16,34 +16,21 @@
                 </div>
                 <div class='about-description' data-aos="fade-right" data-aos-delay="300"
                      data-aos-duration="500">
-                    <p [innerHTML]='"About.Description" | translate' class="mt-4"></p>
+                    <p [innerHTML]='"About.Description" | translate'></p>
                 </div>
-                <ul class="social-icons" data-aos="fade-up" data-aos-duration="500">
-                    <li data-aos="fade-right" data-aos-delay="400" data-aos-duration="500">
-                        <a href="mailto:{{'Email' | translate}}" target='_blank'>
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
-                        <a href="{{'Github' | translate}}" target='_blank'>
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="600" data-aos-duration="500">
-                        <a href="{{'LinkedIn' | translate}}" target='_blank'>
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="700" data-aos-duration="500">
-                        <a href="{{'Instagram' | translate}}" target='_blank'>
-                            <i class="fab fa-instagram"></i>
+                <ul class="social-icons" data-aos="fade-right" data-aos-delay="400" data-aos-duration="500">
+                    <li  *ngFor='let item of "SocialIcons" | translate; let i = index'>
+                        <a href="{{item['Label'] === 'Email' ? 'mailto:' : ''}}{{item['link']  | translate}}" target='_blank'>
+                            <i class="{{item['Icon']}}"></i>
                         </a>
                     </li>
                 </ul>
-                <a (click)="analyticsService.sendAnalyticEvent('download_resume', 'about', 'click'); downloadResume()" class="main-btn" data-aos="fade-right"
-                   data-aos-duration="500">
-                    {{"About.ResumeBtn" | translate}}
-                </a>
+                <div class="download-resume">
+                    <a (click)="analyticsService.sendAnalyticEvent('download_resume', 'about', 'click'); downloadResume()"
+                       class="main-btn" data-aos="fade-right" data-aos-duration="500">
+                        {{"About.ResumeBtn" | translate}}
+                    </a>
+                </div>
             </div>
         </div>
     </div>

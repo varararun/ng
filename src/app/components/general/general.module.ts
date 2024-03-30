@@ -17,7 +17,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     declarations: [
         MenuComponent,
         BackgroundComponent,
-        FooterComponent
+        FooterComponent,
     ],
     imports: [
         CommonModule,

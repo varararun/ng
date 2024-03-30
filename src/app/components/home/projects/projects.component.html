@@ -1,49 +1,45 @@
 <section>
-    <div class="container">
-        <div class="section-box">
+    <div>
+        <h3 class="section-title">
+            {{"Projects.Title" | translate}}
+        </h3>
+    </div>
+    <div>
+        <ul class="project-categories">
+            <li *ngFor='let tag of "Projects.Tags" | translate; let i = index'
+                data-aos="fade-up" data-aos-duration="500" [attr.data-aos-delay]="i*100"
+                (click)="filterProjects(tag)" [class.active]="selectedTag === tag">
+                {{tag || 'All' | titlecase}}
+            </li>
+        </ul>
+    </div>
+    <div class="grid">
+        <div @ExitAnimation *ngFor='let project of filtered; let i = index' class="grid-item project-box"
+             data-aos="fade-up"
+             data-aos-duration="500">
             <div>
-                <h3 class="section-title">
-                    {{"Projects.Title" | translate}}
-                </h3>
-            </div>
-            <div>
-                <ul class="project-categories">
-                    <li *ngFor='let tag of "Projects.Tags" | translate; let i = index'
-                        data-aos="fade-up" data-aos-duration="500" [attr.data-aos-delay]="i*100"
-                        (click)="filterProjects(tag)" [class.active]="selectedTag === tag">
-                        {{tag || 'All' | titlecase}}
-                    </li>
-                </ul>
-            </div>
-            <div class="grid">
-                <div @ExitAnimation *ngFor='let project of filtered; let i = index' class="grid-item project-box"
-                     data-aos="fade-up"
-                     data-aos-duration="500">
-                    <div>
-                        <div class="header">
-                            <div class="title">{{project['Title']}}</div>
-                            <div class="project-img" *ngIf="project['CompanyLogo']">
-                                <img alt="CompanyLogo" [src]="project['CompanyLogo']">
-                            </div>
-                            <div class="external-links">
-                                <a *ngIf="project['GithubLink']" [href]="project['GithubLink']" target="_blank">
-                                    <i class="external-link-btn fab fa-github" id="ghLink"></i>
-                                </a>
-                                <a *ngIf="project['Link']" [href]="project['Link']" target="_blank">
-                                    <i class="external-link-btn fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="description">
-                            {{project['Description']}}
-                        </p>
+                <div class="header">
+                    <div class="title">{{project['Title']}}</div>
+                    <div class="project-img" *ngIf="project['CompanyLogo']">
+                        <img alt="CompanyLogo" [src]="project['CompanyLogo']">
                     </div>
-                    <div>
+                    <div class="external-links">
+                        <a *ngIf="project['GithubLink']" [href]="project['GithubLink']" target="_blank">
+                            <i class="external-link-btn fab fa-github" id="ghLink"></i>
+                        </a>
+                        <a *ngIf="project['Link']" [href]="project['Link']" target="_blank">
+                            <i class="external-link-btn fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="description">
+                    {{project['Description']}}
+                </p>
+            </div>
+            <div>
                         <span *ngFor="let technology of project['Technologies']" class="skills">
                             <span class="highlight">{{technology}}</span>
                         </span>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

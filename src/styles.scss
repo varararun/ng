@@ -16,6 +16,9 @@ body {
 section {
     background: transparent;
     min-height: 100vh;
+    margin: auto auto 20em;
+    width: 90%;
+    max-width: 1000px;
 }
 
 i {
@@ -75,10 +78,6 @@ ol, ul, li {
         background-color: var(--bg-color-30);
         color: var(--btn-text-color) !important;
     }
-}
-
-.section-box {
-    padding: 130px 0;
 }
 
 .container {

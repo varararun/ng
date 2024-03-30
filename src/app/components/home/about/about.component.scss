@@ -3,65 +3,64 @@
 .about {
     min-height: 35vw;
     margin-top: 20vh;
+    margin-bottom: 10em;
 }
-.container {
 
-    .section-box-about {
-        vertical-align: middle;
+.about {
+    vertical-align: middle;
 
-        .content {
-            margin-top: 175px;
-        }
+    .content {
+        margin-top: 175px;
+    }
 
-        h1 {
-            color: var(--title-color);
-            margin: 0 0 20px 3px;
-            font-size: 16px;
-            font-weight: normal;
-            font-family: var(--code-font);
-        }
+    h1 {
+        color: var(--title-color);
+        margin: 0 0 20px 3px;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: var(--code-font);
+    }
 
-        h2, h3 {
-            font-weight: 600;
-            line-height: 1.1;
-            margin: 0;
-        }
+    h2, h3 {
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 0;
+    }
 
-        h2 {
-            font-size: 70px;
-            color: var(--primary-color);
-            font-family: var(--primary-font);
-        }
+    h2 {
+        font-size: 70px;
+        color: var(--primary-color);
+        font-family: var(--primary-font);
+    }
 
-        h3 {
-            margin-top: 10px;
-            font-size: 45px;
-            color: var(--primary-color);
-            font-family: var(--code-font);
-        }
+    h3 {
+        margin-top: 10px;
+        font-size: 45px;
+        color: var(--primary-color);
+        font-family: var(--code-font);
+    }
 
-        p {
-            max-width: 500px;
-        }
+    p {
+        max-width: 500px;
+    }
 
-        .social-icons {
-            display: none;
-            margin: 1.5em 0 2.5em;
-            font-size: 20px;
+    .social-icons {
+        display: none;
+        margin: 1.5em 0 2.5em;
+        font-size: 20px;
 
-            li {
-                display: inline;
-                margin: 0 10px;
+        li {
+            display: inline;
+            margin: 0 10px;
 
-                a:hover {
-                    color: inherit;
-                }
+            a:hover {
+                color: inherit;
             }
         }
+    }
 
-        .download-resume {
-            margin: 3em 0;
-        }
+    .download-resume {
+        margin: 3em 0;
     }
 }
 
@@ -70,6 +69,7 @@
     padding: 0 0px 0px 10px;
     margin-left: -10px;
     color: var(--code-highlight-text-color);
+
     .blinking-cursor {
         animation: 1s blink step-end infinite;
     }

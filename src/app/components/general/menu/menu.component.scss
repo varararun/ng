@@ -1,6 +1,8 @@
 @import "src/assets/styles/themes";
 
 .menu-btn {
+    color: var(--primary-color);
+    cursor: var(--cursor-type);
     display: none;
     font-size: 35px;
     position: fixed;
@@ -8,11 +10,11 @@
     right: 0;
     margin-right: 15px;
     margin-top: 15px;
-    color: var(--primary-color);
-    cursor: var(--cursor-type);
     z-index: 2;
 
     .menu-container {
+        background: var(--bg-color-60);
+        box-shadow: var(--box-shadow);
         border-radius: var(--border-radius);
         transition: var(--transition);
         display: block;
@@ -29,6 +31,8 @@
         }
 
         &.menu-open {
+            box-shadow: none;
+
             .bar1, .bar2, .bar3 {
                 background-color: var(--primary-color);
             }

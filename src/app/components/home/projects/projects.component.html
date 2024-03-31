@@ -20,10 +20,8 @@
             <div>
                 <div class="header">
                     <div class="title">{{project['Title']}}</div>
-                    <div class="project-img" *ngIf="project['CompanyLogo']">
-                        <img alt="CompanyLogo" [src]="project['CompanyLogo']">
-                    </div>
                     <div class="external-links">
+                        <img *ngIf="project['CompanyLogo']" class="project-img" alt="CompanyLogo" [src]="project['CompanyLogo']">
                         <a *ngIf="project['GithubLink']" [href]="project['GithubLink']" target="_blank">
                             <i class="external-link-btn fab fa-github" id="ghLink"></i>
                         </a>

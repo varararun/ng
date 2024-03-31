@@ -64,26 +64,17 @@
         font-size: 17px;
     }
 
-    .skills {
+    .tech-icons {
+        font-size: 25px;
+        i {
+            margin: 10px;
+        }
+    }
+
+    .tech {
         font-size: 12px;
         line-height: 1.75;
         font-family: var(--code-font);
-
-        .highlight {
-            padding-bottom: 3.5px;
-        }
-
-        &:after {
-            content: var(--divider);
-            color: var(--primary-color);
-            font-weight: 600;
-            opacity: .7;
-            margin: 5px;
-        }
-
-        &:last-child:after {
-            content: "";
-        }
     }
 }
 

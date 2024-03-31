@@ -34,10 +34,13 @@
                     {{project['Description']}}
                 </p>
             </div>
-            <div>
-                <span *ngFor="let technology of project['Technologies']" class="skills">
+            <div *ngIf="project['Tech']">
+                 <span *ngFor="let technology of project['Tech']" class="tech">
                     <span class="highlight">{{technology}}</span>
                 </span>
+            </div>
+            <div class="tech-icons" *ngIf="project['TechIcons']">
+                <i *ngFor="let icon of project['TechIcons']" class="{{icon}}"></i>
             </div>
         </div>
     </div>

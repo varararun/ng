@@ -5,9 +5,9 @@
     "Background.Img": "assets/images/background/code.png",
     "SocialIcons": [
         {
-            "Label": "Email",
-            "link": "arunv4700@gmail.com",
-            "Icon": "fas fa-envelope"
+            "Label": "LinkedIn",
+            "link": "https://www.linkedin.com/in/varghesearun/",
+            "Icon": "fab fa-linkedin"
         },
         {
             "Label": "GitHub",
@@ -18,11 +18,6 @@
             "Label": "CodePen",
             "link": "https://codepen.io/avarghese/",
             "Icon": "fab fa-codepen"
-        },
-        {
-            "Label": "LinkedIn",
-            "link": "https://www.linkedin.com/in/varghesearun/",
-            "Icon": "fab fa-linkedin"
         },
         {
             "Label": "Instagram",
@@ -404,16 +399,14 @@
         }
     ],
     "Projects.Title": "My Projects",
-    "Projects.Tags": ["featured", "personal", "work", "patents",""],
+    "Projects.Tags": ["featured", "personal", "work", ""],
     "Projects.Projects": [
         {
-            "Tags": ["featured", "work", "patents"],
+            "Tags": ["featured", "work"],
             "Title": "US Patent 9491178 B2",
             "Description": "Identifying a measure of online security. A computer-implemented method includes retrieving, by one or more processing devices and from one or more data repositories, user information; generating, based on the retrieved user information, a digital personal profile that is a composite of a set of pre-defined attributes. ",
             "Link": "https://patents.google.com/patent/US9491178",
-            "Technologies": [
-                "Published November 2016"
-            ]
+            "Tech": ["Published November 2016"]
         },
         {
             "Tags": ["featured", "work"],
@@ -421,14 +414,13 @@
             "Company": "Comcast",
             "CompanyLogo": "assets/images/logos/logo-comcast.png",
             "Description": "Customer facing web application that unifies network and application management with real-time visibility, analytics and service control purpose-built for multi-cloud enterprises.",
-            "Technologies": [
-                "Angular 15",
-                "Docker",
-                "Kubernetes",
-                "Spring Boot",
-                "Maven",
-                "MyBatis",
-                "MySQL"
+            "TechIcons": [
+                "fab fa-linux",
+                "fab fa-java",
+                "fab fa-angular",
+                "fab fa-npm",
+                "fab fa-js",
+                "fab fa-docker"
             ]
         },
         {
@@ -437,14 +429,14 @@
             "Company": "Masergy",
             "CompanyLogo": "assets/images/logos/logo-masergy.png",
             "Description": "Web application used by internal users to support customers and perform network management across all business domains.",
-            "Technologies": [
-                "Angular 15",
-                "Micro Services",
-                "Zuul",
-                "Keycloak",
-                "Node",
-                "TypeScript",
-                "SCSS"
+            "TechIcons": [
+                "fab fa-linux",
+                "fab fa-java",
+                "fab fa-angular",
+                "fab fa-npm",
+                "fab fa-js",
+                "fab fa-html5",
+                "fab fa-sass"
             ]
         },
         {
@@ -452,14 +444,12 @@
             "Title": "Nspire Platform",
             "CompanyLogo": "assets/images/logos/logo-spireon.png",
             "Description": "Groovy/Grails web application used for internal company operations such as warehousing, customer support, problem diagnosis, and migration operations.",
-            "Technologies": [
-                "Linux",
-                "Tomcat",
-                "MongoDB",
-                "Elastic Search",
-                "RabbitMQ",
-                "Logic Monitor",
-                "Redis"
+            "TechIcons": [
+                "fab fa-linux",
+                "fab fa-angular",
+                "fab fa-java",
+                "fas fa-server",
+                "fas fa-database"
             ]
         },
         {
@@ -467,14 +457,11 @@
             "Title": "Fund Reference",
             "CompanyLogo": "assets/images/logos/logo-fidelity.png",
             "Description": "Java and Spring based web application for consolidating/provisioning fund attributes to downstream systems.",
-            "Technologies": [
-                "Linux",
-                "Tomcat",
-                "Oracle database",
-                "IPP",
-                "PowerCenter",
-                "IBM HATS",
-                "Apache Solr"
+            "TechIcons": [
+                "fab fa-java",
+                "fas fa-server",
+                "fas fa-database",
+                "fab fa-redhat"
             ]
         },
         {
@@ -483,12 +470,13 @@
             "Description": "Latest iteration of my personal website. Designed and developed to showcase my web development and design skills using the latest front end technologies.",
             "GithubLink": "https://github.com/varararun/varararun.github.io",
             "Link": "https://avarghese.me/ng",
-            "Technologies": [
-                "PWA",
-                "Angular 17",
-                "TypeScript",
-                "Github Pages",
-                "SCSS"
+            "TechIcons": [
+                "fab fa-angular",
+                "fab fa-js",
+                "fab fa-html5",
+                "fab fa-sass",
+                "fab fa-npm",
+                "fab fa-docker"
             ]
         },
         {
@@ -497,14 +485,12 @@
             "Description": "3rd iteration of my personal website, Hosted on Github Pages. Designed and developed to showcase my web development and design skills.",
             "GithubLink": "https://github.com/varararun/version-3",
             "Link": "https://avarghese.me/version-3",
-            "Technologies": [
-                "Github Pages",
-                "PWA",
-                "TypeScript",
-                "HTML",
-                "SCSS",
-                "Node",
-                "Gulp"
+            "TechIcons": [
+                "fab fa-js",
+                "fab fa-html5",
+                "fab fa-sass",
+                "fab fa-node-js",
+                "fab fa-gulp"
             ]
         },
         {
@@ -513,11 +499,11 @@
             "Description": "2nd iteration of my personal website. Incorporated better design and included build process automation to streamline development.",
             "GithubLink": "https://github.com/varararun/version-2",
             "Link": "https://avarghese.me/version-2",
-            "Technologies": [
-                "JavaScript",
-                "HTML",
-                "CSS3",
-                "Gulp"
+            "TechIcons": [
+                "fab fa-html5",
+                "fab fa-js",
+                "fab fa-css3",
+                "fab fa-gulp"
             ]
         },
         {
@@ -526,57 +512,37 @@
             "Description": "1st iteration of my personal website created to learn more about front end development.",
             "GithubLink": "https://github.com/varararun/version-1",
             "Link": "https://avarghese.me/version-1",
-            "Technologies": [
-                "JavaScript",
-                "HTML",
-                "CSS"
+            "TechIcons": [
+                "fab fa-html5",
+                "fab fa-js",
+                "fab fa-css3"
             ]
         },
         {
             "Tags": ["personal"],
             "Title": "Online Resume",
-            "Description": "1st iteration of my online resume using a simple static page.",
+            "Description": "1st iteration of my online resume using a simple static page and dev pipeline using gulp.",
             "GithubLink": "https://github.com/varararun/resume",
             "Link": "https://avarghese.me/resume",
-            "Technologies": [
-                "HTML",
-                "Javascript",
-                "SCSS",
-                "Travis-CI",
-                "Hound-CI",
-                "Gulp",
-                "Bower"
+            "TechIcons": [
+                "fab fa-html5",
+                "fab fa-js",
+                "fab fa-sass",
+                "fab fa-gulp",
+                "fab fa-jenkins"
             ]
         },
         {
             "Tags": ["personal", "featured"],
             "Title": "Photo Tiles",
-            "Description": "Front End package, javascript implementation of Mac's Photo Tiles Screensaver.",
+            "Description": "Front End published NPM package, javascript implementation of Mac's Photo Tiles Screensaver.",
             "GithubLink": "https://github.com/varararun/photo-tiles",
             "Link": "https://avarghese.me/photo-tiles",
-            "Technologies": [
-                "HTML",
-                "Javascript",
-                "SCSS",
-                "Travis-CI",
-                "Hound-CI",
-                "Gulp",
-                "Bower"
-            ]
-        },
-        {
-            "Tags": ["personal"],
-            "Title": "Car Dashboard",
-            "Description": "Web application used for viewing, tracking, and assigning expenses for friends' investments in a rally car.",
-            "GithubLink": "https://github.com/gitwrecked/carDashAng2CliV2",
-            "Technologies": [
-                "Angular 2",
-                "Heroku",
-                "Mongo",
-                "Travis-CI",
-                "Node",
-                "Express",
-                "Frisby.js"
+            "TechIcons": [
+                "fab fa-js",
+                "fab fa-sass",
+                "fab fa-gulp",
+                "fab fa-jenkins"
             ]
         }
     ],
@@ -584,6 +550,5 @@
     "Projects.ShowLessBtn": "Show Less",
     "Contact.Pretitle": "Contact",
     "Contact.Title": "Get in Touch!",
-    "Contact.Btn": "Send me an Email",
-    "Footer.Logo": "assets/images/logos/logo-angular.png"
+    "Contact.Btn": "Send me an Email"
 }

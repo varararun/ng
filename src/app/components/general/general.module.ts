@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {BackgroundComponent} from './background/background.component';
 import {FooterComponent} from "./footer/footer.component";
+import {LoaderComponent} from "./loader/loader.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -18,6 +19,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         MenuComponent,
         BackgroundComponent,
         FooterComponent,
+        LoaderComponent
     ],
     imports: [
         CommonModule,
@@ -32,7 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
             }
         })
     ],
-    exports: [MenuComponent, BackgroundComponent, FooterComponent]
+    exports: [MenuComponent, BackgroundComponent, FooterComponent, LoaderComponent]
 })
 export class GeneralModule {
 }

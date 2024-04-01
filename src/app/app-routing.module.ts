@@ -5,10 +5,12 @@ import {ProjectsComponent} from "./components/home/projects/projects.component";
 import {ContactComponent} from "./components/home/contact/contact.component";
 import {ExperienceComponent} from "./components/home/experience/experience.component";
 import {HighlightsComponent} from "./components/home/highlights/highlights.component";
+import {LoaderComponent} from "./components/general/loader/loader.component";
 
 const routes: Routes = [
 
-    {path: '', component: HomeComponent},
+    {path: '', component: LoaderComponent},
+    {path: 'home', component: HomeComponent},
     {path: 'highlights', component: HighlightsComponent},
     {path: 'experience', component: ExperienceComponent},
     {path: 'projects', component: ProjectsComponent},

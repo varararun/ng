@@ -12,11 +12,11 @@ $CubeSize: 150px;
     transition: transform 0.5s 0.1s;
     perspective: 9999px;
     color: #333;
-    margin: -50px 0 0 -50px;
-    position: relative;
+    margin: -50px 0 0 -75px;
+    position: absolute;
     left: 50%;
     top: 50%;
-    animation: spin 5s infinite forwards;
+    animation: spin 3s infinite forwards;
 
     .profile {
         background-image: url('../../../../assets/images/profile/profile-small.png') !important;

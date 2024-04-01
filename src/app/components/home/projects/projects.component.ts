@@ -8,7 +8,7 @@ import {animate, style, transition, trigger} from "@angular/animations";
     styleUrls: ['./projects.component.scss'],
     animations: [
         trigger(
-            'ExitAnimation',
+            'exit-animation',
             [
                 transition(
                     ':leave',

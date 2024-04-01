@@ -5,7 +5,7 @@
         <div class="bar3"></div>
     </div>
 </div>
-<div @HideAnimation *ngIf="menuOpen" class="menu-overlay" data-aos="fade-out" (click)="toggleOverlayMenu()">
+<div @hide-animation *ngIf="menuOpen" class="menu-overlay" data-aos="fade-out" (click)="toggleOverlayMenu()">
     <ol class="menu-items" data-aos="fade-up" data-aos-duration="500">
         <li *ngFor='let item of "Menu.NavItems" | translate; let i = index' class="menu-item">
             <a (click)="navigate(item); menuOpen = !menuOpen">{{item.label}}</a>

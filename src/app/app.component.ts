@@ -23,6 +23,5 @@ export class AppComponent implements OnInit {
         this.metaService.addTag({name: 'appVersion', id: config.environment.version});
 
         AOS.init();
-
     }
 }

@@ -11,7 +11,7 @@ import * as config from "../../../../environments/environment";
     styleUrls: ['./menu.component.scss'],
     animations: [
         trigger(
-            'HideAnimation',
+            'hide-animation',
             [
                 transition(
                     ':leave',

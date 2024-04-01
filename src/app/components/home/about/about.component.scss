@@ -1,13 +1,22 @@
 @import "src/assets/styles/themes";
 
 .about {
-    min-height: 80vw;
-    margin-top: 20vh;
-    margin-bottom: 10em;
-}
-
-.about {
     vertical-align: middle;
+    min-height: 80vw;
+    margin-top: 10em;
+    margin-bottom: 10em;
+
+    .profile-img {
+        background: url('../../../../assets/images/profile/profile-small.png') no-repeat;
+        transform-origin: center;
+        background-size: cover;
+        width: 10em;
+        height: 10em;
+        margin-bottom: 25px;
+        border-radius: var(--border-radius);
+        filter: grayscale(1);
+        box-shadow: var(--box-shadow);
+    }
 
     .content {
         margin-top: 175px;

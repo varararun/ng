@@ -36,6 +36,18 @@ footer {
             &:last-of-type {
                 margin-bottom: 33px;
             }
+
+            .label {
+                opacity: 0;
+                margin-left: -5px;
+                transition: var(--transition);
+            }
+            &:hover {
+                .label {
+                    margin-left: 10px;
+                    opacity: 1;
+                }
+            }
         }
     }
 

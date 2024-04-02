@@ -60,7 +60,7 @@ export class MenuComponent implements OnInit {
         if (item.label === 'Resume') {
             this.downloadResume();
         }
-        this.router.navigate([item.link]);
+        this.router.navigate([item['Link']]);
         document.body.classList.remove('scroll-lock');
     }
 

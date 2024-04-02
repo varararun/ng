@@ -72,6 +72,7 @@
         list-style: none;
         color: var(--primary-color);
         font-family: var(--primary-font);
+        font-size: 13px;
 
         .menu-item {
             margin: 20px 0;
@@ -165,8 +166,8 @@
 }
 
 .overlay-theme-toggle {
-    font-size: 40px;
-    margin-left: 50px;
+    font-size: 35px;
+    margin-left: 45px;
     cursor: pointer;
 }
 
